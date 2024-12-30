@@ -8,7 +8,7 @@ permalink: /ai-agents
 # Introduction to AI Agents  
 
 ## What Are AI Agents?
-This is purely for testing purposes 123 123 123
+This is purely for testing purposes 123 123 123 123
 AI agents are autonomous programs designed to perform tasks, make decisions, and interact with predefined roles. Powered by advanced technologies like Large Language Models (LLMs), these agents can process information, execute actions, and adapt to specific needs without human intervention.  
 
 FabriXAI’s AI agents stand out due to their versatility and ability to integrate seamlessly with various workflows, handling both simple and complex tasks across a wide range of applications. From automating repetitive processes to solving domain-specific challenges, AI agents are transforming how businesses and individuals approach productivity.
