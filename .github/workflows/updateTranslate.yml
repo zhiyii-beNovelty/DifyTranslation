@@ -28,8 +28,14 @@ jobs:
     - name: Check for changed files
       id: check_changes
       run: |
-        CHANGED_FILES=$(git diff --name-only HEAD^ HEAD | grep 'src/en-us/')
-        echo "changed_files=$CHANGED_FILES" >> $GITHUB_ENV
+        # Check if this is the first commit
+        if [ $(git rev-list --count HEAD) -eq 1 ]; then
+          echo "No previous commit to compare against."
+          echo "changed_files=" >> $GITHUB_ENV
+        else
+          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD | grep 'src/en-us/')
+          echo "changed_files=$CHANGED_FILES" >> $GITHUB_ENV
+        fi
 
     - name: Process each changed file
       if: env.changed_files != ''
