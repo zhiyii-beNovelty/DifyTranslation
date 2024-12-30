@@ -28,10 +28,13 @@ jobs:
     - name: Check for changed files
       id: check_changes
       run: |
-        # Get the changed files in the last commit
-        CHANGED_FILES=$(git diff --name-only HEAD^ HEAD | grep '^src/en-us/')
+        # Fetch the last two commits to ensure we have the history
+        git fetch --depth=2
+
+        # Get changed files in the last commit
+        CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD | grep '^src/en-us/')
         
-        # Set the changed_files environment variable
+        # Set changed_files environment variable
         if [ -z "$CHANGED_FILES" ]; then
           echo "No changed files found."
           echo "changed_files=" >> $GITHUB_ENV
