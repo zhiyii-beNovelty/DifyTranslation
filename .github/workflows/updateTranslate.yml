@@ -25,6 +25,20 @@ jobs:
         sudo apt-get install python3 python3-pip
         pip3 install requests
 
+    - name: Get changed files after a specific commit
+      id: get_changes
+      run: |
+        # Specify the commit hash you want to compare against
+        COMMIT_HASH=<commit_hash>  # Replace with your specific commit hash
+        CHANGED_FILES=$(git diff --name-only $COMMIT_HASH HEAD)
+
+        # Output the changed files
+        echo "Changed files:"
+        echo "$CHANGED_FILES"
+        
+        # Set the changed files as an output variable (if needed)
+        echo "::set-output name=changed_files::$CHANGED_FILES"
+
     - name: Check for changed files
       id: check_changes
       run: |
