@@ -25,15 +25,11 @@ jobs:
         sudo apt-get install python3 python3-pip
         pip3 install requests
 
-    - name: Fetch latest changes
-      run: |
-        git fetch origin
-
     - name: Get changed files in src/en-us since last push
       id: get_changes
       run: |
         # Get all changed files in src/en-us since the last push
-        CHANGED_FILES=$(git diff --name-only origin/main -- src/en-us/)
+        CHANGED_FILES=$(git diff --name-only HEAD -- src/en-us/**)
 
         # Output the changed files
         echo "Changed files in src/en-us since last push:"
