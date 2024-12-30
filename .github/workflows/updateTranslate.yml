@@ -25,36 +25,22 @@ jobs:
         sudo apt-get install python3 python3-pip
         pip3 install requests
 
-    - name: Get changed files after a specific commit
+    - name: Fetch latest changes
+      run: |
+        git fetch origin
+
+    - name: Get changed files in src/en-us since last push
       id: get_changes
       run: |
-        # Specify the commit hash you want to compare against
-        COMMIT_HASH=<commit_hash>  # Replace with your specific commit hash
-        CHANGED_FILES=$(git diff --name-only $COMMIT_HASH HEAD)
+        # Get all changed files in src/en-us since the last push
+        CHANGED_FILES=$(git diff --name-only origin/main -- src/en-us/)
 
         # Output the changed files
-        echo "Changed files:"
+        echo "Changed files in src/en-us since last push:"
         echo "$CHANGED_FILES"
         
         # Set the changed files as an output variable (if needed)
-        echo "::set-output name=changed_files::$CHANGED_FILES"
-
-    - name: Check for changed files
-      id: check_changes
-      run: |
-        # Fetch the last two commits to ensure we have the history
-        git fetch --depth=2
-
-        # Get changed files in the last commit
-        CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD | grep '^src/en-us/')
-        
-        # Set changed_files environment variable
-        if [ -z "$CHANGED_FILES" ]; then
-          echo "No changed files found."
-          echo "changed_files=" >> $GITHUB_ENV
-        else
-          echo "changed_files=$CHANGED_FILES" >> $GITHUB_ENV
-        fi
+        echo "changed_files=$CHANGED_FILES" >> $GITHUB_ENV
 
 
     - name: Process each changed file
