@@ -1,0 +1,28 @@
+{
+    "site_info": {
+      "en-us": {
+        "name": "Sample Platform"
+      },
+      "zh-hk": {
+        "name": "範例平台"
+      },
+      "zh-cn": {
+        "name": "范例平台"
+      },
+      "support_email": "support@sampleplatform.com"
+    },
+    "copyright": {
+      "en-us": {
+        "marketplace_mode_prefix": "",
+        "marketplace_mode": "2022 Sample Platform by Sample Company. All rights reserved."
+      },
+      "zh-hk": {
+        "marketplace_mode_prefix": "版權所有 ",
+        "marketplace_mode": "2022 Sample Platform by Sample Company"
+      },
+      "zh-cn": {
+        "marketplace_mode_prefix": "版权所有 ",
+        "marketplace_mode": "2022 Sample Platform by Sample Company"
+      }
+    }
+  }

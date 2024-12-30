@@ -1,0 +1,178 @@
+{
+  "heroSection": {
+    "en-us": {
+      "beforeLoginTitle": "Before Login Title Welcome to SamplePlatform Community",
+      "beforeLoginPoints": [
+        "Before Login Points1",
+        "Before Login Points2 ",
+        "Before Login Points3"
+      ],
+      "afterLoginTitle": "After Login Title Explore SamplePlatform Community",
+      "afterLoginDescription": "After Login Description ",
+
+      "beforeLoginButtons": [
+        "Before Login Buttons1",
+        "Before Login Buttons2"
+      ],
+      "afterLoginButtons": [
+        "After Login Buttons1 ",
+        "After Login Buttons2 "
+      ],
+
+      "introCards": [
+        {
+          "title": "intro Cards title 1",
+          "description": "intro Cards description 1",
+          "button": "intro Cards button 1 "
+        },
+        {
+          "title": "intro Cards title 2",
+          "description": "intro Cards description 2",
+          "button": "intro Cards button 2 "
+        },
+        {
+          "title": "intro Cards title 3",
+          "description": "intro Cards description 3",
+          "button": "intro Cards button 3 "
+        }
+      ]
+    },
+    "zh-hk": {
+      "beforeLoginTitle": "Before Login Title 歡迎來到SamplePlatform社群",
+      "beforeLoginPoints": [
+        "Before Login Points1",
+        "Before Login Points2 ",
+        "Before Login Points3"
+      ],
+      "afterLoginTitle": "After Login Title 探索SamplePlatform社群",
+      "afterLoginDescription": "After Login Description ",
+
+      "beforeLoginButtons": [
+        "Before Login Buttons1",
+        "Before Login Buttons2"
+      ],
+      "afterLoginButtons": [
+        "After Login Buttons1 ",
+        "After Login Buttons2 "
+      ],
+
+      "introCards": [
+        {
+          "title": "intro Cards title 1",
+          "description": "intro Cards description 1",
+          "button": "intro Cards button 1 "
+        },
+        {
+          "title": "intro Cards title 2",
+          "description": "intro Cards description 2",
+          "button": "intro Cards button 2 "
+        },
+        {
+          "title": "intro Cards title 3",
+          "description": "intro Cards description 3",
+          "button": "intro Cards button 3 "
+        }
+      ]
+    },
+    "zh-cn": {
+      "beforeLoginTitle": "Before Login Title  欢迎来到SamplePlatform社群",
+      "beforeLoginPoints": [
+        "Before Login Points1",
+        "Before Login Points2 ",
+        "Before Login Points3"
+      ],
+      "afterLoginTitle": "After Login Title 探索OpenAPIHub社群",
+      "afterLoginDescription": "After Login Description ",
+
+      "beforeLoginButtons": [
+        "Before Login Buttons1",
+        "Before Login Buttons2"
+      ],
+      "afterLoginButtons": [
+        "After Login Buttons1 ",
+        "After Login Buttons2 "
+      ],
+
+      "introCards": [
+        {
+          "title": "intro Cards title 1",
+          "description": "intro Cards description 1",
+          "button": "intro Cards button 1 "
+        },
+        {
+          "title": "intro Cards title 2",
+          "description": "intro Cards description 2",
+          "button": "intro Cards button 2 "
+        },
+        {
+          "title": "intro Cards title 3",
+          "description": "intro Cards description 3",
+          "button": "intro Cards button 3 "
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "display": true,
+        "beforeLoginLink": {
+          "type": "href",
+          "link": "https://beforeloginButton1.com",
+          "external": true
+        },
+        "afterLoginLink": {
+          "type": "href",
+          "link": "https://afterLoginButton1.com",
+          "external": true
+        }
+      },
+      {
+        "display": true,
+        "beforeLoginLink": {
+          "type": "href",
+          "link": "https://beforeLoginButton2.com",
+          "external": true
+        },
+        "afterLoginLink": {
+          "type": "href",
+          "link": "https://afterLoginButton2.com",
+          "external": true
+        }
+      }
+    ],
+    "introCards": [
+      {
+        "id": "ga-M01ai-03",
+        "buttonId": "ga-M01ai-03-03",
+        "icon": "icon-23.svg",
+        "link": {
+          "type": "href",
+          "link": "https://card1Link.com",
+          "external": true
+        },
+        "animationDelay": 0
+      },
+      {
+        "id": "ga-M01ai-04",
+        "buttonId": "ga-M01ai-04-03",
+        "icon": "icon-44.svg",
+        "link": {
+          "type": "href",
+          "link": "https://card2Link.com",
+          "external": true
+        },
+        "animationDelay": 200
+      },
+      {
+        "id": "ga-M01ai-05",
+        "buttonId": "ga-M01ai-53-03",
+        "icon": "icon-24.svg",
+        "link": {
+          "type": "href",
+          "link": "https://card3Link.com",
+          "external": true
+        },
+        "animationDelay": 150
+      }
+    ]
+  }
+}

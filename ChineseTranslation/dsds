@@ -1,0 +1,39 @@
+Here's a prompt you can use to instruct a language model (LLM) to follow the specified structure and formatting:
+
+---
+
+**Prompt:**
+
+Please generate a markdown document following this specific structure and formatting. Ignore the content and focus on the organization. The document should include the following sections:
+
+1. A metadata block at the top, enclosed in `---`, containing:
+   - `metatitle`
+   - `description`
+   - `lang`
+   - `permalink`
+
+2. A main heading using `#` for the title.
+
+3. Several subsections, each marked with `##`, including:
+   - Introduction
+   - Understanding Knowledge Base Chatbots
+   - The Evolution of Customer Support
+     - Include bullet points for specific examples (e.g., E-commerce, Finance)
+   - Key Features of Knowledge Base Chatbots
+     - Include bullet points for features (e.g., Sentiment Analysis, Multilingual Support)
+   - Benefits of Implementing Knowledge Base Chatbots
+   - Implementation Strategies
+     - Include a numbered list for steps (e.g., Assessment, Planning, Deployment, Ongoing Management)
+   - Challenges and Considerations
+   - Future Trends in Customer Support
+   - Best Practices for Maintaining Chatbots
+   - Key Takeaway
+   - FAQ section with questions formatted in bold followed by a line break.
+
+4. A concluding section with a subscription prompt and a numbered list of relevant topics.
+
+The final output should strictly adhere to this structure, ensuring clear hierarchy and organization in markdown format.
+
+---
+
+Feel free to adjust the prompt as needed to better fit your specific requirements!

@@ -10,5 +10,3 @@ permalink: /what-is-an-ai-agent
 An AI agent is a software application that utilizes artificial intelligence to perform tasks, interact with users, and provide responses based on input data. AI agents can analyze information, understand natural language, and learn from interactions to improve their performance over time.
 
 Learn more about the key features and benefits of [AI Agent](/en-us/ai-agents)
-
-#

@@ -1,0 +1,134 @@
+[
+  {
+    "navigation_id": "create-api",
+    "navigation_type": "link",
+    "navigation_link": "URL 1",
+    "navigation_icon": "fas fa-code",
+    "navigation_icon_bgcolor": "#57ABF0",
+    "navigation_meta": [
+      {
+        "lang_code": "en-us",
+        "navigation_data": {
+          "navigation_title": "Title 1",
+          "navigation_desc": "Description 1",
+          "navigation_button": "Button text 1"
+        }
+      },
+      {
+        "lang_code": "zh-hk",
+        "navigation_data": {
+          "navigation_title": "Title 1",
+          "navigation_desc": "Description 1",
+          "navigation_button": "Button text 1"
+        }
+      },
+      {
+        "lang_code": "zh-cn",
+        "navigation_data": {
+          "navigation_title": "Title 1",
+          "navigation_desc": "Description 1",
+          "navigation_button": "Button text 1"
+        }
+      }
+    ]
+  },
+  {
+    "navigation_id": "user-guide",
+    "navigation_type": "link",
+    "navigation_link": "URL 2",
+    "navigation_icon": "fas fa-book",
+    "navigation_icon_bgcolor": "#36B37E",
+    "navigation_meta": [
+      {
+        "lang_code": "en-us",
+        "navigation_data": {
+          "navigation_title": "Title 2",
+          "navigation_desc": "Description 2",
+          "navigation_button": "Button text 2"
+        }
+      },
+      {
+        "lang_code": "zh-hk",
+        "navigation_data": {
+          "navigation_title": "Title 2",
+          "navigation_desc": "Description 2",
+          "navigation_button": "Button text 2"
+        }
+      },
+      {
+        "lang_code": "zh-cn",
+        "navigation_data": {
+          "navigation_title": "Title 2",
+          "navigation_desc": "Description 2",
+          "navigation_button": "Button text 2"
+        }
+      }
+    ]
+  },
+  {
+    "navigation_id": "api-community",
+    "navigation_type": "link",
+    "navigation_link": "URL 3",
+    "navigation_icon": "fas fa-graduation-cap",
+    "navigation_icon_bgcolor": "#FD7E14",
+    "navigation_meta": [
+      {
+        "lang_code": "en-us",
+        "navigation_data": {
+          "navigation_title": "Title 3",
+          "navigation_desc": "Description 3",
+          "navigation_button": "Button text 3"
+        }
+      },
+      {
+        "lang_code": "zh-hk",
+        "navigation_data": {
+          "navigation_title": "Title 3",
+          "navigation_desc": "Description 3",
+          "navigation_button": "Button text 3"
+        }
+      },
+      {
+        "lang_code": "zh-cn",
+        "navigation_data": {
+          "navigation_title": "Title 3",
+          "navigation_desc": "Description 3",
+          "navigation_button": "Button text 3"
+        }
+      }
+    ]
+  },
+  {
+    "navigation_id": "create-api",
+    "navigation_type": "link",
+    "navigation_link": "URL 4",
+    "navigation_icon": "fas fa-comments",
+    "navigation_icon_bgcolor": "#FFBA00",
+    "navigation_meta": [
+      {
+        "lang_code": "en-us",
+        "navigation_data": {
+          "navigation_title": "Title 4",
+          "navigation_desc": "Description 4",
+          "navigation_button": "Button text 4"
+        }
+      },
+      {
+        "lang_code": "zh-hk",
+        "navigation_data": {
+          "navigation_title": "Title 4",
+          "navigation_desc": "Description 4",
+          "navigation_button": "Button text 4"
+        }
+      },
+      {
+        "lang_code": "zh-cn",
+        "navigation_data": {
+          "navigation_title": "Title 4",
+          "navigation_desc": "Description 4",
+          "navigation_button": "Button text 4"
+        }
+      }
+    ]
+  }
+]
