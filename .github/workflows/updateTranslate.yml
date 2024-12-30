@@ -4,7 +4,7 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - en-us/**
+      - src/en-us/**
   pull_request:
     branches: [ "main" ]
   workflow_dispatch:
@@ -28,7 +28,7 @@ jobs:
     - name: Check for changed files
       id: check_changes
       run: |
-        CHANGED_FILES=$(git diff --name-only HEAD^ HEAD | grep 'en-us/')
+        CHANGED_FILES=$(git diff --name-only HEAD^ HEAD | grep 'src/en-us/')
         echo "changed_files=$CHANGED_FILES" >> $GITHUB_ENV
 
     - name: Process each changed file
@@ -38,9 +38,9 @@ jobs:
         for file in ${{ env.changed_files }}; do
           base_path=$(dirname "$file")
           base_name=$(basename "$file")
-          chinese_file="zh-hk/${base_path}/${base_name}"
+          chinese_file="src/zh-hk/${base_path}/${base_name}"
 
-          mkdir -p "zh-hk/${base_path}"
+          mkdir -p "src/zh-hk/${base_path}"
 
           # Call Dify API to translate
           python3 -c "
