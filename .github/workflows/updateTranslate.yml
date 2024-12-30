@@ -28,19 +28,15 @@ jobs:
     - name: Check for changed files
       id: check_changes
       run: |
-        commit_count=$(git rev-list --count HEAD)
+        # Get the changed files in the last commit
+        CHANGED_FILES=$(git diff --name-only HEAD^ HEAD | grep '^src/en-us/')
         
-        if [ "$commit_count" -eq 1 ]; then
-          echo "No previous commit to compare against."
-          echo "changed_files=" >> $GITHUB_ENV
-        else
-          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD | grep 'src/en-us/')
-          echo "changed_files=$CHANGED_FILES" >> $GITHUB_ENV
-        fi
-
+        # Set the changed_files environment variable
         if [ -z "$CHANGED_FILES" ]; then
           echo "No changed files found."
           echo "changed_files=" >> $GITHUB_ENV
+        else
+          echo "changed_files=$CHANGED_FILES" >> $GITHUB_ENV
         fi
 
 
