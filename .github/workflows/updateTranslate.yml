@@ -31,7 +31,7 @@ jobs:
         git fetch origin
         
         # Compare the current branch with the main branch
-        CHANGED_FILES=$(git diff --name-only origin/main...HEAD -- src/en-us/)
+        CHANGED_FILES=$(git diff --name-only origin/main...testcopy -- src/en-us/)
     
         echo "Changed files in src/en-us since last push:"
         echo "$CHANGED_FILES"
