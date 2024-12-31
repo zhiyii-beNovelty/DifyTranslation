@@ -65,6 +65,7 @@ jobs:
           fi
 
           # Read the updated English file
+          git checkout HEAD -- "${file}"
           new_eng_content="${file}"
 
           echo "$old_eng_content"
@@ -86,11 +87,11 @@ jobs:
             print(f'Uploading file: {file_path}...')
             with open(file_path, 'rb') as file:
                 files = {
-                    'file': (file_path, file, 'text/plain')
+                    'file': (file_path, file, 'text/markdown')
                 }
                 data = {
                     'user': user,
-                    'type': 'TXT'
+                    'type': 'MD'
                 }
                 
                 response = requests.post(upload_url, headers=headers, files=files, data=data)
