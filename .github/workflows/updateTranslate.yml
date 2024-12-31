@@ -56,20 +56,16 @@ jobs:
 
           # Fetch the old English file from origin/main
           git checkout origin/main -- "${file}"
-          old_eng_content=$(cat "${file}")
+          old_eng_content="${file}"
 
           # Check if the corresponding Chinese file exists
           translation_file_content=""
           if [ -f "${zh_hk_file}" ]; then
-              translation_file_content=$(cat "${zh_hk_file}")
+              translation_file_content="${zh_hk_file}"
           fi
 
           # Read the updated English file
-          new_eng_content=$(cat "${file}")
-
-          echo "$old_eng_content"
-          echo "$translation_file_content"
-          echo "$new_eng_content"
+          new_eng_content="${file}"
 
           # Call Dify API to translate
           python3 -c "
