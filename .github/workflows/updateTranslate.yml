@@ -49,6 +49,8 @@ jobs:
           echo "Currently translating: $file"
           base_path=$(dirname "$file")
           base_name=$(basename "$file")
+          echo "$base_path"
+          echo "$base_name"
           
           # Construct paths for old and translation files
           old_eng_file="${base_path}/${base_name}"
