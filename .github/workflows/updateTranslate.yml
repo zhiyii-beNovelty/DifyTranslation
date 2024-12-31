@@ -75,11 +75,11 @@ jobs:
         import os
         import subprocess
 
-        def git_checkout(branch, file_path):
+        def git_checkout(branch):
           try:
-              subprocess.run(['git', 'checkout', branch, '--', file_path], check=True)
+              subprocess.run(['git', 'checkout', branch], check=True)
           except subprocess.CalledProcessError as e:
-              print(f"Error during git checkout: {e}")
+              print(f'Error during git checkout: {e}')
         
         def upload_file(file_path, user):
             upload_url = 'https://api.dify.ai/v1/files/upload'
@@ -146,10 +146,10 @@ jobs:
         # Main execution
         user = 'testUser123'
 
-        git_checkout('origin/main', old_eng_content)
+        git_checkout('origin/main')
         old_file_id = upload_file('${old_eng_content}', user)
         
-        git_checkout('HEAD', new_eng_content)
+        git_checkout('HEAD')
         new_file_id = upload_file('${new_eng_content}', user)
         translation_file_id = upload_file('${translation_file_content}', user)
         
