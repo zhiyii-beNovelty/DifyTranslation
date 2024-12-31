@@ -53,6 +53,8 @@ jobs:
           # Construct paths for old and translation files
           old_eng_file="src/en-us/${base_path}/${base_name}"
           zh_hk_file="src/zh-hk/${base_path}/${base_name}"
+          echo "$old_eng_file"
+          echo "$zh_hk_file"
 
           # Fetch the old English file from origin/main
           git checkout origin/main -- "${file}"
@@ -71,9 +73,12 @@ jobs:
           python3 -c "
         import requests
         import os
+        import json
 
         url = 'https://api.dify.ai/v1'
-        headers = {'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}', 'Content-Type': 'application/json'}
+        headers = {'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}',
+        'Content-Type': 'application/json',
+        }
 
         data = {
           'inputs': {
