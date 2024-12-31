@@ -51,49 +51,49 @@ jobs:
 
           # Call Dify API to translate
           python3 -c "
-        import requests
-        import os
-        
-        url = 'https://api.dify.ai/v1'
-        headers = {'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}', 'Content-Type': 'application/json'}
-        
-        # Read the updated English file
-        with open('${file}', 'r', encoding='utf-8') as new_eng_file:
-            new_eng_text = new_eng_file.read()
-        
-        # Check if the corresponding Chinese file exists
-        if os.path.exists('${chinese_file}'):
-            with open('${chinese_file}', 'r', encoding='utf-8') as old_chinese_file:
-                old_chinese_text = old_chinese_file.read()
-        else:
-            old_chinese_text = ''  # If no previous Chinese translation exists
-        
-        # Get the old English file from the previous commit
-        old_eng_file_path = '${file}'  # Current file path
-        old_eng_file_name = old_eng_file_path.replace('src/en-us/', 'src/old_en-us/')  # Adjust path for old file
-        if os.path.exists(old_eng_file_name):
-            with open(old_eng_file_name, 'r', encoding='utf-8') as old_eng_file:
-                old_eng_text = old_eng_file.read()
-        else:
-            old_eng_text = ''  # No previous English file exists
-        
-        data = {
-            'inputs': {
-                'target_lang': 'chinese',
-                'old_eng_file': old_eng_text,
-                'new_eng_file': new_eng_text,
-                'translation_file': old_chinese_text  # Existing Chinese content to update
-            },
-            'user': 'testUser123'
-        }
-        
-        response = requests.post(url, headers=headers, json=data)
-        
-        if response.status_code == 200:
-            chinese_text = response.json()['blog_translated']
-            with open('${chinese_file}', 'w', encoding='utf-8') as file:
-                file.write(chinese_text)
-        else:
-            print(f'Error: {response.status_code} - {response.text}')
-        "
-            done
+          import requests
+          import os
+          
+          url = 'https://api.dify.ai/v1'
+          headers = {'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}', 'Content-Type': 'application/json'}
+          
+          # Read the updated English file
+          with open('${file}', 'r', encoding='utf-8') as new_eng_file:
+              new_eng_text = new_eng_file.read()
+          
+          # Check if the corresponding Chinese file exists
+          if os.path.exists('${chinese_file}'):
+              with open('${chinese_file}', 'r', encoding='utf-8') as old_chinese_file:
+                  old_chinese_text = old_chinese_file.read()
+          else:
+              old_chinese_text = ''  # If no previous Chinese translation exists
+          
+          # Get the old English file from the previous commit
+          old_eng_file_path = '${file}'  # Current file path
+          old_eng_file_name = old_eng_file_path.replace('src/en-us/', 'src/old_en-us/')  # Adjust path for old file
+          if os.path.exists(old_eng_file_name):
+              with open(old_eng_file_name, 'r', encoding='utf-8') as old_eng_file:
+                  old_eng_text = old_eng_file.read()
+          else:
+              old_eng_text = ''  # No previous English file exists
+          
+          data = {
+              'inputs': {
+                  'target_lang': 'chinese',
+                  'old_eng_file': old_eng_text,
+                  'new_eng_file': new_eng_text,
+                  'translation_file': old_chinese_text  # Existing Chinese content to update
+              },
+              'user': 'testUser123'
+          }
+          
+          response = requests.post(url, headers=headers, json=data)
+          
+          if response.status_code == 200:
+              chinese_text = response.json()['blog_translated']
+              with open('${chinese_file}', 'w', encoding='utf-8') as file:
+                  file.write(chinese_text)
+          else:
+              print(f'Error: {response.status_code} - {response.text}')
+          "
+              done
