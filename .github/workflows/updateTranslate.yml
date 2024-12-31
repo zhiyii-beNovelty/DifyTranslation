@@ -67,6 +67,10 @@ jobs:
           # Read the updated English file
           new_eng_content="${file}"
 
+          echo "$old_eng_content"
+          echo "$translation_file_content"
+          echo "$new_eng_content"
+
           # Call Dify API to translate
           python3 -c "
         import requests
@@ -81,9 +85,9 @@ jobs:
         data = {
           'inputs': {
             'target_lang': 'chinese',
-            'old_eng_file': '''${old_eng_content}''',
-            'new_eng_file': '''${new_eng_content}''',
-            'translation_file': '''${translation_file_content}'''
+            'old_eng_file': '${old_eng_content}',
+            'new_eng_file': '${new_eng_content}',
+            'translation_file': '${translation_file_content}'
           },
           'user': 'testUser123'
         }
