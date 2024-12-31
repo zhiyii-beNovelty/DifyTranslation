@@ -71,34 +71,85 @@ jobs:
           echo "$translation_file_content"
           echo "$new_eng_content"
 
+          
           # Call Dify API to translate
           python3 -c "
         import requests
         import os
-        import json
-
-        url = 'https://api.dify.ai/v1'
-        headers = {'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}',
-        'Content-Type': 'application/json',
-        }
-
-        data = {
-          'inputs': {
-            'target_lang': 'chinese',
-            'old_eng_file': '${old_eng_content}',
-            'new_eng_file': '${new_eng_content}',
-            'translation_file': '${translation_file_content}'
-          },
-          'user': 'testUser123'
-        }
-
-        response = requests.post(url, headers=headers, json=data)
-
-        if response.status_code == 200:
-            chinese_text = response.json()['blog_translated']
-            with open('${zh_hk_file}', 'w', encoding='utf-8') as file:
-                file.write(chinese_text)
+        
+        def upload_file(file_path, user):
+            upload_url = 'https://api.dify.ai/v1/files/upload'
+            headers = {
+                'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}',
+            }
+        
+            print(f'Uploading file: {file_path}...')
+            with open(file_path, 'rb') as file:
+                files = {
+                    'file': (file_path, file, 'text/plain')
+                }
+                data = {
+                    'user': user,
+                    'type': 'TXT'
+                }
+                
+                response = requests.post(upload_url, headers=headers, files=files, data=data)
+                if response.status_code == 201:
+                    print('File uploaded successfully')
+                    return response.json().get('id')
+                else:
+                    print(f'File upload failed, status code: {response.status_code}')
+                    return None
+        
+        def run_workflow(old_file_id, new_file_id, translation_file_id, user, target_lang='chinese'):
+            workflow_url = 'https://api.dify.ai/v1/workflows/run'
+            headers = {
+                'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}',
+                'Content-Type': 'application/json'
+            }
+        
+            data = {
+                'inputs': {
+                    'target_lang': target_lang,
+                    'old_eng_file': {
+                        'transfer_method': 'local_file',
+                        'upload_file_id': old_file_id,
+                        'type': 'document'
+                    },
+                    'new_eng_file': {
+                        'transfer_method': 'local_file',
+                        'upload_file_id': new_file_id,
+                        'type': 'document'
+                    },
+                    'translation_file': {
+                        'transfer_method': 'local_file',
+                        'upload_file_id': translation_file_id,
+                        'type': 'document'
+                    }
+                },
+                'user': user
+            }
+        
+            print('Running Workflow...')
+            response = requests.post(workflow_url, headers=headers, json=data)
+            if response.status_code == 200:
+                print('Workflow execution successful')
+                return response.json()
+            else:
+                print(f'Workflow execution failed, status code: {response.status_code}')
+                return {'status': 'error', 'message': f'Failed to execute workflow, status code: {response.status_code}'}
+        
+        # Main execution
+        user = 'testUser123'
+        
+        old_file_id = upload_file('${old_eng_content}', user)
+        new_file_id = upload_file('${new_eng_content}', user)
+        translation_file_id = upload_file('${translation_file_content}', user) if translation_file_content else None
+        
+        if old_file_id and new_file_id and translation_file_id:
+            result = run_workflow(old_file_id, new_file_id, translation_file_id, user)
+            print(result)
         else:
-            print(f'Error: {response.status_code} - {response.text}')
+            print('One or more file uploads failed, and workflow cannot be executed.')
         "
-          done
+            done
