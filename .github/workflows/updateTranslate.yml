@@ -30,29 +30,32 @@ jobs:
         # Get all changed files in src/en-us since the last push
         CHANGED_FILES=$(git diff --name-only origin/main -- src/en-us/)
         
+        # Fix the paths (replace spaces with underscores, for example)
+        FIXED_CHANGED_FILES=$(echo "$CHANGED_FILES" | sed 's/ /_/g')
+    
         # Output the changed files
         echo "Changed files in src/en-us since last push:"
-        echo "$CHANGED_FILES"
+        echo "$FIXED_CHANGED_FILES"
         
-        # Set the changed files as an output variable (if needed)
-        echo "changed_files=$CHANGED_FILES" >> $GITHUB_ENV
+        # Set the fixed changed files as an output variable
+        echo "changed_files=$FIXED_CHANGED_FILES" >> $GITHUB_ENV
 
 
     - name: Process each changed file
       if: env.changed_files != ''
       run: |
         IFS=$'\n' # Set Internal Field Separator to newline
-        echo "changed_files=$CHANGED_FILES" 
-        echo "1"
         for file in ${{ env.changed_files }}; do
-          echo "2"
+          # Replace underscores back to spaces for processing
+          original_file="${file//_/ }"
           echo "$file"
-          base_path=$(dirname "$file")
-          base_name=$(basename "$file")
+          echo "$original_file"
+          base_path=$(dirname "$original_file")
+          base_name=$(basename "$original_file")
           chinese_file="src/zh-hk/${base_path}/${base_name}"
-
+    
           mkdir -p "src/zh-hk/${base_path}"
-
+    
           # Call Dify API to translate
           python3 -c "
         import requests
@@ -62,18 +65,18 @@ jobs:
         headers = {'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}', 'Content-Type': 'application/json'}
         
         # Read the updated English file
-        with open('${file}', 'r', encoding='utf-8') as new_eng_file:
+        with open('${{ original_file }}', 'r', encoding='utf-8') as new_eng_file:
             new_eng_text = new_eng_file.read()
         
         # Check if the corresponding Chinese file exists
-        if os.path.exists('${chinese_file}'):
-            with open('${chinese_file}', 'r', encoding='utf-8') as old_chinese_file:
+        if os.path.exists('${{ chinese_file }}'):
+            with open('${{ chinese_file }}', 'r', encoding='utf-8') as old_chinese_file:
                 old_chinese_text = old_chinese_file.read()
         else:
             old_chinese_text = ''  # If no previous Chinese translation exists
         
         # Get the old English file from the previous commit
-        old_eng_file_path = '${file}'  # Current file path
+        old_eng_file_path = '${{ original_file }}'  # Current file path
         old_eng_file_name = old_eng_file_path.replace('src/en-us/', 'src/old_en-us/')  # Adjust path for old file
         if os.path.exists(old_eng_file_name):
             with open(old_eng_file_name, 'r', encoding='utf-8') as old_eng_file:
@@ -95,7 +98,7 @@ jobs:
         
         if response.status_code == 200:
             chinese_text = response.json()['blog_translated']
-            with open('${chinese_file}', 'w', encoding='utf-8') as file:
+            with open('${{ chinese_file }}', 'w', encoding='utf-8') as file:
                 file.write(chinese_text)
         else:
             print(f'Error: {response.status_code} - {response.text}')
