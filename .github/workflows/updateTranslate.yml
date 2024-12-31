@@ -59,10 +59,7 @@ jobs:
           old_eng_content="${file}"
 
           # Check if the corresponding Chinese file exists
-          translation_file_content=""
-          if [ -f "${zh_hk_file}" ]; then
-              translation_file_content="${zh_hk_file}"
-          fi
+          translation_file_content="${zh_hk_file}"
 
           # Read the updated English file
           git checkout HEAD -- "${file}"
