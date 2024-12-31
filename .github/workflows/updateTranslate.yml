@@ -40,21 +40,58 @@ jobs:
         # Set the fixed changed files as an output variable
         echo "changed_files=$FIXED_CHANGED_FILES" >> $GITHUB_ENV
 
-
     - name: Process each changed file
       if: env.changed_files != ''
       run: |
         IFS=$'\n' # Set Internal Field Separator to newline
         for file in ${{ env.changed_files }}; do
-          # Replace underscores back to spaces for processing
-          original_file="${file//_/ }"
-          echo "$file"
-          echo "$original_file"
-          base_path=$(dirname "$original_file")
-          base_name=$(basename "$original_file")
-          chinese_file="src/zh-hk/${base_path}/${base_name}"
-    
-          mkdir -p "src/zh-hk/${base_path}"
+          file="${file//_/ }"
+          echo "Currently translating: $file"
+          base_path=$(dirname "$file")
+          base_name=$(basename "$file")
+          
+          # Construct paths for old and translation files
+          old_eng_file="src/en-us/${base_path}/${base_name}"
+          zh_hk_file="src/zh-hk/${base_path}/${base_name}"
 
-        done
+          # Fetch the old English file from origin/main
+          git checkout origin/main -- "${file}"
+          old_eng_content=$(cat "${file}")
 
+          # Check if the corresponding Chinese file exists
+          translation_file_content=""
+          if [ -f "${zh_hk_file}" ]; then
+              translation_file_content=$(cat "${zh_hk_file}")
+          fi
+
+          # Read the updated English file
+          new_eng_content=$(cat "${file}")
+
+          # Call Dify API to translate
+          python3 -c "
+        import requests
+        import os
+
+        url = 'https://api.dify.ai/v1'
+        headers = {'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}', 'Content-Type': 'application/json'}
+
+        data = {
+          'inputs': {
+            'target_lang': 'chinese',
+            'old_eng_file': '''${old_eng_content}''',
+            'new_eng_file': '''${new_eng_content}''',
+            'translation_file': '''${translation_file_content}'''
+          },
+          'user': 'testUser123'
+        }
+
+        response = requests.post(url, headers=headers, json=data)
+
+        if response.status_code == 200:
+            chinese_text = response.json()['blog_translated']
+            with open('${zh_hk_file}', 'w', encoding='utf-8') as file:
+                file.write(chinese_text)
+        else:
+            print(f'Error: {response.status_code} - {response.text}')
+        "
+      done
