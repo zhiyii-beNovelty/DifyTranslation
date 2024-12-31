@@ -28,7 +28,7 @@ jobs:
     - name: Get changed files in src/en-us since last push
       id: get_changes
       run: |
-        git fetch origin main
+        git fetch origin
 
         CHANGED_FILES=$(git diff --name-only origin/main... -- src/en-us/)
 
