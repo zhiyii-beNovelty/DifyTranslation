@@ -128,7 +128,7 @@ jobs:
             }
         
             print('Running Workflow...')
-            response = requests.post(workflow_url, headers=headers, json=data)
+            response = requests.post(workflow_url, headers=headers, json=data, timeout=999)
             if response.status_code == 200:
                 print('Workflow execution successful')
                 return response.json()
