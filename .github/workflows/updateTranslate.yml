@@ -2,7 +2,7 @@ name: Translate
 
 on:
   push:
-    branches: [ "main", "testcopy" ]
+    branches: [ "*" ]
     paths:
       - src/en-us/**
   pull_request:
