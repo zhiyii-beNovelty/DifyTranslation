@@ -2,7 +2,7 @@ name: Translate
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "testcopy" ]
     paths:
       - src/en-us/**
   pull_request:
@@ -28,6 +28,7 @@ jobs:
     - name: Get changed files in src/en-us since last push
       id: get_changes
       run: |
+        git fetch origin main
         # Get all changed files in src/en-us since the last push
         CHANGED_FILES=$(git diff --name-only HEAD -- src/en-us/**)
 
