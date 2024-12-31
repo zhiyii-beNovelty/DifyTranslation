@@ -56,3 +56,5 @@ jobs:
     
           mkdir -p "src/zh-hk/${base_path}"
 
+        done
+
