@@ -49,13 +49,10 @@ jobs:
           echo "Currently translating: $file"
           base_path=$(dirname "$file")
           base_name=$(basename "$file")
-          echo "$base_path"
-          echo "$base_name"
           
           # Construct paths for old and translation files
           old_eng_file="${base_path}/${base_name}"
-          zh_hk_file="${base_path}/${base_name}"
-          zh_hk_file=zh_hk_file.replace("en-us","zh-hk")
+          zh_hk_file="${base_path/en-us/zh-hk}/${base_name}"
           echo "$old_eng_file"
           echo "$zh_hk_file"
 
