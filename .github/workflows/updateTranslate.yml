@@ -55,6 +55,7 @@ jobs:
           # Construct paths for old and translation files
           old_eng_file="${base_path}/${base_name}"
           zh_hk_file="${base_path}/${base_name}"
+          zh_hk_file=zh_hk_file.replace("en-us","zh-hk")
           echo "$old_eng_file"
           echo "$zh_hk_file"
 
