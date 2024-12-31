@@ -30,7 +30,7 @@ jobs:
       run: |
         git fetch origin
         # Get all changed files in src/en-us since the last push
-        CHANGED_FILES=$(git diff --name-only origin/main...testcopy -- src/en-us/**)
+        CHANGED_FILES=$(git diff --name-only origin/main...origin/testcopy -- src/en-us/**)
 
         # Output the changed files
         echo "Changed files in src/en-us since last push:"
