@@ -42,7 +42,9 @@ jobs:
       if: env.changed_files != ''
       run: |
         IFS=$'\n' # Set Internal Field Separator to newline
+        echo "1"
         for file in ${{ env.changed_files }}; do
+          echo "2"
           base_path=$(dirname "$file")
           base_name=$(basename "$file")
           chinese_file="src/zh-hk/${base_path}/${base_name}"
