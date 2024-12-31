@@ -70,7 +70,7 @@ else:
 
 # Get the old English file from the previous commit
 old_eng_file_path = '${file}'  # Current file path
-old_eng_file_name = old_eng_file_path.replace('en-us/', 'old_en-us/')  # Adjust path for old file
+old_eng_file_name = old_eng_file_path.replace('src/en-us/', 'src/old_en-us/')  # Adjust path for old file
 if os.path.exists(old_eng_file_name):
     with open(old_eng_file_name, 'r', encoding='utf-8') as old_eng_file:
         old_eng_text = old_eng_file.read()
@@ -78,13 +78,13 @@ else:
     old_eng_text = ''  # No previous English file exists
 
 data = {
-  'inputs': {
-    'target_lang': 'chinese',
-    'old_eng_file': old_eng_text,
-    'new_eng_file': new_eng_text,
-    'translation_file': old_chinese_text  # Existing Chinese content to update
-  },
-  'user': 'testUser123'
+    'inputs': {
+        'target_lang': 'chinese',
+        'old_eng_file': old_eng_text,
+        'new_eng_file': new_eng_text,
+        'translation_file': old_chinese_text  # Existing Chinese content to update
+    },
+    'user': 'testUser123'
 }
 
 response = requests.post(url, headers=headers, json=data)
@@ -96,6 +96,4 @@ if response.status_code == 200:
 else:
     print(f'Error: {response.status_code} - {response.text}')
 "
-
-        done
-      done
+    done
