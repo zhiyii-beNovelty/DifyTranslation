@@ -5,8 +5,6 @@ on:
     branches: [ "*" ]
     paths:
       - src/en-us/**
-  pull_request:
-    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
@@ -28,19 +26,16 @@ jobs:
     - name: Get changed files in src/en-us since last push
       id: get_changes
       run: |
-        git fetch origin
-        
-        # Compare the current branch with the main branch
+        git fetch origin main
+        # Get all changed files in src/en-us since the last push
         CHANGED_FILES=$(git diff --name-only origin/main -- src/en-us/)
-    
+        
+        # Output the changed files
         echo "Changed files in src/en-us since last push:"
         echo "$CHANGED_FILES"
         
-        if [ -z "$CHANGED_FILES" ]; then
-          echo "No changed files detected."
-        else
-          echo "changed_files=$CHANGED_FILES" >> $GITHUB_ENV
-        fi
+        # Set the changed files as an output variable (if needed)
+        echo "changed_files=$CHANGED_FILES" >> $GITHUB_ENV
 
 
     - name: Process each changed file
@@ -56,51 +51,49 @@ jobs:
 
           # Call Dify API to translate
           python3 -c "
-        import requests
-        import os
+import requests
+import os
 
-        url = 'https://api.dify.ai/v1'
-        headers = {'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}', 'Content-Type': 'application/json'}
+url = 'https://api.dify.ai/v1'
+headers = {'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}', 'Content-Type': 'application/json'}
 
-        # Read the updated English file
-        with open('${file}', 'r', encoding='utf-8') as new_eng_file:
-            new_eng_text = new_eng_file.read()
+# Read the updated English file
+with open('${file}', 'r', encoding='utf-8') as new_eng_file:
+    new_eng_text = new_eng_file.read()
 
-        # Check if the corresponding Chinese file exists
-        if os.path.exists('${chinese_file}'):
-            with open('${chinese_file}', 'r', encoding='utf-8') as old_chinese_file:
-                old_chinese_text = old_chinese_file.read()
-        else:
-            old_chinese_text = ''  # If no previous Chinese translation exists
+# Check if the corresponding Chinese file exists
+if os.path.exists('${chinese_file}'):
+    with open('${chinese_file}', 'r', encoding='utf-8') as old_chinese_file:
+        old_chinese_text = old_chinese_file.read()
+else:
+    old_chinese_text = ''  # If no previous Chinese translation exists
 
-        # Get the old English file from the previous commit
-        old_eng_file_path = '${file}'  # Current file path
-        old_eng_file_name = old_eng_file_path.replace('en-us/', 'old_en-us/')  # Adjust path for old file
-        if os.path.exists(old_eng_file_name):
-            with open(old_eng_file_name, 'r', encoding='utf-8') as old_eng_file:
-                old_eng_text = old_eng_file.read()
-        else:
-            old_eng_text = ''  # No previous English file exists
+# Get the old English file from the previous commit
+old_eng_file_path = '${file}'  # Current file path
+old_eng_file_name = old_eng_file_path.replace('src/en-us/', 'src/old_en-us/')  # Adjust path for old file
+if os.path.exists(old_eng_file_name):
+    with open(old_eng_file_name, 'r', encoding='utf-8') as old_eng_file:
+        old_eng_text = old_eng_file.read()
+else:
+    old_eng_text = ''  # No previous English file exists
 
-        data = {
-          'inputs': {
-            'target_lang': 'chinese',
-            'old_eng_file': old_eng_text,
-            'new_eng_file': new_eng_text,
-            'translation_file': old_chinese_text  # Existing Chinese content to update
-          },
-          'user': 'testUser123'
-        }
+data = {
+    'inputs': {
+        'target_lang': 'chinese',
+        'old_eng_file': old_eng_text,
+        'new_eng_file': new_eng_text,
+        'translation_file': old_chinese_text  # Existing Chinese content to update
+    },
+    'user': 'testUser123'
+}
 
-        response = requests.post(url, headers=headers, json=data)
+response = requests.post(url, headers=headers, json=data)
 
-        if response.status_code == 200:
-            chinese_text = response.json()['blog_translated']
-            with open('${chinese_file}', 'w', encoding='utf-8') as file:
-                file.write(chinese_text)
-        else:
-            print(f'Error: {response.status_code} - {response.text}')
-        "
-
-                done
-              done
+if response.status_code == 200:
+    chinese_text = response.json()['blog_translated']
+    with open('${chinese_file}', 'w', encoding='utf-8') as file:
+        file.write(chinese_text)
+else:
+    print(f'Error: {response.status_code} - {response.text}')
+"
+    done
