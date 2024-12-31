@@ -145,13 +145,12 @@ jobs:
         
         # Main execution
         user = 'testUser123'
+        
+        new_file_id = upload_file('${new_eng_content}', user)
+        translation_file_id = upload_file('${translation_file_content}', user)
 
         git_checkout('origin/main')
         old_file_id = upload_file('${old_eng_content}', user)
-        
-        git_checkout('HEAD')
-        new_file_id = upload_file('${new_eng_content}', user)
-        translation_file_id = upload_file('${translation_file_content}', user)
         
         if old_file_id and new_file_id and translation_file_id:
             result = run_workflow(old_file_id, new_file_id, translation_file_id, user)
