@@ -58,12 +58,11 @@ jobs:
           git checkout origin/main -- "${file}"
           old_eng_content="${file}"
 
-          # Check if the corresponding Chinese file exists
-          translation_file_content="${zh_hk_file}"
-
           # Read the updated English file
           git checkout HEAD -- "${file}"
           new_eng_content="${file}"
+
+          translation_file_content="${zh_hk_file}"
 
           echo "$old_eng_content"
           echo "$translation_file_content"
