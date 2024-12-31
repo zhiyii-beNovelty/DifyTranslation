@@ -146,10 +146,10 @@ jobs:
         # Main execution
         user = 'testUser123'
 
-        git_checkout('origin/main', file_path)
+        git_checkout('origin/main', old_eng_content)
         old_file_id = upload_file('${old_eng_content}', user)
         
-        git_checkout('HEAD', file_path)
+        git_checkout('HEAD', new_eng_content)
         new_file_id = upload_file('${new_eng_content}', user)
         translation_file_id = upload_file('${translation_file_content}', user)
         
