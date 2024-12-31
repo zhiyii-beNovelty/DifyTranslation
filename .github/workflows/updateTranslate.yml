@@ -51,8 +51,8 @@ jobs:
           base_name=$(basename "$file")
           
           # Construct paths for old and translation files
-          old_eng_file="src/en-us/${base_path}/${base_name}"
-          zh_hk_file="src/zh-hk/${base_path}/${base_name}"
+          old_eng_file="${base_path}/${base_name}"
+          zh_hk_file="${base_path}/${base_name}"
           echo "$old_eng_file"
           echo "$zh_hk_file"
 
