@@ -40,7 +40,8 @@ jobs:
       if: env.changed_files != ''
       run: |
         IFS='~'
-        for file in ${{ env.changed_files }}; do
+        changed_files="${{ env.changed_files }}"
+        for file in $changed_files; do
           file="${file//_/ }"
           echo "Currently translating: $file"
           base_path=$(dirname "$file")
