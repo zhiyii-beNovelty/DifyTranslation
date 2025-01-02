@@ -172,22 +172,21 @@ jobs:
                 f.write(blog_translated)
                 print('Translated markdown content written to file.')
 
-                subprocess.run(['git', 'config', '--global', 'user.email', 'no-reply@github.com'])
-                print('1')
-                subprocess.run(['git', 'config', '--global', 'user.name', 'GitHub Actions'])
-                print('2')
-                subprocess.run(['git', 'add', translation_file_path])
-                print('3')
+              subprocess.run(['git', 'config', '--global', 'user.email', 'no-reply@github.com'])
+              print('1')
+              subprocess.run(['git', 'config', '--global', 'user.name', 'GitHub Actions'])
+              print('2')
+              subprocess.run(['git', 'add', translation_file_path])
+              print('3')
                 
-                if subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode != 0:
-                    print('10')
-                    subprocess.run(['git', 'commit', '-m', 'Add translation'])
-                    print('4')
-                    subprocess.run(['git', 'push'])
-                    print('5')
-                else:
-                    print('No changes to commit.')
+              if subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode != 0:
+                  print('10')
+                  subprocess.run(['git', 'commit', '-m', 'Add translation'])
+                  print('4')
                     
+              else:
+                  print('No changes to commit.')
+                  
             else:
               print('No translated content found in result.')
               sys.exit(1)
