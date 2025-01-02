@@ -39,6 +39,7 @@ jobs:
     - name: Process each changed file
       if: env.changed_files != ''
       run: |
+        git config --global advice.detachedHead false
         IFS='~'
         changed_files="${{ env.changed_files }}"
         for file in $changed_files; do
