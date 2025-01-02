@@ -159,6 +159,7 @@ jobs:
             print(result)
             blog_translated = result.get('data', {}).get('outputs', {}).get('blog_translated', None)
             print('Blog translation retrieved')
+            print(blog_translated)
 
             if blog_translated:
               translation_file_path = translation_file_content
