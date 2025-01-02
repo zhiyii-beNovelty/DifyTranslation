@@ -197,6 +197,8 @@ jobs:
               else:
                 print('No changes to commit.')
                 subprocess.run(['git', 'push'])
+
+              subprocess.run(['git', 'push'])
                   
             else:
               print('No translated content found in result.')
