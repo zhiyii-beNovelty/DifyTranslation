@@ -139,6 +139,7 @@ jobs:
             else:
                 print(f'Workflow execution failed, status code: {response.status_code}')
                 return {'status': 'error', 'message': f'Failed to execute workflow, status code: {response.status_code}'}
+                sys.exit(1)
         
         # Main execution
         user = 'testUser123'
@@ -162,8 +163,10 @@ jobs:
                 print(f'Translated markdown content written to {translation_file_path}')
             else:
               print('No translated content found in result.')
+              sys.exit(1)
         else:
             print('One or more file uploads failed, and workflow cannot be executed.')
+            sys.exit(1)
         "
                 done
             done
