@@ -166,6 +166,8 @@ jobs:
             if blog_translated:
               translation_file_path = '${translation_file_content}'
 
+              os.makedirs(os.path.dirname(translation_file_path), exist_ok=True)
+
               with open(translation_file_path, 'w', encoding='utf-8') as f:
                 f.write(blog_translated)
                 print(f'Translated markdown content written to {translation_file_path}')
