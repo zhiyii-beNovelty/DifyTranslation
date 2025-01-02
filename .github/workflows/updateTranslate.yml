@@ -101,29 +101,35 @@ jobs:
                 'Content-Type': 'application/json'
             }
         
+            inputs = {
+                'target_lang': target_lang
+            }
+        
+            if old_file_id:
+                inputs['old_eng_file'] = {
+                    'transfer_method': 'local_file',
+                    'upload_file_id': old_file_id,
+                    'type': 'document'
+                }
+            
+            if new_file_id:
+                inputs['new_eng_file'] = {
+                    'transfer_method': 'local_file',
+                    'upload_file_id': new_file_id,
+                    'type': 'document'
+                }
+            
+            if translation_file_id:
+                inputs['translation_file'] = {
+                    'transfer_method': 'local_file',
+                    'upload_file_id': translation_file_id,
+                    'type': 'document'
+                }
+        
             data = {
-                'inputs': {
-                    'target_lang': target_lang,
-                    'old_eng_file': {
-                        'transfer_method': 'local_file',
-                        'upload_file_id': old_file_id,
-                        'type': 'document'
-                    } if old_file_id else None,
-                    'new_eng_file': {
-                        'transfer_method': 'local_file',
-                        'upload_file_id': new_file_id,
-                        'type': 'document'
-                    },
-                    'translation_file': {
-                        'transfer_method': 'local_file',
-                        'upload_file_id': translation_file_id,
-                        'type': 'document'
-                    } if translation_file_id else None
-                },
+                'inputs': inputs,
                 'user': user
             }
-
-            data['inputs'] = {k: v for k, v in data['inputs'].items() if v is not None}
         
             print('Running Workflow...')
             response = requests.post(workflow_url, headers=headers, json=data, timeout=999)
