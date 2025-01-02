@@ -159,12 +159,12 @@ jobs:
             # blog_translated = result.get('data', {}).get('outputs', {}).get('blog_translated', None)
             print('Blog translation retrieved')
             # remove this section
-            blog_translated = "Hello. This is for testing purposes only. Please remove"
+            blog_translated = 'Hello. This is for testing purposes only. Please remove'
             print(blog_translated)
             # end of section to remove
             
             if blog_translated:
-              translation_file_path = "${translation_file_content}"
+              translation_file_path = '${translation_file_content}'
 
               with open(translation_file_path, 'w', encoding='utf-8') as f:
                 f.write(blog_translated)
