@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       DIFY_API_KEY: ${{ secrets.DIFY_API_KEY }}
+      LANGUAGES: 'zh-hk fr ja' # Add languages here
 
     steps:
     - name: Check out the repository
@@ -27,48 +28,30 @@ jobs:
       id: get_changes
       run: |
         git fetch origin main
-        # Get all changed files in src/en-us since the last push
         CHANGED_FILES=$(git diff --name-only origin/main -- src/en-us/)
         
-        # Fix the paths (replace spaces with underscores, for example)
         FIXED_CHANGED_FILES=$(echo "$CHANGED_FILES" | sed 's/ /_/g')
     
-        # Output the changed files
         echo "Changed files in src/en-us since last push:"
         echo "$FIXED_CHANGED_FILES"
-        
-        # Set the fixed changed files as an output variable
         echo "changed_files=$FIXED_CHANGED_FILES" >> $GITHUB_ENV
 
     - name: Process each changed file
       if: env.changed_files != ''
       run: |
-        IFS=$'\n' # Set Internal Field Separator to newline
+        IFS=$'\n'
         for file in ${{ env.changed_files }}; do
           file="${file//_/ }"
           echo "Currently translating: $file"
           base_path=$(dirname "$file")
           base_name=$(basename "$file")
           
-          # Construct paths for old and translation files
-          old_eng_file="${base_path}/${base_name}"
-          zh_hk_file="${base_path/en-us/zh-hk}/${base_name}"
+          eng_content="${file}"
 
-          # Fetch the old English file from origin/main
-          git checkout origin/main -- "${file}"
-          old_eng_content="${file}"
-
-          # Read the updated English file
-          git checkout HEAD -- "${file}"
-          new_eng_content="${file}"
-
-          translation_file_content="${zh_hk_file}"
-
-          echo "$old_eng_content"
-          echo "$translation_file_content"
-          echo "$new_eng_content"
-
-          
+          for lang in $LANGUAGES; do
+            translation_file_content="${base_path/en-us/$lang}/${base_name}"
+            echo "Processing translation for: $lang"
+                      
           # Call Dify API to translate
           python3 -c "
         import requests
@@ -82,6 +65,12 @@ jobs:
               print(f'Error during git checkout: {e}')
         
         def upload_file(file_path, user):
+
+            # Check for file
+            if not os.path.exists(file_path):
+              print(f'File not found: {file_path}')
+              return None
+              
             upload_url = 'https://api.dify.ai/v1/files/upload'
             headers = {
                 'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}',
@@ -105,7 +94,7 @@ jobs:
                     print(f'File upload failed, status code: {response.status_code}')
                     return None
         
-        def run_workflow(old_file_id, new_file_id, translation_file_id, user, target_lang='chinese'):
+        def run_workflow(old_file_id, new_file_id, translation_file_id, user, target_lang):
             workflow_url = 'https://api.dify.ai/v1/workflows/run'
             headers = {
                 'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}',
@@ -119,7 +108,7 @@ jobs:
                         'transfer_method': 'local_file',
                         'upload_file_id': old_file_id,
                         'type': 'document'
-                    },
+                    } if old_file_id else None,
                     'new_eng_file': {
                         'transfer_method': 'local_file',
                         'upload_file_id': new_file_id,
@@ -129,10 +118,12 @@ jobs:
                         'transfer_method': 'local_file',
                         'upload_file_id': translation_file_id,
                         'type': 'document'
-                    }
+                    } if translation_file_id else None
                 },
                 'user': user
             }
+
+            data['inputs'] = {k: v for k, v in data['inputs'].items() if v is not None}
         
             print('Running Workflow...')
             response = requests.post(workflow_url, headers=headers, json=data, timeout=999)
@@ -146,15 +137,25 @@ jobs:
         # Main execution
         user = 'testUser123'
         
-        new_file_id = upload_file('${new_eng_content}', user)
+        new_file_id = upload_file('${eng_content}', user)
         translation_file_id = upload_file('${translation_file_content}', user)
 
         git_checkout('origin/main')
-        old_file_id = upload_file('${old_eng_content}', user)
+        old_file_id = upload_file('${eng_content}', user)
         
         if old_file_id and new_file_id and translation_file_id:
-            result = run_workflow(old_file_id, new_file_id, translation_file_id, user)
-            print(result)
+            result = run_workflow(old_file_id, new_file_id, translation_file_id, user, target_lang='${lang}')
+            print('Translation successful')
+            blog_translated = result.get('data', {}).get('outputs', {}).get('blog_translated', None)
+
+            if blog_translated:
+              translation_file_path = translation_file
+
+              with open(translation_file_path, 'w', enchoding='utf-8') as f:
+                f.write(blog_translated)
+                print(f'Translated markdown content written to {translation_file_path}')
+            else:
+              print('No translated content found in result.')
         else:
             print('One or more file uploads failed, and workflow cannot be executed.')
         "
