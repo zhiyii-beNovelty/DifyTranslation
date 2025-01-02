@@ -196,16 +196,14 @@ jobs:
                     
               else:
                 print('No changes to commit.')
-                subprocess.run(['git', 'push'])
 
               subprocess.run(['git', 'push'])
                   
             else:
               print('No translated content found in result.')
-              sys.exit(1)
+              
         else:
             print('One or more file uploads failed, and workflow cannot be executed.')
-            sys.exit(1)
         "
                 done
             done
