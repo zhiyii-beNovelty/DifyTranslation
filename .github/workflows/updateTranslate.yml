@@ -168,5 +168,5 @@ jobs:
               print('One or more file uploads failed, and workflow cannot be executed.')
               sys.exit(1)
           "
+            done
         done
-      done
