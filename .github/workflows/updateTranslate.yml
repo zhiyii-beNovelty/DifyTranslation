@@ -156,15 +156,13 @@ jobs:
         if new_file_id:
             result = run_workflow(old_file_id, new_file_id, translation_file_id, user, target_lang='${lang}')
             print('Translation successful')
-            print(result)
             blog_translated = result.get('data', {}).get('outputs', {}).get('blog_translated', None)
             print('Blog translation retrieved')
-            print(blog_translated)
 
             if blog_translated:
               translation_file_path = translation_file_content
 
-              with open(translation_file_path, 'w', enchoding='utf-8') as f:
+              with open(translation_file_path, 'w', encoding='utf-8') as f:
                 f.write(blog_translated)
                 print(f'Translated markdown content written to {translation_file_path}')
             else:
