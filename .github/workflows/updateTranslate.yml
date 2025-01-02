@@ -170,7 +170,7 @@ jobs:
 
               with open(translation_file_path, 'w', encoding='utf-8') as f:
                 f.write(blog_translated)
-                print(f'Translated markdown content written to {translation_file_path}')
+                print('Translated markdown content written to file.')
 
                 subprocess.run(['git', 'config', '--global', 'user.email', 'no-reply@github.com'])
                 subprocess.run(['git', 'config', '--global', 'user.name', 'GitHub Actions'])
