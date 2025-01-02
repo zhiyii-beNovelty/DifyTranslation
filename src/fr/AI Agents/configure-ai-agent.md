@@ -1,9 +1,8 @@
-```markdown
 ---
 metatitle: Configurer un Agent IA | Guide de l'utilisateur FabriXAI
 description: Apprenez à configurer des agents IA sur FabriXAI avec ce guide étape par étape.
 lang: fr-FR
-permalink: /configure-ai-agent
+permalink: /fr-fr/configure-ai-agent
 ---
 
 # Configurer un Agent IA
@@ -122,4 +121,3 @@ Après avoir configuré tous les paramètres, cliquez simplement sur **"Enregist
 ## Articles Associés
 - [Utiliser un Agent IA](/fr-fr/use-ai-agent)
 - [Partager un Agent IA](/fr-fr/share-ai-agent/)
-```
