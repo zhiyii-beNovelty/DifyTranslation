@@ -39,7 +39,7 @@ jobs:
     - name: Process each changed file
       if: env.changed_files != ''
       run: |
-        IFS=$'\n'
+        IFS=' '
         for file in ${{ env.changed_files }}; do
           file="${file//_/ }"
           echo "Currently translating: $file"
