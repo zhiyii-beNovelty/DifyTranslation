@@ -314,4 +314,5 @@ jobs:
             else
               echo "Translation file already exists: $translation_file"
             fi
+            done
           done
