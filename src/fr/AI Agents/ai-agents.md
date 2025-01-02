@@ -1,4 +1,3 @@
-```markdown
 ---
 metatitle: Introduction aux Agents d'IA | Guide d'utilisateur FabriXAI
 description: Découvrez les agents d'IA, leurs capacités et comment commencer avec FabriXAI.
@@ -19,7 +18,6 @@ De plus, FabriXAI vous permet de déployer votre agent d'IA sous deux formats, e
 - **Application Web** : Idéal pour les tâches nécessitant une application autonome accessible via un navigateur, telles que la soumission de formulaires ou la génération de documents.
 - **Chatbot** : Parfait pour les interactions conversationnelles en temps réel, telles que le support client ou les assistants virtuels.
 
-
 ## Commencer avec les Agents d'IA  
 
 Commencer avec les agents d'IA dans FabriXAI est simple et convivial.  
@@ -27,7 +25,6 @@ Commencer avec les agents d'IA dans FabriXAI est simple et convivial.
 - **[Créer à partir de modèles](/en-us/create-from-templates/)** : FabriXAI propose une bibliothèque de modèles d'agents d'IA prêts à l'emploi. Vous pouvez facilement cloner un modèle pour démarrer votre processus de création d'agent. Une fois cloné, le modèle devient entièrement personnalisable, vous permettant de le configurer selon vos besoins spécifiques.  
 
 En utilisant des modèles, vous pouvez économiser du temps et des efforts, tout en conservant la flexibilité d'adapter et d'améliorer vos agents selon les besoins.  
-
 
 ## Ce Que Vous Pouvez Faire avec les Agents d'IA  
 
@@ -41,7 +38,6 @@ Les agents d'IA dans FabriXAI peuvent gérer une grande variété de tâches, le
 
 Ces exemples mettent en lumière la flexibilité et la puissance des agents d'IA pour rationaliser les flux de travail et augmenter la productivité. Vous cherchez plus d'inspiration ? Explorez la bibliothèque de [Modèles d'agents](/en-us/agent-templates/) de FabriXAI pour commencer à créer des agents adaptés à vos besoins.
 
-
 ## Avantages de l'Utilisation des Agents d'IA  
 
 Voici quelques avantages clés de l'utilisation des agents d'IA dans FabriXAI :  
@@ -52,7 +48,6 @@ Voici quelques avantages clés de l'utilisation des agents d'IA dans FabriXAI :
 4. **Personnalisation** : Personnalisez vos agents pour des cas d'utilisation spécifiques avec des modèles et des outils préconçus.  
 5. **Intégration Transparente** : Connectez les agents d'IA à des plateformes externes ou à vos propres applications en utilisant des API ouvertes.  
 
-
 ## Bonnes Pratiques pour les Agents d'IA  
 
 Pour maximiser l'efficacité de vos agents d'IA :  
@@ -62,9 +57,7 @@ Pour maximiser l'efficacité de vos agents d'IA :
 - Surveillez leurs performances et affinez les flux de travail selon les besoins.  
 - Exploitez les outils et les modèles de FabriXAI pour construire rapidement des solutions personnalisées.  
 
-
 ## Articles Associés
 - [Créer à partir de modèles](/en-us/create-from-templates/)
 - [Modèles d'agents](/en-us/agent-templates/)
 - [Configurer l'agent d'IA](/en-us/configure-ai-agent/)
-```
