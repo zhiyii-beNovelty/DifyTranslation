@@ -183,9 +183,6 @@ jobs:
     #             f.write(blog_translated)
     #             print('Translated markdown content written to file.')
 
-    #           with open(translation_file_path, 'r', encoding='utf-8') as file:
-    #             content = file.read()
-
     #           subprocess.run(['git', 'config', '--global', 'user.email', 'no-reply@github.com'])
     #           subprocess.run(['git', 'config', '--global', 'user.name', 'GitHub Actions'])
     #           subprocess.run(['git', 'add', translation_file_path])
@@ -229,6 +226,7 @@ jobs:
               python3 -c "
           import requests
           import os
+          import subprocess
           
           def upload_file(file_path, user):
               if not os.path.exists(file_path):
@@ -293,6 +291,20 @@ jobs:
                       os.makedirs(os.path.dirname('${translation_file}'), exist_ok=True)
                       with open('${translation_file}', 'w', encoding='utf-8') as f:
                           f.write(blog_translated)
+
+                      subprocess.run(['git', 'config', '--global', 'user.email', 'no-reply@github.com'])
+                      subprocess.run(['git', 'config', '--global', 'user.name', 'GitHub Actions'])
+                      subprocess.run(['git', 'add', translation_file_path])
+                        
+                      if subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode != 0:
+                        subprocess.run(['git', 'commit', '-m', 'Add translation'])
+                        subprocess.run(['git', 'push'])
+                            
+                      else:
+                        print('No changes to commit.')
+        
+                      subprocess.run(['git', 'push'])
+                      
                       print('Translated markdown content written to file.')
                   else:
                       print('No translated content found in result.')
