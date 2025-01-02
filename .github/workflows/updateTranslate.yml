@@ -156,6 +156,7 @@ jobs:
         if new_file_id:
             result = run_workflow(old_file_id, new_file_id, translation_file_id, user, target_lang='${lang}')
             print('Translation successful')
+            print(result)
             blog_translated = result.get('data', {}).get('outputs', {}).get('blog_translated', None)
             print('Blog translation retrieved')
 
