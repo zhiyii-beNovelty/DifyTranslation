@@ -159,4 +159,5 @@ jobs:
         else:
             print('One or more file uploads failed, and workflow cannot be executed.')
         "
+                done
             done
