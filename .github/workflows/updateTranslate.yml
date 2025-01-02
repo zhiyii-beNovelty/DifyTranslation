@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       DIFY_API_KEY: ${{ secrets.DIFY_API_KEY }}
+      LANGUAGES: 'zh-hk fr ja' # Add languages here
 
     steps:
     - name: Check out the repository
@@ -27,74 +28,155 @@ jobs:
       id: get_changes
       run: |
         git fetch origin main
-        # Get all changed files in src/en-us since the last push
         CHANGED_FILES=$(git diff --name-only origin/main -- src/en-us/)
         
-        # Output the changed files
+        FIXED_CHANGED_FILES=$(echo "$CHANGED_FILES" | sed 's/ /_/g')
+    
         echo "Changed files in src/en-us since last push:"
-        echo "$CHANGED_FILES"
-        
-        # Set the changed files as an output variable (if needed)
-        echo "changed_files=$CHANGED_FILES" >> $GITHUB_ENV
-
+        echo "$FIXED_CHANGED_FILES"
+        echo "changed_files=$FIXED_CHANGED_FILES" >> $GITHUB_ENV
 
     - name: Process each changed file
       if: env.changed_files != ''
       run: |
-        IFS=$'\n' # Set Internal Field Separator to newline
+        IFS=' '
         for file in ${{ env.changed_files }}; do
+          file="${file//_/ }"
+          echo "Currently translating: $file"
           base_path=$(dirname "$file")
           base_name=$(basename "$file")
-          chinese_file="src/zh-hk/${base_path}/${base_name}"
+          
+          eng_content="${file}"
 
-          mkdir -p "src/zh-hk/${base_path}"
-
+          for lang in $LANGUAGES; do
+            translation_file_content="${base_path/en-us/$lang}/${base_name}"
+            echo "Processing translation for: $lang"
+                      
           # Call Dify API to translate
           python3 -c "
         import requests
         import os
-        
-        url = 'https://api.dify.ai/v1'
-        headers = {'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}', 'Content-Type': 'application/json'}
-        
-        # Read the updated English file
-        with open('${file}', 'r', encoding='utf-8') as new_eng_file:
-            new_eng_text = new_eng_file.read()
-        
-        # Check if the corresponding Chinese file exists
-        if os.path.exists('${chinese_file}'):
-            with open('${chinese_file}', 'r', encoding='utf-8') as old_chinese_file:
-                old_chinese_text = old_chinese_file.read()
-        else:
-            old_chinese_text = ''  # If no previous Chinese translation exists
-        
-        # Get the old English file from the previous commit
-        old_eng_file_path = '${file}'  # Current file path
-        old_eng_file_name = old_eng_file_path.replace('en-us/', 'old_en-us/')  # Adjust path for old file
-        if os.path.exists(old_eng_file_name):
-            with open(old_eng_file_name, 'r', encoding='utf-8') as old_eng_file:
-                old_eng_text = old_eng_file.read()
-        else:
-            old_eng_text = ''  # No previous English file exists
-        
-        data = {
-          'inputs': {
-            'target_lang': 'chinese',
-            'old_eng_file': old_eng_text,
-            'new_eng_file': new_eng_text,
-            'translation_file': old_chinese_text  # Existing Chinese content to update
-          },
-          'user': 'testUser123'
-        }
-        
-        response = requests.post(url, headers=headers, json=data)
+        import subprocess
+        import sys
 
-        if response.status_code == 200:
-            chinese_text = response.json()['blog_translated']
-            with open('${chinese_file}', 'w', encoding='utf-8') as file:
-                file.write(chinese_text)
-        else:
-            print(f'Error: {response.status_code} - {response.text}')
-        "
+        def git_checkout(branch):
+          try:
+              subprocess.run(['git', 'checkout', branch], check=True)
+          except subprocess.CalledProcessError as e:
+              print(f'Error during git checkout: {e}')
         
-          done
+        def upload_file(file_path, user):
+
+            # Check for file
+            if not os.path.exists(file_path):
+              print(f'File not found: {file_path}')
+              return None
+              
+            upload_url = 'https://api.dify.ai/v1/files/upload'
+            headers = {
+                'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}',
+            }
+        
+            print(f'Uploading file: {file_path}...')
+            with open(file_path, 'rb') as file:
+                files = {
+                    'file': (file_path, file, 'text/markdown')
+                }
+                data = {
+                    'user': user,
+                    'type': 'MD'
+                }
+                
+                response = requests.post(upload_url, headers=headers, files=files, data=data)
+                if response.status_code == 201:
+                    print('File uploaded successfully')
+                    return response.json().get('id')
+                else:
+                    print(f'File upload failed, status code: {response.status_code}')
+                    return None
+        
+        def run_workflow(old_file_id, new_file_id, translation_file_id, user, target_lang):
+            workflow_url = 'https://api.dify.ai/v1/workflows/run'
+            headers = {
+                'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}',
+                'Content-Type': 'application/json'
+            }
+        
+            inputs = {
+                'target_lang': target_lang
+            }
+        
+            if old_file_id:
+                inputs['old_eng_file'] = {
+                    'transfer_method': 'local_file',
+                    'upload_file_id': old_file_id,
+                    'type': 'document'
+                }
+            
+            if new_file_id:
+                inputs['new_eng_file'] = {
+                    'transfer_method': 'local_file',
+                    'upload_file_id': new_file_id,
+                    'type': 'document'
+                }
+            
+            if translation_file_id:
+                inputs['translation_file'] = {
+                    'transfer_method': 'local_file',
+                    'upload_file_id': translation_file_id,
+                    'type': 'document'
+                }
+        
+            data = {
+                'inputs': inputs,
+                'user': user
+            }
+        
+            print('Running Workflow...')
+            response = requests.post(workflow_url, headers=headers, json=data, timeout=999)
+            if response.status_code == 200:
+                print('Workflow execution successful')
+                return response.json()
+            else:
+                print(f'Workflow execution failed, status code: {response.status_code}')
+                return {'status': 'error', 'message': f'Failed to execute workflow, status code: {response.status_code}'}
+                sys.exit(1)
+
+        # Main execution
+        user = 'testUser123'
+
+        git_checkout('origin/main')
+        old_file_id = upload_file('${eng_content}', user)
+
+        git_checkout('-')
+        new_file_id = upload_file('${eng_content}', user)
+        translation_file_id = upload_file('${translation_file_content}', user)
+
+        # remove comments and testing !!!
+        if new_file_id:
+            # result = run_workflow(old_file_id, new_file_id, translation_file_id, user, target_lang='${lang}')
+            print('Translation successful')
+            # blog_translated = result.get('data', {}).get('outputs', {}).get('blog_translated', None)
+            print('Blog translation retrieved')
+            # remove this section
+            blog_translated = 'Hello. This is for testing purposes only. Please remove'
+            print(blog_translated)
+            # end of section to remove
+            
+            if blog_translated:
+              translation_file_path = '${translation_file_content}'
+
+              os.makedirs(os.path.dirname(translation_file_path), exist_ok=True)
+
+              with open(translation_file_path, 'w', encoding='utf-8') as f:
+                f.write(blog_translated)
+                print(f'Translated markdown content written to {translation_file_path}')
+            else:
+              print('No translated content found in result.')
+              sys.exit(1)
+        else:
+            print('One or more file uploads failed, and workflow cannot be executed.')
+            sys.exit(1)
+        "
+                done
+            done
