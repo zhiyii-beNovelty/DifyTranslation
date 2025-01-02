@@ -57,6 +57,7 @@ jobs:
         import requests
         import os
         import subprocess
+        import sys
 
         def git_checkout(branch):
           try:
