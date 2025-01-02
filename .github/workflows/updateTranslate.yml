@@ -180,7 +180,8 @@ jobs:
                 print('3')
                 
                 if subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode != 0:
-                    subprocess.run(['git', 'commit', '-m', f'Add translation for {base_name}'])
+                    print('10')
+                    subprocess.run(['git', 'commit', '-m', 'Add translation'])
                     print('4')
                     subprocess.run(['git', 'push', 'origin', 'HEAD:main'])
                     print('5')
