@@ -30,7 +30,7 @@ jobs:
         git fetch origin main
         CHANGED_FILES=$(git diff --name-only origin/main -- src/en-us/)
         
-        FIXED_CHANGED_FILES=$(echo "$CHANGED_FILES" | sed 's/ /_/g')
+        FIXED_CHANGED_FILES=$(echo "$CHANGED_FILES" | tr '\n' '~' | sed 's/ /_/g')
     
         echo "Changed files in src/en-us since last push:"
         echo "$FIXED_CHANGED_FILES"
@@ -39,7 +39,7 @@ jobs:
     - name: Process each changed file
       if: env.changed_files != ''
       run: |
-        IFS='\n'
+        IFS='~'
         for file in ${{ env.changed_files }}; do
           file="${file//_/ }"
           echo "Currently translating: $file"
