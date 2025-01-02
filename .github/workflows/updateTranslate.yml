@@ -143,7 +143,7 @@ jobs:
         git_checkout('origin/main')
         old_file_id = upload_file('${eng_content}', user)
         
-        if old_file_id and new_file_id and translation_file_id:
+        if new_file_id:
             result = run_workflow(old_file_id, new_file_id, translation_file_id, user, target_lang='${lang}')
             print('Translation successful')
             blog_translated = result.get('data', {}).get('outputs', {}).get('blog_translated', None)
