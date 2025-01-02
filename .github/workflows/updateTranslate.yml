@@ -152,16 +152,11 @@ jobs:
         new_file_id = upload_file('${eng_content}', user)
         translation_file_id = upload_file('${translation_file_content}', user)
 
-        # remove comments and testing !!!
         if new_file_id:
-            # result = run_workflow(old_file_id, new_file_id, translation_file_id, user, target_lang='${lang}')
+            result = run_workflow(old_file_id, new_file_id, translation_file_id, user, target_lang='${lang}')
             print('Translation successful')
-            # blog_translated = result.get('data', {}).get('outputs', {}).get('blog_translated', None)
+            blog_translated = result.get('data', {}).get('outputs', {}).get('blog_translated', None)
             print('Blog translation retrieved')
-            # remove this section
-            blog_translated = 'Hello. This is for testing purposes only. Please remove'
-            print(blog_translated)
-            # end of section to remove
             
             if blog_translated:
               translation_file_path = '${translation_file_content}'
@@ -174,19 +169,13 @@ jobs:
 
               with open(translation_file_path, 'r', encoding='utf-8') as file:
                 content = file.read()
-              print(content)
 
               subprocess.run(['git', 'config', '--global', 'user.email', 'no-reply@github.com'])
-              print('1')
               subprocess.run(['git', 'config', '--global', 'user.name', 'GitHub Actions'])
-              print('2')
               subprocess.run(['git', 'add', translation_file_path])
-              print('3')
                 
               if subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode != 0:
-                print('10')
                 subprocess.run(['git', 'commit', '-m', 'Add translation'])
-                print('4')
                 subprocess.run(['git', 'push'])
                     
               else:
