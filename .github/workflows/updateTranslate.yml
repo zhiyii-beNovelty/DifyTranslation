@@ -171,6 +171,17 @@ jobs:
               with open(translation_file_path, 'w', encoding='utf-8') as f:
                 f.write(blog_translated)
                 print(f'Translated markdown content written to {translation_file_path}')
+
+                subprocess.run(['git', 'config', '--global', 'user.email', 'no-reply@github.com'])
+                subprocess.run(['git', 'config', '--global', 'user.name', 'GitHub Actions'])
+                subprocess.run(['git', 'add', translation_file_path])
+                
+                if subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode != 0:
+                    subprocess.run(['git', 'commit', '-m', f"Add translation for {base_name}"])
+                    subprocess.run(['git', 'push', 'origin', 'HEAD:main'])
+                else:
+                    print('No changes to commit.')
+                    
             else:
               print('No translated content found in result.')
               sys.exit(1)
