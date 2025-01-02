@@ -36,177 +36,177 @@ jobs:
         echo "$FIXED_CHANGED_FILES"
         echo "changed_files=$FIXED_CHANGED_FILES" >> $GITHUB_ENV
 
-    - name: Process each changed file
-      if: env.changed_files != ''
-      run: |
-        git config --global advice.detachedHead false
-        IFS='~'
-        changed_files="${{ env.changed_files }}"
-        for file in $changed_files; do
-          file="${file//_/ }"
-          echo "Currently translating: $file"
-          base_path=$(dirname "$file")
-          base_name=$(basename "$file")
+    # - name: Process each changed file
+    #   if: env.changed_files != ''
+    #   run: |
+    #     git config --global advice.detachedHead false
+    #     IFS='~'
+    #     changed_files="${{ env.changed_files }}"
+    #     for file in $changed_files; do
+    #       file="${file//_/ }"
+    #       echo "Currently translating: $file"
+    #       base_path=$(dirname "$file")
+    #       base_name=$(basename "$file")
           
-          eng_content="${file}"
+    #       eng_content="${file}"
           
-          IFS=' '
-          for lang in $LANGUAGES; do
-            translation_file_content="${base_path/en-us/$lang}/${base_name}"
-            echo "Processing translation for: $lang"
+    #       IFS=' '
+    #       for lang in $LANGUAGES; do
+    #         translation_file_content="${base_path/en-us/$lang}/${base_name}"
+    #         echo "Processing translation for: $lang"
                       
-          # Call Dify API to translate
-          python3 -c "
-        import requests
-        import os
-        import subprocess
-        import sys
-        import time
+    #       # Call Dify API to translate
+    #       python3 -c "
+    #     import requests
+    #     import os
+    #     import subprocess
+    #     import sys
+    #     import time
 
-        def git_checkout(branch):
-          try:
-              subprocess.run(['git', 'checkout', branch], check=True)
-          except subprocess.CalledProcessError as e:
-              print(f'Error during git checkout: {e}')
+    #     def git_checkout(branch):
+    #       try:
+    #           subprocess.run(['git', 'checkout', branch], check=True)
+    #       except subprocess.CalledProcessError as e:
+    #           print(f'Error during git checkout: {e}')
         
-        def upload_file(file_path, user):
+    #     def upload_file(file_path, user):
 
-            # Check for file
-            if not os.path.exists(file_path):
-              print(f'File not found: {file_path}')
-              return None
+    #         # Check for file
+    #         if not os.path.exists(file_path):
+    #           print(f'File not found: {file_path}')
+    #           return None
               
-            upload_url = 'https://api.dify.ai/v1/files/upload'
-            headers = {
-                'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}',
-            }
+    #         upload_url = 'https://api.dify.ai/v1/files/upload'
+    #         headers = {
+    #             'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}',
+    #         }
         
-            print(f'Uploading file: {file_path}...')
-            with open(file_path, 'rb') as file:
-                files = {
-                    'file': (file_path, file, 'text/markdown')
-                }
-                data = {
-                    'user': user,
-                    'type': 'MD'
-                }
+    #         print(f'Uploading file: {file_path}...')
+    #         with open(file_path, 'rb') as file:
+    #             files = {
+    #                 'file': (file_path, file, 'text/markdown')
+    #             }
+    #             data = {
+    #                 'user': user,
+    #                 'type': 'MD'
+    #             }
                 
-                response = requests.post(upload_url, headers=headers, files=files, data=data)
-                if response.status_code == 201:
-                    print('File uploaded successfully')
-                    return response.json().get('id')
-                else:
-                    print(f'File upload failed, status code: {response.status_code}')
-                    return None
+    #             response = requests.post(upload_url, headers=headers, files=files, data=data)
+    #             if response.status_code == 201:
+    #                 print('File uploaded successfully')
+    #                 return response.json().get('id')
+    #             else:
+    #                 print(f'File upload failed, status code: {response.status_code}')
+    #                 return None
         
-        def run_workflow(old_file_id, new_file_id, translation_file_id, user, target_lang):
-            workflow_url = 'https://api.dify.ai/v1/workflows/run'
-            headers = {
-                'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}',
-                'Content-Type': 'application/json'
-            }
+    #     def run_workflow(old_file_id, new_file_id, translation_file_id, user, target_lang):
+    #         workflow_url = 'https://api.dify.ai/v1/workflows/run'
+    #         headers = {
+    #             'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}',
+    #             'Content-Type': 'application/json'
+    #         }
         
-            inputs = {
-                'target_lang': target_lang
-            }
+    #         inputs = {
+    #             'target_lang': target_lang
+    #         }
         
-            if old_file_id:
-                inputs['old_eng_file'] = {
-                    'transfer_method': 'local_file',
-                    'upload_file_id': old_file_id,
-                    'type': 'document'
-                }
+    #         if old_file_id:
+    #             inputs['old_eng_file'] = {
+    #                 'transfer_method': 'local_file',
+    #                 'upload_file_id': old_file_id,
+    #                 'type': 'document'
+    #             }
             
-            if new_file_id:
-                inputs['new_eng_file'] = {
-                    'transfer_method': 'local_file',
-                    'upload_file_id': new_file_id,
-                    'type': 'document'
-                }
+    #         if new_file_id:
+    #             inputs['new_eng_file'] = {
+    #                 'transfer_method': 'local_file',
+    #                 'upload_file_id': new_file_id,
+    #                 'type': 'document'
+    #             }
             
-            if translation_file_id:
-                inputs['translation_file'] = {
-                    'transfer_method': 'local_file',
-                    'upload_file_id': translation_file_id,
-                    'type': 'document'
-                }
+    #         if translation_file_id:
+    #             inputs['translation_file'] = {
+    #                 'transfer_method': 'local_file',
+    #                 'upload_file_id': translation_file_id,
+    #                 'type': 'document'
+    #             }
         
-            data = {
-                'inputs': inputs,
-                'user': user
-            }
+    #         data = {
+    #             'inputs': inputs,
+    #             'user': user
+    #         }
 
-            max_retries = 3
-            for attempt in range(max_retries):
-                print('Running Workflow...')
-                try:
-                    response = requests.post(workflow_url, headers=headers, json=data, timeout=999)
-                    if response.status_code == 200:
-                        print('Workflow execution successful')
-                        return response.json()
-                    else:
-                        print(f'Workflow execution failed, status code: {response.status_code}')
-                except requests.exceptions.RequestException as e:
-                    print(f'Request failed: {e}')
+    #         max_retries = 3
+    #         for attempt in range(max_retries):
+    #             print('Running Workflow...')
+    #             try:
+    #                 response = requests.post(workflow_url, headers=headers, json=data, timeout=999)
+    #                 if response.status_code == 200:
+    #                     print('Workflow execution successful')
+    #                     return response.json()
+    #                 else:
+    #                     print(f'Workflow execution failed, status code: {response.status_code}')
+    #             except requests.exceptions.RequestException as e:
+    #                 print(f'Request failed: {e}')
         
-                # Wait before retrying
-                time.sleep(1)
+    #             # Wait before retrying
+    #             time.sleep(1)
         
-            return {'status': 'error', 'message': f'Failed to execute workflow after {max_retries} attempts'}
+    #         return {'status': 'error', 'message': f'Failed to execute workflow after {max_retries} attempts'}
 
-        # Main execution
-        user = 'testUser123'
+    #     # Main execution
+    #     user = 'testUser123'
 
-        git_checkout('origin/main')
-        old_file_id = upload_file('${eng_content}', user)
+    #     git_checkout('origin/main')
+    #     old_file_id = upload_file('${eng_content}', user)
 
-        git_checkout('-')
-        new_file_id = upload_file('${eng_content}', user)
-        translation_file_id = upload_file('${translation_file_content}', user)
+    #     git_checkout('-')
+    #     new_file_id = upload_file('${eng_content}', user)
+    #     translation_file_id = upload_file('${translation_file_content}', user)
 
-        if new_file_id:
+    #     if new_file_id:
 
-            if old_file_id and translation_file_id:
-              result = run_workflow(old_file_id, new_file_id, translation_file_id, user, target_lang='${lang}')
-            else:
-              result = run_workflow(old_file_id=None, new_file_id=new_file_id, translation_file_id=None, user=user, target_lang='${lang}')
-            print('Translation successful')
-            blog_translated = result.get('data', {}).get('outputs', {}).get('blog_translated', None)
-            print('Blog translation retrieved')
+    #         if old_file_id and translation_file_id:
+    #           result = run_workflow(old_file_id, new_file_id, translation_file_id, user, target_lang='${lang}')
+    #         else:
+    #           result = run_workflow(old_file_id=None, new_file_id=new_file_id, translation_file_id=None, user=user, target_lang='${lang}')
+    #         print('Translation successful')
+    #         blog_translated = result.get('data', {}).get('outputs', {}).get('blog_translated', None)
+    #         print('Blog translation retrieved')
             
-            if blog_translated:
-              translation_file_path = '${translation_file_content}'
+    #         if blog_translated:
+    #           translation_file_path = '${translation_file_content}'
 
-              os.makedirs(os.path.dirname(translation_file_path), exist_ok=True)
+    #           os.makedirs(os.path.dirname(translation_file_path), exist_ok=True)
 
-              with open(translation_file_path, 'w', encoding='utf-8') as f:
-                f.write(blog_translated)
-                print('Translated markdown content written to file.')
+    #           with open(translation_file_path, 'w', encoding='utf-8') as f:
+    #             f.write(blog_translated)
+    #             print('Translated markdown content written to file.')
 
-              with open(translation_file_path, 'r', encoding='utf-8') as file:
-                content = file.read()
+    #           with open(translation_file_path, 'r', encoding='utf-8') as file:
+    #             content = file.read()
 
-              subprocess.run(['git', 'config', '--global', 'user.email', 'no-reply@github.com'])
-              subprocess.run(['git', 'config', '--global', 'user.name', 'GitHub Actions'])
-              subprocess.run(['git', 'add', translation_file_path])
+    #           subprocess.run(['git', 'config', '--global', 'user.email', 'no-reply@github.com'])
+    #           subprocess.run(['git', 'config', '--global', 'user.name', 'GitHub Actions'])
+    #           subprocess.run(['git', 'add', translation_file_path])
                 
-              if subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode != 0:
-                subprocess.run(['git', 'commit', '-m', 'Add translation'])
-                subprocess.run(['git', 'push'])
+    #           if subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode != 0:
+    #             subprocess.run(['git', 'commit', '-m', 'Add translation'])
+    #             subprocess.run(['git', 'push'])
                     
-              else:
-                print('No changes to commit.')
+    #           else:
+    #             print('No changes to commit.')
 
-              subprocess.run(['git', 'push'])
+    #           subprocess.run(['git', 'push'])
                   
-            else:
-              print('No translated content found in result.')
+    #         else:
+    #           print('No translated content found in result.')
               
-        else:
-            print('One or more file uploads failed, and workflow cannot be executed.')
-        "
-                done
-            done
+    #     else:
+    #         print('One or more file uploads failed, and workflow cannot be executed.')
+    #     "
+    #             done
+    #         done
 
     - name: Check and create translation files
       run: |
@@ -227,80 +227,80 @@ jobs:
 
               # Call Dify API to translate
               python3 -c "
-            import requests
-            import os
-            
-            def upload_file(file_path, user):
-                if not os.path.exists(file_path):
-                    print(f'File not found: {file_path}')
-                    return None
-                upload_url = 'https://api.dify.ai/v1/files/upload'
-                headers = {
-                    'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}',
-                }
-                with open(file_path, 'rb') as file:
-                    files = {
-                        'file': (file_path, file, 'text/markdown')
-                    }
-                    data = {
-                        'user': user,
-                        'type': 'MD'
-                    }
-                    response = requests.post(upload_url, headers=headers, files=files, data=data)
-                    if response.status_code == 201:
-                        print('File uploaded successfully')
-                        return response.json().get('id')
-                    else:
-                        print(f'File upload failed, status code: {response.status_code}')
-                        return None
-            
-            def run_workflow(new_file_id, user, target_lang):
-                workflow_url = 'https://api.dify.ai/v1/workflows/run'
-                headers = {
-                    'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}',
-                    'Content-Type': 'application/json'
-                }
-                inputs = {
-                    'target_lang': target_lang,
-                    'new_eng_file': {
-                        'transfer_method': 'local_file',
-                        'upload_file_id': new_file_id,
-                        'type': 'document'
-                    }
-                }
-                data = {
-                    'inputs': inputs,
-                    'user': user
-                }
-            
-                response = requests.post(workflow_url, headers=headers, json=data)
-                if response.status_code == 200:
-                    print('Workflow execution successful')
-                    return response.json()
-                else:
-                    print(f'Workflow execution failed, status code: {response.status_code}')
-                    return None
-            
-            # Main execution
-            user = 'testUser123'
-            new_file_id = upload_file('${file}', user)
-            
-            if new_file_id:
-                result = run_workflow(new_file_id, user, target_lang='${lang}')
-                if result:
-                    blog_translated = result.get('data', {}).get('outputs', {}).get('blog_translated', None)
-                    if blog_translated:
-                        os.makedirs(os.path.dirname('${translation_file}'), exist_ok=True)
-                        with open('${translation_file}', 'w', encoding='utf-8') as f:
-                            f.write(blog_translated)
-                        print('Translated markdown content written to file.')
-                    else:
-                        print('No translated content found in result.')
-            else:
-                print('File upload failed, cannot execute workflow.')
-                          "
-                        else
-                          echo "Translation file already exists: $translation_file"
-                        fi
-                      done
+          import requests
+          import os
+          
+          def upload_file(file_path, user):
+              if not os.path.exists(file_path):
+                  print(f'File not found: {file_path}')
+                  return None
+              upload_url = 'https://api.dify.ai/v1/files/upload'
+              headers = {
+                  'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}',
+              }
+              with open(file_path, 'rb') as file:
+                  files = {
+                      'file': (file_path, file, 'text/markdown')
+                  }
+                  data = {
+                      'user': user,
+                      'type': 'MD'
+                  }
+                  response = requests.post(upload_url, headers=headers, files=files, data=data)
+                  if response.status_code == 201:
+                      print('File uploaded successfully')
+                      return response.json().get('id')
+                  else:
+                      print(f'File upload failed, status code: {response.status_code}')
+                      return None
+          
+          def run_workflow(new_file_id, user, target_lang):
+              workflow_url = 'https://api.dify.ai/v1/workflows/run'
+              headers = {
+                  'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}',
+                  'Content-Type': 'application/json'
+              }
+              inputs = {
+                  'target_lang': target_lang,
+                  'new_eng_file': {
+                      'transfer_method': 'local_file',
+                      'upload_file_id': new_file_id,
+                      'type': 'document'
+                  }
+              }
+              data = {
+                  'inputs': inputs,
+                  'user': user
+              }
+          
+              response = requests.post(workflow_url, headers=headers, json=data)
+              if response.status_code == 200:
+                  print('Workflow execution successful')
+                  return response.json()
+              else:
+                  print(f'Workflow execution failed, status code: {response.status_code}')
+                  return None
+          
+          # Main execution
+          user = 'testUser123'
+          new_file_id = upload_file('${file}', user)
+          
+          if new_file_id:
+              result = run_workflow(new_file_id, user, target_lang='${lang}')
+              if result:
+                  blog_translated = result.get('data', {}).get('outputs', {}).get('blog_translated', None)
+                  if blog_translated:
+                      os.makedirs(os.path.dirname('${translation_file}'), exist_ok=True)
+                      with open('${translation_file}', 'w', encoding='utf-8') as f:
+                          f.write(blog_translated)
+                      print('Translated markdown content written to file.')
+                  else:
+                      print('No translated content found in result.')
+          else:
+              print('File upload failed, cannot execute workflow.')
+                        "
+                      else
+                        echo "Translation file already exists: $translation_file"
+                      fi
                     done
+                  done
