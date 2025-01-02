@@ -39,7 +39,7 @@ jobs:
     - name: Process each changed file
       if: env.changed_files != ''
       run: |
-        IFS=' '  # Set IFS to space
+        IFS=' '
         for file in ${{ env.changed_files }}; do
           file="${file//_/ }"
           echo "Currently translating: $file"
@@ -47,12 +47,12 @@ jobs:
           base_name=$(basename "$file")
           
           eng_content="${file}"
-    
+
           for lang in $LANGUAGES; do
             translation_file_content="${base_path/en-us/$lang}/${base_name}"
             echo "Processing translation for: $lang"
-    
-            # Call Dify API to translate
+                      
+          # Call Dify API to translate
             python3 -c "
           import requests
           import os
@@ -60,21 +60,23 @@ jobs:
           import sys
   
           def git_checkout(branch):
-              try:
-                  subprocess.run(['git', 'checkout', branch], check=True)
-              except subprocess.CalledProcessError as e:
-                  print(f'Error during git checkout: {e}')
-  
+            try:
+                subprocess.run(['git', 'checkout', branch], check=True)
+            except subprocess.CalledProcessError as e:
+                print(f'Error during git checkout: {e}')
+          
           def upload_file(file_path, user):
-              if not os.path.exists(file_path):
-                  print(f'File not found: {file_path}')
-                  return None
   
+              # Check for file
+              if not os.path.exists(file_path):
+                print(f'File not found: {file_path}')
+                return None
+                
               upload_url = 'https://api.dify.ai/v1/files/upload'
               headers = {
-                  'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}',  # Correct quoting
+                  'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}',
               }
-  
+          
               print(f'Uploading file: {file_path}...')
               with open(file_path, 'rb') as file:
                   files = {
@@ -92,18 +94,18 @@ jobs:
                   else:
                       print(f'File upload failed, status code: {response.status_code}')
                       return None
-  
+          
           def run_workflow(old_file_id, new_file_id, translation_file_id, user, target_lang):
               workflow_url = 'https://api.dify.ai/v1/workflows/run'
               headers = {
-                  'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}',  # Correct quoting
+                  'Authorization': f'Bearer {os.environ['DIFY_API_KEY']}',
                   'Content-Type': 'application/json'
               }
-  
+          
               inputs = {
                   'target_lang': target_lang
               }
-  
+          
               if old_file_id:
                   inputs['old_eng_file'] = {
                       'transfer_method': 'local_file',
@@ -124,12 +126,12 @@ jobs:
                       'upload_file_id': translation_file_id,
                       'type': 'document'
                   }
-  
+          
               data = {
                   'inputs': inputs,
                   'user': user
               }
-  
+          
               print('Running Workflow...')
               response = requests.post(workflow_url, headers=headers, json=data, timeout=999)
               if response.status_code == 200:
@@ -137,9 +139,9 @@ jobs:
                   return response.json()
               else:
                   print(f'Workflow execution failed, status code: {response.status_code}')
-                  # Remove the sys.exit() here; instead, return an error response
                   return {'status': 'error', 'message': f'Failed to execute workflow, status code: {response.status_code}'}
-  
+                  sys.exit(1)
+          
           # Main execution
           user = 'testUser123'
   
@@ -150,6 +152,7 @@ jobs:
           new_file_id = upload_file('${eng_content}', user)
           translation_file_id = upload_file('${translation_file_content}', user)
   
+  
           if new_file_id:
               result = run_workflow(old_file_id, new_file_id, translation_file_id, user, target_lang='${lang}')
               print('Translation successful')
@@ -157,16 +160,17 @@ jobs:
               print('Blog translation retrieved')
   
               if blog_translated:
-                  translation_file_path = translation_file_content  # Correct assignment
-                  with open(translation_file_path, 'w', encoding='utf-8') as f:
-                      f.write(blog_translated)
-                      print(f'Translated markdown content written to {translation_file_path}')
+                translation_file_path = translation_file_content
+  
+                with open(translation_file_path, 'w', encoding='utf-8') as f:
+                  f.write(blog_translated)
+                  print(f'Translated markdown content written to {translation_file_path}')
               else:
-                  print('No translated content found in result.')
-                  sys.exit(1)
+                print('No translated content found in result.')
+                sys.exit(1)
           else:
               print('One or more file uploads failed, and workflow cannot be executed.')
               sys.exit(1)
-          "
+        "
+                done
             done
-        done
