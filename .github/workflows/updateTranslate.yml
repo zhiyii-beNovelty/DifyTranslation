@@ -310,7 +310,7 @@ jobs:
                         print('No translated content found in result.')
             else:
                 print('File upload failed, cannot execute workflow.')
-                          "
+            "
             else
               echo "Translation file already exists: $translation_file"
             fi
