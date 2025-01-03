@@ -55,7 +55,7 @@ jobs:
             translation_file_content="${base_path/en-us/$lang}/${base_name}"
             echo "Processing translation for: $lang"
             
-            python3 translation_script.py "$eng_content" "$translation_file_content" "$lang"
+            python3 scripts/translation_script.py "$eng_content" "$translation_file_content" "$lang"
           done
         done
 
@@ -76,7 +76,7 @@ jobs:
               echo "Translation file does not exist: \"$translation_file\""
               echo "Creating translation file using Dify API for: $lang"
               
-              python3 .github/workflows/scripts/translation_script.py "$file" "$translation_file" "$lang"
+              python3 scripts/translation_script.py "$file" "$translation_file" "$lang"
             else
               echo "Translation file already exists: \"$translation_file\""
             fi
