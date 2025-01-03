@@ -75,8 +75,8 @@ def write_translated_content(translation_file_path, blog_translated):
 def commit_and_push_changes(translation_file_path):
     subprocess.run(['git', 'config', '--global', 'user.email', 'no-reply@github.com'])
     subprocess.run(['git', 'config', '--global', 'user.name', 'GitHub Actions'])
-    if subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode != 0:
-        subprocess.run(['git', 'add', translation_file_path])
+    subprocess.run(['git', 'add', translation_file_path])
+    if subprocess.run(['git', 'diff', '--quiet']).returncode != 0:
         subprocess.run(['git', 'commit', '-m', 'Add translation'])
         subprocess.run(['git', 'push'])
 
