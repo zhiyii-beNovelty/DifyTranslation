@@ -61,7 +61,7 @@ jobs:
 
     - name: Check and create translation files
       run: |
-        EN_FILES=$(find src/en-us -type f -name "*.md")
+        EN_FILES=$(find src/en-us -type f -name "*.md" ! -name "index.md")
 
         FIXED_EN_FILES=$(echo "$EN_FILES" | tr '\n' '~' | sed 's/ /_/g')
 
