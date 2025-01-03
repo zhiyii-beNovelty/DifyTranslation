@@ -6,7 +6,10 @@ import subprocess
 import time
 
 def git_checkout(branch):
-    subprocess.run(['git', 'checkout', branch], check=True)
+    try:
+        subprocess.run(['git', 'checkout', branch], check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"Error checking out branch {branch}: {e}")
 
 def upload_file(file_path, user):
     if not os.path.exists(file_path):
@@ -50,11 +53,18 @@ def run_workflow(old_file_id, new_file_id, translation_file_id, user, target_lan
     data = {'inputs': inputs, 'user': user}
 
     for _ in range(3):
-        response = requests.post(workflow_url, headers=headers, json=data, timeout=999)
-        if response.status_code == 200:
-            return response.json()
+        try:
+            response = requests.post(workflow_url, headers=headers, json=data, timeout=999)
+            if response.status_code == 200:
+                print('Workflow execution successful')
+                return response.json()
+            else:
+                print(f'Workflow execution failed, status code: {response.status_code}')
+        except requests.exceptions.RequestException as e:
+            print(f'Request failed: {e}')
+            
         time.sleep(1)
-    return None
+    return {'status': 'error', 'message': f'Failed to execute workflow after {max_retries} attempts'}
 
 def write_translated_content(translation_file_path, blog_translated):
     os.makedirs(os.path.dirname(translation_file_path), exist_ok=True)
@@ -95,7 +105,7 @@ def main(eng_content, translation_file_content, lang):
 if __name__ == "__main__":
     import sys
     if len(sys.argv) != 4:
-        print("Usage: python translation_script.py <eng_content> <translation_file_content> <lang>")
+        print("Usage: python3 scripts/dify_translation.py <eng_content> <translation_file_content> <lang>")
     else:
         eng_content = sys.argv[1]
         translation_file_content = sys.argv[2]
