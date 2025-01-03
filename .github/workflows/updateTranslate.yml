@@ -71,6 +71,7 @@ jobs:
           echo "Checking translations for: \"$file\""
           base_name=$(basename "$file")
           base_path=$(dirname "$file")
+          eng_content="${file}"
           
           IFS=' ' read -r -a languages <<< "${{ env.LANGUAGES }}"
           for lang in "${languages[@]}"; do
