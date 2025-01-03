@@ -5,6 +5,7 @@ on:
     branches: [ "*" ]
     paths:
       - src/en-us/**
+      - .github/workflows/**
   workflow_dispatch:
 
 jobs:
