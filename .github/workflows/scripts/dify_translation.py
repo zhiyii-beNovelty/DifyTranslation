@@ -54,8 +54,8 @@ def run_workflow(old_file_id, new_file_id, translation_file_id, user, target_lan
 
     for _ in range(3):
         try:
-            response = requests.post(workflow_url, headers=headers, json=data, timeout=9999)
-            if response.status_code in (200, 201):
+            response = requests.post(workflow_url, headers=headers, json=data, timeout=2000)
+            if response.status_code == 200:
                 print('Workflow execution successful')
                 return response.json()
             else:
