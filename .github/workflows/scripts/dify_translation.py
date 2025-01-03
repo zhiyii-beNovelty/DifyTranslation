@@ -55,15 +55,14 @@ def run_workflow(old_file_id, new_file_id, translation_file_id, user, target_lan
     for _ in range(3):
         try:
             response = requests.post(workflow_url, headers=headers, json=data, timeout=2000)
-            if response.status_code == 200:
-                print('Workflow execution successful')
-                return response.json()
-            else:
-                print(f'Workflow execution failed, status code: {response.status_code}')
+            return response.json()
         except requests.exceptions.RequestException as e:
             print(f'Request failed: {e}')
-            
+        except ValueError:
+            print('Failed to decode JSON from response:', response.text)
+
         time.sleep(1)
+    
     return {'status': 'error', 'message': 'Failed to execute workflow after 3 attempts'}
 
 def write_translated_content(translation_file_path, blog_translated):
