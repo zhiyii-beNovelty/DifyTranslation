@@ -62,8 +62,12 @@ jobs:
     - name: Check and create translation files
       run: |
         EN_FILES=$(find src/en-us -type f -name "*.md")
-        
-        for file in $EN_FILES; do
+
+        FIXED_EN_FILES=$(echo "$EN_FILES" | tr '\n' '~' | sed 's/ /_/g')
+
+        IFS='~'
+        for file in $FIXED_EN_FILES; do
+          file="${file//_/ }"
           echo "Checking translations for: \"$file\""
           base_name=$(basename "$file")
           base_path=$(dirname "$file")
