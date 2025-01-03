@@ -9,6 +9,8 @@ permalink: /configure-ai-agent
 
 ## Create Your Customized AI Agents in FabriXAI
 
+This is purely for testing purposes. Please delete this later. AI Agents are awesome!
+
 AI agents in FabriXAI are designed to automate workflows and enhance specific use cases. With FabriXAI, you can deploy your AI agent in two formats, depending on the needs of your task:
 
 - **Web App**: Ideal for tasks requiring a standalone application accessible via a browser, such as form submissions or document generation.
