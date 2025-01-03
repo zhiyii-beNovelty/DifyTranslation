@@ -48,6 +48,7 @@ jobs:
           echo "Currently translating: $file"
           base_path=$(dirname "$file")
           base_name=$(basename "$file")
+          
           eng_content="${file}"
     
           IFS=' '
@@ -60,7 +61,7 @@ jobs:
 
     - name: Check and create translation files
       run: |
-        EN_FILES=$(find src/en-us -type f)
+        EN_FILES=$(find src/en-us -type f -name "*.md")
         
         for file in $EN_FILES; do
           echo "Checking translations for: \"$file\""
