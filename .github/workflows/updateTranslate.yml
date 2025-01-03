@@ -54,7 +54,7 @@ jobs:
           for lang in $LANGUAGES; do
             translation_file_content="${base_path/en-us/$lang}/${base_name}"
             echo "Processing translation for: $lang"
-            
+            ls -al
             python3 "/home/runner/work/DifyTranslation/.github/workflows/scripts/translation_script.py" "$eng_content" "$translation_file_content" "$lang"
           done
         done
