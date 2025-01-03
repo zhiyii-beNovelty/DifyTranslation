@@ -54,8 +54,8 @@ def run_workflow(old_file_id, new_file_id, translation_file_id, user, target_lan
 
     for _ in range(3):
         try:
-            response = requests.post(workflow_url, headers=headers, json=data, timeout=999)
-            if response.status_code == 200:
+            response = requests.post(workflow_url, headers=headers, json=data, timeout=9999)
+            if response.status_code in (200, 201):
                 print('Workflow execution successful')
                 return response.json()
             else:
@@ -64,7 +64,7 @@ def run_workflow(old_file_id, new_file_id, translation_file_id, user, target_lan
             print(f'Request failed: {e}')
             
         time.sleep(1)
-    return {'status': 'error', 'message': f'Failed to execute workflow after {max_retries} attempts'}
+    return {'status': 'error', 'message': 'Failed to execute workflow after 3 attempts'}
 
 def write_translated_content(translation_file_path, blog_translated):
     os.makedirs(os.path.dirname(translation_file_path), exist_ok=True)
