@@ -81,7 +81,7 @@ jobs:
               echo "Translation file does not exist: \"$translation_file\""
               echo "Creating translation file using Dify API for: $lang"
               
-              python3 .github/workflows/scripts/dify_translation.py "$eng_content" "$translation_file_content" "$lang"
+              python3 .github/workflows/scripts/dify_translation.py "$eng_content" "$translation_file" "$lang"
             else
               echo "Translation file already exists: \"$translation_file\""
             fi
