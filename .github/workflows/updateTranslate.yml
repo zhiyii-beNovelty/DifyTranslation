@@ -5,7 +5,6 @@ on:
     branches: [ "*" ]
     paths:
       - src/en-us/**
-      - .github/workflows/**
   workflow_dispatch:
 
 jobs:
@@ -13,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       DIFY_API_KEY: ${{ secrets.DIFY_API_KEY }}
-      LANGUAGES: 'zh-hk fr' # Add languages here
+      LANGUAGES: 'zh-cn es fr de ja ko' # Add languages here
 
     steps:
     - name: Check out the repository
@@ -62,7 +61,7 @@ jobs:
 
     - name: Check and create translation files
       run: |
-        EN_FILES=$(find src/en-us -type f -name "*.md" ! -name "index.md")
+        EN_FILES=$(find src/en-us -type f -name "*.md")
 
         FIXED_EN_FILES=$(echo "$EN_FILES" | tr '\n' '~' | sed 's/ /_/g')
 
