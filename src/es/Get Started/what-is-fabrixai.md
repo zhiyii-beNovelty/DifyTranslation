@@ -1,6 +1,6 @@
 ---
 metatitle: ¿Qué es FabriXAI | Guía del Usuario de FabriXAI
-description: Presentando FabriXAI: La plataforma de agentes de IA de bajo código diseñada para simplificar la automatización.
+description: Presentando FabriXAI - La plataforma de agentes de IA de bajo código diseñada para simplificar la automatización.
 lang: es
 permalink: /what-is-fabrixai
 ---
