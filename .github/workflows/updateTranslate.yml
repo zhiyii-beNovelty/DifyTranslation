@@ -46,6 +46,9 @@ jobs:
     
         for file in $changed_files; do
           file="${file//_/ }"
+          if [[ -z "$file" || "$file" == "~" ]]; then
+            continue
+          fi
           echo "Currently translating: $file"
           base_path=$(dirname "$file")
           base_name=$(basename "$file")
