@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       DIFY_API_KEY: ${{ secrets.DIFY_API_KEY }}
-      LANGUAGES: 'zh-hk fr' # Add languages here
+      LANGUAGES: 'zh-cn es fr de ja ko' # Add languages here
 
     steps:
     - name: Check out the repository
