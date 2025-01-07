@@ -1,0 +1,98 @@
+name: Validate and Correct Metadata
+
+on:
+  workflow_dispatch:
+
+jobs:
+  validate_and_correct_metadata:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Validate and correct metadata
+        run: |
+          # Function to validate and correct metadata
+          correct_metadata() {
+            local file=$1
+            local lang=$2
+            local metatitle_suffix
+
+            # Define metatitle suffixes for each language
+            case "$lang" in
+              "zh-cn") metatitle_suffix="FabriXAI 用户指南" ;;
+              "es")    metatitle_suffix="Guía del Usuario de FabriXA" ;;
+              "fr")    metatitle_suffix="Guide de l'utilisateur FabriXAI" ;;
+              "de")    metatitle_suffix="FabriXAI Benutzerhandbuch" ;;
+              "ja")    metatitle_suffix="FabriXAIユーザーガイド" ;;
+              "ko")    metatitle_suffix="FabriXAI 사용자 가이드" ;;
+              *)       echo "Unknown language: $lang" && return ;;
+            esac
+            
+            # Read the first few lines of the file
+            local metadata=$(head -n 10 "$file")
+            local needs_update=false
+
+            # Check for metatitle
+            if [[ $metadata =~ metatitle:\ (.+) ]]; then
+              metatitle="${BASH_REMATCH[1]}"
+              if [[ ! $metatitle == *"$metatitle_suffix" ]]; then
+                echo "Updating metatitle in $file"
+                metatitle="metatitle: ${metatitle% *} $metatitle_suffix"
+                needs_update=true
+              fi
+            else
+              echo "Adding metatitle to $file"
+              metatitle="metatitle: Default Title $metatitle_suffix"
+              needs_update=true
+            fi
+
+            # Check for lang
+            if [[ $metadata =~ lang:\ (.+) ]]; then
+              file_lang="${BASH_REMATCH[1]}"
+              if [[ $file_lang != "$lang" ]]; then
+                echo "Updating lang in $file"
+                needs_update=true
+              fi
+            else
+              echo "Adding lang to $file"
+              needs_update=true
+            fi
+
+            # If changes are needed, update the file
+            if $needs_update; then
+              # Create a temporary file to hold the modified content
+              temp_file=$(mktemp)
+
+              # Replace the old metadata with updated values
+              while IFS= read -r line; do
+                if [[ $line =~ metatitle: ]]; then
+                  echo "$metatitle" >> "$temp_file"
+                elif [[ $line =~ lang: ]]; then
+                  echo "lang: $lang" >> "$temp_file"
+                else
+                  echo "$line" >> "$temp_file"
+                fi
+              done < "$file"
+
+              # Move the temporary file back to the original
+              mv "$temp_file" "$file"
+            fi
+          }
+
+          # Iterate over all language directories and apply corrections
+          for path in src/zh-cn src/es src/fr src/de src/ja src/ko; do
+            for file in "$path"/*; do
+              if [[ -f $file ]]; then
+                case "$path" in
+                  "src/zh-cn") correct_metadata "$file" "zh-cn" ;;
+                  "src/es") correct_metadata "$file" "es" ;;
+                  "src/fr") correct_metadata "$file" "fr" ;;
+                  "src/de") correct_metadata "$file" "de" ;;
+                  "src/ja") correct_metadata "$file" "ja" ;;
+                  "src/ko") correct_metadata "$file" "ko" ;;
+                esac
+              fi
+            done
+          done
