@@ -7,6 +7,14 @@ permalink: /what-is-fabrixai
 
 # Bienvenido a FabriXAI
 
+## Guía del Usuario de FabriXA
+description: Presentando FabriXAI - La plataforma de agentes de IA de bajo código diseñada para simplificar la automatización.
+lang: es
+permalink: /what-is-fabrixai
+---
+
+# Bienvenido a FabriXAI
+
 ## Introducción
 FabriXAI es una plataforma todo en uno diseñada para simplificar procesos empresariales complejos mediante el uso de agentes de IA de bajo código. Empodera a las empresas para construir, automatizar y gestionar flujos de trabajo sin esfuerzo, sin requerir una amplia experiencia en TI. Desde la creación de poderosos agentes impulsados por IA hasta encadenarlos sin problemas para manejar tareas más complejas, FabriXAI revoluciona la forma en que los equipos abordan la productividad y la automatización.
 

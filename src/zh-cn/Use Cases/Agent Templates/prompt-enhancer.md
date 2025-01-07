@@ -7,6 +7,14 @@ permalink: /agent-templates/prompt-enhancer
 
 # 提示增强器
 
+**提示增强器**是一款专注于大型语言模型 (LLMs) FabriXAI 用户指南
+description: 这是Prompt Enhancer的用户指南，一个旨在为大型语言模型（LLMs）完善和改进您的提示的AI助手。
+lang: zh-CN
+permalink: /agent-templates/prompt-enhancer
+---
+
+# 提示增强器
+
 **提示增强器**是一款专注于大型语言模型 (LLMs) 提示工程的AI助手。它允许用户输入初始提示或反馈意见，随后系统根据上下文和清晰度进行优化。输出内容包括经过润色的提示版本、调整说明以及进一步增强的建议。该工具对于希望提高提示效果和精确性的用户尤其有用，确保与AI模型的互动更好。
 
 ## 开始使用
@@ -93,4 +101,3 @@ permalink: /agent-templates/prompt-enhancer
 
 ## 相关文章
 
-继续探索我们的[智能代理模板系列](/en-us/agent-templates/)，以了解更多人工智能代理的创意应用！

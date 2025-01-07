@@ -7,6 +7,14 @@ permalink: /share-ai-agent
 
 # 分享智能代理
 
+使用 FabriXAI 用户指南
+description: 通过本逐步指南了解如何共享您的AI代理。
+lang: zh-CN
+permalink: /share-ai-agent
+---
+
+# 分享智能代理
+
 使用 FabriXAI，轻松与他人分享你的智能代理！
 
 ## 分享方法
@@ -27,4 +35,3 @@ permalink: /share-ai-agent
 ## 相关文章
 - [从模板创建](/zh-cn/create-from-templates)
 - [配置AI代理](/zh-cn/configure-ai-agent/)
-- [将AI代理与API集成](/zh-cn/integrations-api/)

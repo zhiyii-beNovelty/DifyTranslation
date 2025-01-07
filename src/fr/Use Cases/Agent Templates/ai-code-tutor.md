@@ -7,6 +7,14 @@ permalink: /agent-templates/ai-code-tutor
 
 # Tuteur de Code IA
 
+Le **Tuteur de Code IA** est un assistant intelligent conçu pour aider les utilisateurs à comprendre le code de programmation. En analysant les extraits de code fournis par l'utilisateur, l'agent offre un aperçu complet de ce que fait le code, suivi d'une explication détaillée, étape par étape, de chaque partie. De plus, il suggère des sujets de programmation liés pour approfondir l'apprentissage, permettant aux utilisateurs de renforcer leur compréhension des concepts de codage. Que vous soyez débutant ou que vous cherchiez à améliorer vos compétences, le Tuteur de Code IA vous guidera à travers les complexités des langages de programmation et des Guide de l'utilisateur FabriXAI
+description: Ceci est un guide utilisateur pour configurer et utiliser le Tuteur de Code IA, un agent spécialisé dans les explications de programmation.
+lang: fr
+permalink: /agent-templates/ai-code-tutor
+---
+
+# Tuteur de Code IA
+
 Le **Tuteur de Code IA** est un assistant intelligent conçu pour aider les utilisateurs à comprendre le code de programmation. En analysant les extraits de code fournis par l'utilisateur, l'agent offre un aperçu complet de ce que fait le code, suivi d'une explication détaillée, étape par étape, de chaque partie. De plus, il suggère des sujets de programmation liés pour approfondir l'apprentissage, permettant aux utilisateurs de renforcer leur compréhension des concepts de codage. Que vous soyez débutant ou que vous cherchiez à améliorer vos compétences, le Tuteur de Code IA vous guidera à travers les complexités des langages de programmation et des concepts.
 
 ## Démarrage
@@ -85,4 +93,3 @@ Le tutoriel de Real Python sur la gestion des erreurs : https://realpython.com/p
 - **Affinez vos Requêtes** : Si les explications ne sont pas assez détaillées, essayez de fournir plus de contexte ou de poser des questions spécifiques sur le code.
 
 ## Articles connexes
-Continuez à explorer notre collection de [Modèles d'Agents](/fr-us/agent-templates/) pour découvrir plus d'idées d'agents IA en action !

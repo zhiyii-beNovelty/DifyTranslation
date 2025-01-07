@@ -7,6 +7,14 @@ permalink: /agent-templates/blog-post-generator
 
 # Générateur de Publications de Blog
 
+Le **Générateur de Publications de Blog** est conçu pour aider les utilisateurs à créer des articles de blog bien structurés et optimisés, en générant spécifiquement du contenu autour de mots-clés ciblés. L'outil utilise un flux de travail détaillé en deux étapes Guide de l'utilisateur FabriXAI
+description: Il s'agit d'un guide utilisateur pour le Générateur de Publications de Blog, conçu pour aider les utilisateurs à créer du contenu de blog engageant et informatif de manière efficace.
+lang: fr
+permalink: /agent-templates/blog-post-generator
+---
+
+# Générateur de Publications de Blog
+
 Le **Générateur de Publications de Blog** est conçu pour aider les utilisateurs à créer des articles de blog bien structurés et optimisés, en générant spécifiquement du contenu autour de mots-clés ciblés. L'outil utilise un flux de travail détaillé en deux étapes :
 
 - **Générer un Plan** : Couvre systématiquement divers aspects du sujet et intègre les mots-clés ciblés dans les titres et sous-titres.
@@ -151,4 +159,3 @@ En conclusion, l'IA et l'AA ont de nombreuses applications dans diverses industr
 - **Vérifiez les Légendes Suggérées** : Vérifiez toujours les légendes pour leur pertinence et leur alignement avec votre marque avant de les publier.
 
 ## Articles Associés
-Continuez à explorer notre collection de [Modèles d'Agents](/en-us/agent-templates/) pour découvrir davantage d'idées d'agents IA en action !

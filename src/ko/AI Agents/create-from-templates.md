@@ -7,6 +7,14 @@ permalink: /create-from-templates
 
 # 템플릿으로 생성하기
 
+FabriXAI의 미리 구축된 에이전트 템플릿을 활용하여 빠르게 FabriXAI 사용자 가이드
+description: 이 단계별 가이드를 통해 FabriXAI에서 템플릿을 사용하여 AI 에이전트를 만드는 방법을 배웁니다.
+lang: ko
+permalink: /create-from-templates
+---
+
+# 템플릿으로 생성하기
+
 FabriXAI의 미리 구축된 에이전트 템플릿을 활용하여 빠르게 시작하세요!
 
 ## 에이전트 템플릿이란?
@@ -32,4 +40,3 @@ FabriXAI의 미리 구축된 에이전트 템플릿을 활용하여 빠르게 �
 
 ## 관련 자료
 - [에이전트 템플릿](/en-us/agent-templates/)
-- [AI 에이전트 구성](/en-us/configure-ai-agent/)

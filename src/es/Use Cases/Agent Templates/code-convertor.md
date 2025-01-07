@@ -7,6 +7,14 @@ permalink: /agent-templates/code-convertor
 
 # Convertidor de Código
 
+El **Convertidor de Código** es un agente de IA diseñado para ayudar a los programadores a convertir código de un lenguaje de programación a otro. Al especificar los lenguajes de programación inicial y final, así como el código que se va a convertir, los usuarios pueden confiar en el agente para realizar traducciones precisas. El agente garantiza que la funcionalidad del código permanezca intacta, mientras también proporciona comentarios dentro del código para resaltar cualquier cambio significativo realizado durante el proceso de conversión. En caso de que no se pueda realizar la conversión, el agente explicará la razón. Esto hace del Convertidor de Código una herramienta valiosa para los desarrolladores que buscan trabajar con diferentes lenguajes de Guía del Usuario de FabriXA
+description: Esta es una guía del usuario para el agente Convertidor de Código, que ayuda a convertir código de un lenguaje de programación a otro asegurando su funcionalidad.
+lang: es
+permalink: /agent-templates/code-convertor
+---
+
+# Convertidor de Código
+
 El **Convertidor de Código** es un agente de IA diseñado para ayudar a los programadores a convertir código de un lenguaje de programación a otro. Al especificar los lenguajes de programación inicial y final, así como el código que se va a convertir, los usuarios pueden confiar en el agente para realizar traducciones precisas. El agente garantiza que la funcionalidad del código permanezca intacta, mientras también proporciona comentarios dentro del código para resaltar cualquier cambio significativo realizado durante el proceso de conversión. En caso de que no se pueda realizar la conversión, el agente explicará la razón. Esto hace del Convertidor de Código una herramienta valiosa para los desarrolladores que buscan trabajar con diferentes lenguajes de programación.
 
 ## Comenzando
@@ -77,4 +85,3 @@ int main() {
 - **Usa sabiamente los comentarios**: Si estás subiendo código con comentarios, asegúrate de que sean concisos y relevantes para una mejor comprensión de la conversión.
 
 ## Artículos Relacionados
-Continúa explorando nuestra colección de [Plantillas de Agentes](/en-us/agent-templates/) para descubrir más ideas de agentes de IA en funcionamiento!

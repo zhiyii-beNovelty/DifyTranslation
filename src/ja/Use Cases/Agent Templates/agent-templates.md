@@ -7,6 +7,14 @@ permalink: /agent-templates
 
 # エージェントテンプレート
 
+## FabriXAIユーザーガイド
+description: FabriXIAのエージェントテンプレートについて学び、カスタマイズされたAIエージェントを簡単に作成する方法を活用しましょう。
+lang: ja
+permalink: /agent-templates
+---
+
+# エージェントテンプレート
+
 ## エージェントテンプレートとは？
 
 エージェントテンプレートは、特定のタスクに合わせて迅速にAIエージェントを作成するのに役立つ、事前に構築された設定です。これらのテンプレートは出発点として機能し、あなたのビジネスニーズに合わせてカスタマイズできる基盤となります。エージェントテンプレートを使用することで、目的に応じて効果的に設定されたAIエージェントを確実に作成しながら、時間と労力を節約できます。
@@ -51,4 +59,3 @@ permalink: /agent-templates
 
 ### セキュリティエージェント
 - [機密データフィルタリングエージェント](/ja-jp/agent-templates/sensitive-data-filtering-agent)
-- [スパム検出器](/ja-jp/agent-templates/spam-detector)

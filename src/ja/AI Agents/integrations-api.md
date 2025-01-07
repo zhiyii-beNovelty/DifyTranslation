@@ -7,6 +7,14 @@ permalink: /integrations-api
 
 # AIエージェントとAPIを連携しよう
 
+カスタマイズされたAIエージェントをFabriXAI FabriXAIユーザーガイド
+description: カスタマイズしたAIエージェントをFabriXAI APIと統合してアプリケーションに組み込む方法を学びましょう。
+lang: ja
+permalink: /integrations-api
+---
+
+# AIエージェントとAPIを連携しよう
+
 カスタマイズされたAIエージェントをFabriXAI APIと簡単に統合し、アプリケーションを強化しましょう！
 
 ## FabriXAI APIの利点
@@ -28,4 +36,3 @@ FabriXAI APIと統合することで、いくつかの利点を利用できま�
 
 ## 関連記事
 - [AIエージェントの使い方](/ja-jp/use-ai-agent/)
-- [AIエージェントを共有する](/ja-jp/share-ai-agent/)

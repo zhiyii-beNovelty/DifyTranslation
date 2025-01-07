@@ -7,6 +7,14 @@ permalink: /use-ai-agent
 
 # AI 에이전트 사용
 
+설정 후 AI 에이전트에 접속하여 FabriXAI 사용자 가이드
+description: 단계별 가이드를 통해 AI 에이전트에 접근하고 사용하는 방법을 배우세요.
+lang: ko
+permalink: /use-ai-agent
+---
+
+# AI 에이전트 사용
+
 설정 후 AI 에이전트에 접속하여 상호작용하세요!
 
 ## AI 에이전트 접근 방법
@@ -20,4 +28,3 @@ AI 에이전트의 모든 설정을 구성하고 저장한 후에는 다음 단�
 
 ## 관련 기사
 - [AI 에이전트 구성하기](/en-us/configure-ai-agent/)
-- [AI 에이전트 공유하기](/en-us/share-ai-agents)

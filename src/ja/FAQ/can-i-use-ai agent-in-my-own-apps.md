@@ -5,6 +5,12 @@ lang: ja
 permalink: /faq/can-i-use-ai-agent-in-my-own-apps
 ---
 
+# FabriXAIユーザーガイド
+description: AIエージェントを自分のアプリケーションやウェブサイトに統合・埋め込む方法を学びましょう。
+lang: ja
+permalink: /faq/can-i-use-ai-agent-in-my-own-apps
+---
+
 # 私のアプリでAIエージェントを使用できますか？
 
 はい、AIエージェントを自分のアプリに組み込むことができます！私たちのプラットフォームは、統合や埋め込みに柔軟なオプションを提供し、さまざまな環境でAIエージェントの機能を活用できます。
@@ -19,4 +25,3 @@ permalink: /faq/can-i-use-ai-agent-in-my-own-apps
 ### AIエージェントをウェブサイトに埋め込む
 ウェブサイトにAIエージェントを利用可能にしたい場合は、提供されたHTMLスニペットを使用して簡単に埋め込むことができます。これにより、ユーザーは追加の操作を必要とせずに、ウェブページから直接AIエージェントと対話することができます。
 
-埋め込みスニペットの取得方法については、[Share AIエージェント](/en-us/share-ai-agent/) セクションを参照してください。

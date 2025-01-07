@@ -7,6 +7,14 @@ permalink: /agent-templates/thank-you-email-generator
 
 # Générateur d'e-mails de remerciement
 
+L'**agent Générateur d'e-mails de remerciement** vous aide à créer des e-mails de remerciement personnalisés pour les clients ayant effectué des achats récents. En saisissant des détails pertinents tels que le nom du client, le produit acheté et le ton préféré, l'agent génère un e-mail chaleureux et sincère qui exprime de la gratitude et met en avant les avantages du produit. L'e-mail résultant couvrira tous les éléments essentiels pour améliorer la satisfaction client et l'engagement, ce qui en fait un outil idéal pour les entreprises cherchant à maintenir des relations positives avec leur Guide de l'utilisateur FabriXAI
+description: Il s'agit d'un guide utilisateur pour configurer et utiliser l'agent Générateur d'e-mails de remerciement afin de créer des e-mails de remerciement personnalisés.
+lang: fr
+permalink: /agent-templates/thank-you-email-generator
+---
+
+# Générateur d'e-mails de remerciement
+
 L'**agent Générateur d'e-mails de remerciement** vous aide à créer des e-mails de remerciement personnalisés pour les clients ayant effectué des achats récents. En saisissant des détails pertinents tels que le nom du client, le produit acheté et le ton préféré, l'agent génère un e-mail chaleureux et sincère qui exprime de la gratitude et met en avant les avantages du produit. L'e-mail résultant couvrira tous les éléments essentiels pour améliorer la satisfaction client et l'engagement, ce qui en fait un outil idéal pour les entreprises cherchant à maintenir des relations positives avec leur clientèle.
 
 ## Premiers pas
@@ -71,4 +79,3 @@ Cordialement,
 - **Testez et affinez** : Expérimentez avec différentes entrées pour voir comment les variations affectent la sortie de l'e-mail, permettant ainsi une amélioration continue de l'interaction.
 
 ## Articles connexes
-Continuez à explorer notre collection de [Modèles d'agents](/fr-fr/agent-templates/) pour découvrir davantage d'idées d'agents IA en action !

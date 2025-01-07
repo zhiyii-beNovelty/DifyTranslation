@@ -7,6 +7,14 @@ permalink: /agent-templates
 
 # Modèles d'agents
 
+## Qu'est-ce que les Modèles d'Agents Guide de l'utilisateur FabriXAI
+description: Découvrez les modèles d'agents de FabriXAI et comment les utiliser pour créer des agents IA personnalisés sans effort.
+lang: fr
+permalink: /agent-templates
+---
+
+# Modèles d'agents
+
 ## Qu'est-ce que les Modèles d'Agents ?
 
 Les modèles d'agents sont des configurations préétablies conçues pour vous aider à créer rapidement des agents IA adaptés à des tâches spécifiques. Ces modèles servent de tremplin, offrant des configurations de base que vous pouvez personnaliser pour répondre à vos besoins commerciaux uniques. En utilisant des modèles d'agents, vous pouvez gagner du temps et des efforts tout en vous assurant que votre agent IA est configuré efficacement pour son objectif prévu.
@@ -57,4 +65,3 @@ Continuez à explorer notre collection de modèles d'agents pour découvrir dava
 ### Agents de Sécurité
 
 - [Agent de Filtrage des Données Sensibles](/fr-fr/agent-templates/sensitive-data-filtering-agent)
-- [Détecteur de Spam](/fr-fr/agent-templates/spam-detector)

@@ -7,6 +7,14 @@ permalink: /agent-templates/summarizer
 
 # Resumidor
 
+El agente **Resumidor** está diseñado para condensar textos extensos en resúmenes concisos mientras retiene el significado central y el contexto del material original. Los usuarios pueden especificar el tono de la escritura, establecer un límite de palabras y proporcionar retroalimentación para refinar aún más el resumen. Esta versatilidad permite resúmenes que se ajustan a necesidades específicas, ya sea para lectura casual o análisis formal. Puedes personalizar el estilo de salida según tus preferencias, lo que lo convierte en una herramienta invaluable para procesar de manera eficiente grandes cantidades de Guía del Usuario de FabriXA
+description: Esta es una guía del usuario para configurar y utilizar el agente Resumidor de manera efectiva.
+lang: es
+permalink: /agent-templates/summarizer
+---
+
+# Resumidor
+
 El agente **Resumidor** está diseñado para condensar textos extensos en resúmenes concisos mientras retiene el significado central y el contexto del material original. Los usuarios pueden especificar el tono de la escritura, establecer un límite de palabras y proporcionar retroalimentación para refinar aún más el resumen. Esta versatilidad permite resúmenes que se ajustan a necesidades específicas, ya sea para lectura casual o análisis formal. Puedes personalizar el estilo de salida según tus preferencias, lo que lo convierte en una herramienta invaluable para procesar de manera eficiente grandes cantidades de información.
 
 ## Comenzando
@@ -58,4 +66,3 @@ El rápido progreso de la IA es muy emocionante pero también viene con algunos 
 - **Revisa la retroalimentación**: Utiliza el mecanismo de retroalimentación del agente para refinar tus resúmenes basándote en salidas anteriores.
 
 ## Artículos Relacionados
-Continúa explorando nuestra colección de [Plantillas de Agentes](/en-us/agent-templates/) para descubrir más ideas de agentes de IA en acción!

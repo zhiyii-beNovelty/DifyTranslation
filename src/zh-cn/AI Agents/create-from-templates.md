@@ -7,6 +7,14 @@ permalink: /create-from-templates
 
 # 从模板创建
 
+利用 FabriXAI FabriXAI 用户指南
+description: 通过这份分步指南，了解如何在 FabriXAI 上通过模板创建 AI 代理。
+lang: zh-CN
+permalink: /create-from-templates
+---
+
+# 从模板创建
+
 利用 FabriXAI 的预建代理模板，快速开始！
 
 ## 什么是代理模板？
@@ -32,4 +40,3 @@ permalink: /create-from-templates
 
 ## 相关文章
 - [代理模板](/zh-cn/agent-templates/)
-- [配置 AI 代理](/zh-cn/configure-ai-agent/)

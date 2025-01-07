@@ -13,4 +13,3 @@ Una vez que hayas configurado y guardado todos los ajustes para tu agente de IA,
 
 ## Artículos relacionados
 - [Configurar Agente de IA](/es/configure-ai-agent/)
-- [Compartir Agentes de IA](/es/share-ai-agents)

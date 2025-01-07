@@ -7,6 +7,14 @@ permalink: /configure-ai-agent
 
 # 配置 AI 代理
 
+## 在 FabriXAI 中创建您的自定义 AI FabriXAI 用户指南
+description: 通过本逐步指南，了解如何在 FabriXAI 上配置 AI 代理。
+lang: zh-CN
+permalink: /configure-ai-agent
+---
+
+# 配置 AI 代理
+
 ## 在 FabriXAI 中创建您的自定义 AI 代理
 
 FabriXAI 中的 AI 代理旨在自动化工作流程并增强特定的用例。通过 FabriXAI，您可以根据任务需求以两种形式部署您的 AI 代理：
@@ -118,4 +126,3 @@ FabriXAI 中的知识功能允许您使用自己的上下文和数据来增强 A
 
 ## 相关文章
 - [使用 AI 代理](/zh-cn/use-ai-agent)
-- [分享 AI 代理](/zh-cn/share-ai-agent/)

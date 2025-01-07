@@ -7,6 +7,14 @@ permalink: /key-concepts
 
 # Concepts clés de FabriXAI
 
+## Agent Guide de l'utilisateur FabriXAI
+description: Découvrez les concepts clés de FabriXAI et commencez rapidement.
+lang: fr
+permalink: /key-concepts
+---
+
+# Concepts clés de FabriXAI
+
 ## Agent IA
 
 Un agent IA est un programme conçu pour effectuer des tâches de manière autonome et interagir avec des rôles prédéfinis. Équipés de Grands Modèles de Langage (LLMs) pré-construits, les agents IA vont au-delà du Traitement du Langage Naturel, offrant une large gamme de fonctionnalités avancées. Ils peuvent traiter des informations, prendre des décisions et agir sans intervention humaine.
@@ -44,4 +52,3 @@ En savoir plus sur l'intégration de votre agent IA avec l'API sur [Intégrer l'
 ## Articles liés
 - [Agents d'IA](/en-us/ai-agents/)
 - [Connaissance](/en-us/knowledge/)
-- [Modèles d'agents](/en-us/agent-templates/)

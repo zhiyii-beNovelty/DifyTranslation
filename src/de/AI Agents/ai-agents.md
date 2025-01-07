@@ -7,6 +7,14 @@ permalink: /ai-agents
 
 # Einführung in KI-Agenten  
 
+## Was sind KI-Agenten?  FabriXAI Benutzerhandbuch
+description: Erfahren Sie mehr über KI-Agenten, ihre Fähigkeiten und wie Sie mit FabriXAI beginnen können.
+lang: de
+permalink: /ai-agents
+---
+
+# Einführung in KI-Agenten  
+
 ## Was sind KI-Agenten?  
 KI-Agenten sind autonome Programme, die entwickelt wurden, um Aufgaben zu erfüllen, Entscheidungen zu treffen und mit vordefinierten Rollen zu interagieren. Angetrieben von fortschrittlichen Technologien wie großen Sprachmodellen (LLMs) können diese Agenten Informationen verarbeiten, Aktionen ausführen und sich ohne menschliches Eingreifen an spezifische Bedürfnisse anpassen.  
 
@@ -59,4 +67,3 @@ Um die Effektivität Ihrer KI-Agenten zu maximieren:
 ## Verwandte Artikel
 - [Vorlagen verwenden](/de-de/create-from-templates/)
 - [Agentenvorlagen](/de-de/agent-templates/)
-- [KI-Agent konfigurieren](/de-de/configure-ai-agent/)

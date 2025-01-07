@@ -7,6 +7,14 @@ permalink: /agent-templates/paraphrasing-agent
 
 # Agente de Paráfrasis
 
+El **Agente de Paráfrasis** es una herramienta de IA avanzada que se especializa en transformar texto mientras preserva su significado original. Diseñada para la escritura profesional, este agente permite a los usuarios especificar el tono que desean transmitir, como enérgico, formal o persuasivo. Al centrarse en el estilo deseado, el agente parafrasea el contenido de manera única y precisa, garantizando claridad e involucramiento del lector. Ya sea que esté refinando contenido para marketing, elaborando mensajes para redes sociales o simplemente buscando mejorar la legibilidad, el Agente de Paráfrasis proporciona una solución fluida para todas sus necesidades de Guía del Usuario de FabriXA
+description: Esta es una guía de usuario para el Agente de Paráfrasis diseñado para ayudar a los usuarios a parafrasear textos con un tono específico mientras se mantienen los significados principales.
+lang: es
+permalink: /agent-templates/paraphrasing-agent
+---
+
+# Agente de Paráfrasis
+
 El **Agente de Paráfrasis** es una herramienta de IA avanzada que se especializa en transformar texto mientras preserva su significado original. Diseñada para la escritura profesional, este agente permite a los usuarios especificar el tono que desean transmitir, como enérgico, formal o persuasivo. Al centrarse en el estilo deseado, el agente parafrasea el contenido de manera única y precisa, garantizando claridad e involucramiento del lector. Ya sea que esté refinando contenido para marketing, elaborando mensajes para redes sociales o simplemente buscando mejorar la legibilidad, el Agente de Paráfrasis proporciona una solución fluida para todas sus necesidades de parafraseo.
 
 ## Primeros Pasos
@@ -66,4 +74,3 @@ Al usar nuestro Analizador de CV/Resume, podrás causar una impresión más fuer
 
 ## Artículos Relacionados
 
-Continúe explorando nuestra colección de [Plantillas de Agentes](/es/agent-templates/) para descubrir más ideas de agentes de IA en acción.

@@ -5,6 +5,12 @@ lang: zh-CN
 permalink: /knowledge
 ---
 
+# FabriXAI 用户指南
+description: 了解如何使用 FabriXAI 的知识功能为您的 AI 代理添加和集成知识。
+lang: zh-CN
+permalink: /knowledge
+---
+
 # 知识
 
 知识功能通过提供有价值的信息，提升您的AI代理的响应质量。通过增加知识，您的AI代理能够提供更准确的答案，优化与用户的互动，并做出明智的决策。此功能确保您的AI代理能够访问必要的数据，帮助用户更有效地完成任务。
@@ -27,4 +33,3 @@ permalink: /knowledge
 
 ## 相关文章
 - [配置智能代理](/zh-cn/configure-ai-agent/)
-- [整合知识的步骤](/zh-cn/configure-ai-agent/#knowledge)

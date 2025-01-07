@@ -7,6 +7,14 @@ permalink: /agent-templates/paraphrasing-agent
 
 # Agent de paraphrase
 
+L'**Agent de paraphrase** est un outil d'IA avancé spécialisé dans la transformation de textes tout en préservant leur signification originale. Conçu pour l'écriture professionnelle, cet agent permet aux utilisateurs de spécifier le ton qu'ils souhaitent transmettre, tel qu'énergique, formel ou persuasif. En se concentrant sur le style désiré, l'agent reformule le contenu de manière unique et précise, garantissant la clarté et l'engagement des lecteurs. Que vous affiniez du contenu pour le marketing, élaboriez des messages pour les médias sociaux ou cherchiez simplement à améliorer la lisibilité, l'Agent de paraphrase offre une solution fluide pour tous vos besoins en Guide de l'utilisateur FabriXAI
+description: Ceci est un guide de l'utilisateur pour l'Agent de Paraphrase conçu pour aider les utilisateurs à paraphraser du texte avec un ton spécifique tout en conservant les significations essentielles.
+lang: fr
+permalink: /agent-templates/paraphrasing-agent
+---
+
+# Agent de paraphrase
+
 L'**Agent de paraphrase** est un outil d'IA avancé spécialisé dans la transformation de textes tout en préservant leur signification originale. Conçu pour l'écriture professionnelle, cet agent permet aux utilisateurs de spécifier le ton qu'ils souhaitent transmettre, tel qu'énergique, formel ou persuasif. En se concentrant sur le style désiré, l'agent reformule le contenu de manière unique et précise, garantissant la clarté et l'engagement des lecteurs. Que vous affiniez du contenu pour le marketing, élaboriez des messages pour les médias sociaux ou cherchiez simplement à améliorer la lisibilité, l'Agent de paraphrase offre une solution fluide pour tous vos besoins en paraphrase.
 
 ## Démarrage
@@ -66,4 +74,3 @@ En utilisant notre Analyseur de CV, vous serez en mesure de faire une impression
 - **Itérez** : Si la sortie ne répond pas à vos exigences, modifiez vos entrées ou les spécifications du ton et relancez le processus pour obtenir de meilleurs résultats.
 
 ## Articles Liés
-Continuez d'explorer notre collection de [modèles d'agents](/en-us/agent-templates/) pour découvrir davantage d'idées d'agents d'IA en action !

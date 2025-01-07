@@ -7,6 +7,14 @@ permalink: /agent-templates/question-bank-generator
 
 # Générateur de Banque de Questions
 
+Le **Générateur de Banque de Questions** est un agent intelligent conçu pour créer des questions à choix multiples basées sur des sujets spécifiques dérivés du contenu web fourni. L'agent évalue la compréhension de l'utilisateur en formulant des questions qui couvrent divers niveaux de difficulté, de facile à difficile, garantissant une évaluation complète des concepts clés. Avec la capacité de générer à la fois des options de réponse à choix unique et à choix multiples, cet outil adapte efficacement les évaluations à des fins éducatives. Il est idéal pour les éducateurs, les étudiants et toute personne souhaitant renforcer ses connaissances de manière Guide de l'utilisateur FabriXAI
+description: Il s'agit d'un guide utilisateur pour configurer et utiliser l'agent Générateur de Banque de Questions afin de créer des questions à choix multiples personnalisées.
+lang: fr
+permalink: /agent-templates/question-bank-generator
+---
+
+# Générateur de Banque de Questions
+
 Le **Générateur de Banque de Questions** est un agent intelligent conçu pour créer des questions à choix multiples basées sur des sujets spécifiques dérivés du contenu web fourni. L'agent évalue la compréhension de l'utilisateur en formulant des questions qui couvrent divers niveaux de difficulté, de facile à difficile, garantissant une évaluation complète des concepts clés. Avec la capacité de générer à la fois des options de réponse à choix unique et à choix multiples, cet outil adapte efficacement les évaluations à des fins éducatives. Il est idéal pour les éducateurs, les étudiants et toute personne souhaitant renforcer ses connaissances de manière exhaustive.
 
 ## Démarrage
@@ -81,4 +89,3 @@ Réponse correcte : B
 
 ## Articles Connexes
 
-Continuez à explorer notre collection de [Modèles d'Agents](/en-us/agent-templates/) pour découvrir davantage d'idées d'agents d'IA en action !

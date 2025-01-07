@@ -7,6 +7,14 @@ permalink: /agent-templates/keywords-identifier
 
 # Schlüsselwort-Identifikator
 
+Der **Schlüsselwort-Identifikator** ist ein intelligenter Agent, der dazu entwickelt wurde, zentrale Themen und Themen aus einem gegebenen Text zu extrahieren. Durch die Analyse des Inhalts identifiziert und bewertet er die relevantesten Schlüsselwörter oder Tags, die die Kernideen und behandelten Themen zusammenfassen. Dieses Tool ist besonders nützlich für Inhaltsersteller, Forscher und digitale Marketer, die Informationen schnell aus großen Textmengen destillieren müssen. Es stellt sicher, dass die extrahierten Schlüsselwörter prägnant und genau den Inhalt des Textes widerspiegeln, indem es eine nach ihrer Wichtigkeit sortierte Liste FabriXAI Benutzerhandbuch
+description: Dies ist ein Benutzerhandbuch für den Schlüsselwort-Identifikator, der dazu entwickelt wurde, zentrale Themen und Themen aus einem gegebenen Text zu extrahieren.
+lang: de
+permalink: /agent-templates/keywords-identifier
+---
+
+# Schlüsselwort-Identifikator
+
 Der **Schlüsselwort-Identifikator** ist ein intelligenter Agent, der dazu entwickelt wurde, zentrale Themen und Themen aus einem gegebenen Text zu extrahieren. Durch die Analyse des Inhalts identifiziert und bewertet er die relevantesten Schlüsselwörter oder Tags, die die Kernideen und behandelten Themen zusammenfassen. Dieses Tool ist besonders nützlich für Inhaltsersteller, Forscher und digitale Marketer, die Informationen schnell aus großen Textmengen destillieren müssen. Es stellt sicher, dass die extrahierten Schlüsselwörter prägnant und genau den Inhalt des Textes widerspiegeln, indem es eine nach ihrer Wichtigkeit sortierte Liste bereitstellt.
 
 ## Erste Schritte
@@ -65,4 +73,3 @@ Diese Schlüsselwörter/Tags erfassen die Essenz des Textes und bieten eine prä
 
 ## Verwandte Artikel
 
-Entdecken Sie weiterhin unsere Sammlung von [Agentenvorlagen](/en-us/agent-templates/), um mehr Ideen für den Einsatz von KI-Agenten zu entdecken!

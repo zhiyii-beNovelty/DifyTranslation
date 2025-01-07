@@ -7,6 +7,14 @@ permalink: /configure-ai-agent
 
 # AI 에이전트 구성
 
+## FabriXAI에서 맞춤형 AI 에이전트 FabriXAI 사용자 가이드
+description: 이 단계별 가이드를 통해 FabriXAI에서 AI 에이전트를 구성하는 방법을 알아보세요.
+lang: ko
+permalink: /configure-ai-agent
+---
+
+# AI 에이전트 구성
+
 ## FabriXAI에서 맞춤형 AI 에이전트 만들기
 
 FabriXAI의 AI 에이전트는 작업 흐름을 자동화하고 특정 사용 사례를 향상하도록 설계되었습니다. FabriXAI를 사용하면 작업의 필요에 따라 두 가지 형식 중 하나로 AI 에이전트를 배포할 수 있습니다:
@@ -118,4 +126,3 @@ FabriXAI의 지식 기능은 AI 에이전트의 지식 기반을 맥락과 데�
 
 ## 관련 기사
 - [AI 에이전트 사용](/ko-kr/use-ai-agent)
-- [AI 에이전트 공유](/ko-kr/share-ai-agent)

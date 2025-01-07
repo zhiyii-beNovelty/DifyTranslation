@@ -7,6 +7,14 @@ permalink: /knowledge
 
 # Connaissance
 
+La fonctionnalité des connaissances améliore la qualité des réponses de votre agent d'IA en fournissant des informations précieuses. En ajoutant des connaissances, votre agent d'IA peut fournir des réponses plus précises, améliorer les interactions avec les utilisateurs et prendre des décisions éclairées. Cette fonctionnalité garantit que votre agent d'IA a accès aux données essentielles pour servir efficacement les Guide de l'utilisateur FabriXAI
+description: Apprenez à ajouter et à intégrer des connaissances dans vos agents IA en utilisant la fonctionnalité Connaissance sur FabriAXI.
+lang: fr
+permalink: /knowledge
+---
+
+# Connaissance
+
 La fonctionnalité des connaissances améliore la qualité des réponses de votre agent d'IA en fournissant des informations précieuses. En ajoutant des connaissances, votre agent d'IA peut fournir des réponses plus précises, améliorer les interactions avec les utilisateurs et prendre des décisions éclairées. Cette fonctionnalité garantit que votre agent d'IA a accès aux données essentielles pour servir efficacement les utilisateurs.
 
 ## Guide étape par étape pour ajouter des connaissances
@@ -27,4 +35,3 @@ Pour intégrer les connaissances que vous avez ajoutées à votre agent IA, veui
 
 ## Articles connexes
 - [Configurer agent d'IA](/en-us/configure-ai-agent/)
-- [Étapes pour intégrer les connaissances](/en-us/configure-ai-agent/#knowledge)

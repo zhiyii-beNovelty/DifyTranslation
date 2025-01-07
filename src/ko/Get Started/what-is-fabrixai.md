@@ -7,6 +7,14 @@ permalink: /what-is-fabrixai
 
 # FabriXAI에 오신 것을 환영합니다
 
+# FabriXAI 사용자 가이드
+description: FabriXAI 소개 — 자동화를 간소화하도록 설계된 로우코드 AI 에이전트 플랫폼.
+lang: ko
+permalink: /what-is-fabrixai
+---
+
+# FabriXAI에 오신 것을 환영합니다
+
 # Introduction
 FabriXAI는 로우코드 AI 에이전트를 활용하여 복잡한 비즈니스 프로세스를 간소화하도록 설계된 올인원 플랫폼입니다. 이는 광범위한 IT 전문 지식 없이도 기업이 워크플로우를 손쉽게 구축, 자동화 및 관리할 수 있게 해줍니다. 강력한 AI 기반 에이전트를 생성하는 것부터 이를 원활하게 연결하여 더 복잡한 작업을 처리하는 것까지, FabriXAI는 팀이 생산성과 자동화에 접근하는 방식을 혁신적으로 변화시킵니다.  
 
@@ -39,4 +47,3 @@ FabriXAI를 개발한 팀은 ISO 27001:2013 인증을 획득했으며, 이를 �
 - **기업 맞춤형:** 특정 사업 요구사항을 충족시키기 위해 기업 수준의 보안과 제어를 갖춘 맞춤형 솔루션을 제공합니다.  
 
 # FabriXAI 시작하기  
-업무 흐름을 혁신할 준비가 되셨나요? [FabriXAI의 핵심 개념](/en-us/key-concepts)를 자세히 알아보고 지금 바로 FabriXAI를 시작해 보세요!

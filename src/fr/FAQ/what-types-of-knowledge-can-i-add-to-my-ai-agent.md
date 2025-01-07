@@ -7,6 +7,14 @@ permalink: /what-types-of-knowledge-can-i-add-to-my-ai-agent
 
 # Quels types de connaissances puis-je ajouter à mon agent d'IA?
 
+Vous pouvez améliorer votre agent d'IA en ajoutant différents types de connaissances sous forme de documents. Actuellement, nous prenons en charge les formats de fichiers suivants pour le téléchargement Guide de l'utilisateur FabriXAI
+description: Découvrez les types de connaissances que vous pouvez intégrer à votre agent IA ainsi que les formats de fichiers pris en charge.
+lang: fr
+permalink: /what-types-of-knowledge-can-i-add-to-my-ai-agent
+---
+
+# Quels types de connaissances puis-je ajouter à mon agent d'IA?
+
 Vous pouvez améliorer votre agent d'IA en ajoutant différents types de connaissances sous forme de documents. Actuellement, nous prenons en charge les formats de fichiers suivants pour le téléchargement :
 
 ## Formats pris en charge
@@ -25,4 +33,3 @@ En ajoutant des connaissances dans ces formats, vous permettez à votre agent IA
 
 Pour plus d'informations sur la création de connaissances, veuillez consulter la section [Connaissances](/en-us/knowledge/).
 
-Pour intégrer les connaissances dans un agent IA spécifique, consultez les [Étapes pour intégrer les connaissances](/en-us/configure-ai-agent/#knowledge) dans le Guide de configuration de l'agent IA.

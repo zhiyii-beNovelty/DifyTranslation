@@ -7,6 +7,14 @@ permalink: /knowledge
 
 # Wissen
 
+Die Wissensfunktion verbessert die Qualität der Antworten Ihres KI-Agenten, indem sie wertvolle Informationen bereitstellt. Durch die Integration von Wissen kann Ihr KI-Agent präzisere Antworten geben, die Interaktion mit den Benutzern optimieren und fundierte Entscheidungen treffen. Diese Funktion stellt sicher, dass Ihr KI-Agent Zugang zu den notwendigen Daten hat, um die Benutzer effektiv zu FabriXAI Benutzerhandbuch
+description: Erfahren Sie, wie Sie Wissen zu Ihren KI-Agenten hinzufügen und integrieren, indem Sie die Wissensfunktion von FabriAXI verwenden.
+lang: de
+permalink: /knowledge
+---
+
+# Wissen
+
 Die Wissensfunktion verbessert die Qualität der Antworten Ihres KI-Agenten, indem sie wertvolle Informationen bereitstellt. Durch die Integration von Wissen kann Ihr KI-Agent präzisere Antworten geben, die Interaktion mit den Benutzern optimieren und fundierte Entscheidungen treffen. Diese Funktion stellt sicher, dass Ihr KI-Agent Zugang zu den notwendigen Daten hat, um die Benutzer effektiv zu unterstützen.
 
 ## Schritt-für-Schritt-Anleitung zum Hinzufügen von Wissen
@@ -27,4 +35,3 @@ Um das Wissen, das Sie zu Ihren KI-Agenten hinzugefügt haben, zu integrieren, v
 
 ## Verwandte Artikel
 - [KI-Agent einrichten](/en-us/configure-ai-agent/)
-- [Schritte zur Integration von Wissen](/en-us/configure-ai-agent/#knowledge)

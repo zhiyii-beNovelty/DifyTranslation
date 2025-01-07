@@ -7,6 +7,14 @@ permalink: /agent-templates/code-convertor
 
 # Convertisseur de Code
 
+Le **Convertisseur de Code** est un agent IA conçu pour aider les programmeurs à convertir du code d'un langage de programmation à un autre. En spécifiant les langages de programmation initial et final, ainsi que le code à convertir, les utilisateurs peuvent compter sur l'agent pour effectuer des traductions précises. L'agent garantit que la fonctionnalité du code reste intacte, tout en fournissant des commentaires dans le code pour souligner tout changement significatif effectué pendant le processus de conversion. Dans les cas où la conversion ne peut pas être effectuée, l'agent expliquera la raison. Cela fait du Convertisseur de Code un outil précieux pour les développeurs cherchant à travailler avec différents langages de Guide de l'utilisateur FabriXAI
+description: Ceci est un guide utilisateur pour l'agent Convertisseur de Code, qui aide à convertir le code d'un langage de programmation à un autre tout en assurant la fonctionnalité.
+lang: fr
+permalink: /agent-templates/code-convertor
+---
+
+# Convertisseur de Code
+
 Le **Convertisseur de Code** est un agent IA conçu pour aider les programmeurs à convertir du code d'un langage de programmation à un autre. En spécifiant les langages de programmation initial et final, ainsi que le code à convertir, les utilisateurs peuvent compter sur l'agent pour effectuer des traductions précises. L'agent garantit que la fonctionnalité du code reste intacte, tout en fournissant des commentaires dans le code pour souligner tout changement significatif effectué pendant le processus de conversion. Dans les cas où la conversion ne peut pas être effectuée, l'agent expliquera la raison. Cela fait du Convertisseur de Code un outil précieux pour les développeurs cherchant à travailler avec différents langages de programmation.
 
 ## Commencer
@@ -77,4 +85,3 @@ int main() {
 - **Utilisez les commentaires judicieusement** : Si vous téléversez du code avec des commentaires, assurez-vous qu'ils sont concis et pertinents pour une meilleure compréhension pendant la conversion.
 
 ## Articles Connexes
-Continuez à explorer notre collection de [Modèles d'Agents](/fr-fr/agent-templates/) pour découvrir plus d'agents d'intelligence artificielle en action !

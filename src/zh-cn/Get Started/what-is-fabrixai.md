@@ -7,6 +7,14 @@ permalink: /what-is-fabrixai
 
 # 欢迎来到 FabriXAI
 
+## FabriXAI 用户指南
+description: 介绍FabriXAI——旨在简化自动化的低代码AI代理平台。
+lang: zh-CN
+permalink: /what-is-fabrixai
+---
+
+# 欢迎来到 FabriXAI
+
 ## 介绍
 FabriXAI是一个多合一平台，旨在通过利用低代码AI代理简化复杂的业务流程。它使企业能够轻松构建、自动化和管理工作流程，无需广泛的IT专业知识。从创建强大的AI驱动代理到无缝地将它们连接在一起以处理更复杂的任务，FabriXAI彻底革新了团队在提升生产力和实现自动化方面的方式。  
 
@@ -39,4 +47,3 @@ FabriXAI背后的团队获得了ISO 27001:2013认证，确保您的数据保持�
 - **可定制的企业方案：** 获取具有企业级安全性和控制力的定制化解决方案，以满足特定业务需求。  
 
 ## 快速入门 FabriXAI  
-准备好彻底革新您的工作流程了吗？继续阅读更多关于[FabriXAI的关键概念](/en-us/key-concepts)，并立即开始使用FabriXAI吧！

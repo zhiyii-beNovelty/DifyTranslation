@@ -7,6 +7,14 @@ permalink: /agent-templates/blog-post-generator
 
 # Blog-Beitrag Generator
 
+Der **Blog-Beitrag Generator** ist dazu konzipiert, Benutzern dabei zu helfen, gut strukturierte und optimierte Blog-Beiträge zu erstellen, die speziell Inhalte rund um gezielte Schlüsselwörter generieren. Das Tool verwendet einen detaillierten zweistufigen FabriXAI Benutzerhandbuch
+description: Dies ist ein Benutzerhandbuch für den Blog-Beitrag Generator, das dazu entwickelt wurde, Benutzern dabei zu helfen, effizient ansprechende und informative Blog-Beiträge zu erstellen.
+lang: de
+permalink: /agent-templates/blog-post-generator
+---
+
+# Blog-Beitrag Generator
+
 Der **Blog-Beitrag Generator** ist dazu konzipiert, Benutzern dabei zu helfen, gut strukturierte und optimierte Blog-Beiträge zu erstellen, die speziell Inhalte rund um gezielte Schlüsselwörter generieren. Das Tool verwendet einen detaillierten zweistufigen Arbeitsablauf:
 
 - **Gliederung erstellen**: Deckt systematisch verschiedene Aspekte des Themas ab und integriert gezielte Schlüsselwörter in Titel und Untertitel.
@@ -161,4 +169,3 @@ Zusammenfassend haben KI und ML zahlreiche Anwendungen in verschiedenen Branchen
 
 ## Verwandte Artikel
 
-Entdecken Sie weiterhin unsere Sammlung von [Agent-Vorlagen](/de-de/agentenvorlagen/), um weitere Beispiele von KI-Agenten im Einsatz zu entdecken!

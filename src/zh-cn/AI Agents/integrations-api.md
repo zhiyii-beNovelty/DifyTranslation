@@ -7,6 +7,14 @@ permalink: /integrations-api
 
 # 将 AI 代理与 API 集成
 
+轻松将您自定义的 AI 代理与 FabriXAI API FabriXAI 用户指南
+description: 了解如何将您自定义的 AI 代理与 FabriXAI API 集成到您的应用程序中。
+lang: zh-CN
+permalink: /integrations-api
+---
+
+# 将 AI 代理与 API 集成
+
 轻松将您自定义的 AI 代理与 FabriXAI API 集成，以增强您的应用程序！
 
 ## 使用 FabriXAI API 的优势
@@ -28,4 +36,3 @@ permalink: /integrations-api
 
 ## 相关文章
 - [使用 AI 代理](/zh-cn/use-ai-agent)
-- [分享 AI 代理](/zh-cn/share-ai-agent/)

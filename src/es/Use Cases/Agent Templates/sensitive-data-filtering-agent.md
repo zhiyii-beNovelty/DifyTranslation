@@ -7,6 +7,14 @@ permalink: /agent-templates/sensitive-data-filtering-agent
 
 # Agente de Filtrado de Datos Sensibles
 
+El **Agente de Filtrado de Datos Sensibles** está diseñado para ayudar a los usuarios a salvaguardar la información personal mediante la identificación automática y el enmascaramiento de datos sensibles dentro de un texto dado. Apuntando a categorías específicas como números de HKID, números de teléfono, direcciones, información financiera y fechas de nacimiento, este agente reemplaza sistemáticamente los datos sensibles con marcadores de posición predefinidos. Los usuarios pueden mantener la integridad de su comunicación y el cumplimiento de las regulaciones de privacidad de datos, mientras aseguran que los detalles confidenciales no se filtren, convirtiéndolo en una herramienta invaluable para profesionales que manejan documentos Guía del Usuario de FabriXA
+description: Esta es una guía del usuario para el Agente de Filtrado de Datos Sensibles, diseñado para ayudar a los usuarios a salvaguardar la información personal mediante la identificación y ocultación automática de datos sensibles dentro de un texto dado.
+lang: es
+permalink: /agent-templates/sensitive-data-filtering-agent
+---
+
+# Agente de Filtrado de Datos Sensibles
+
 El **Agente de Filtrado de Datos Sensibles** está diseñado para ayudar a los usuarios a salvaguardar la información personal mediante la identificación automática y el enmascaramiento de datos sensibles dentro de un texto dado. Apuntando a categorías específicas como números de HKID, números de teléfono, direcciones, información financiera y fechas de nacimiento, este agente reemplaza sistemáticamente los datos sensibles con marcadores de posición predefinidos. Los usuarios pueden mantener la integridad de su comunicación y el cumplimiento de las regulaciones de privacidad de datos, mientras aseguran que los detalles confidenciales no se filtren, convirtiéndolo en una herramienta invaluable para profesionales que manejan documentos sensibles.
 
 ## Empezando
@@ -76,4 +84,3 @@ Ten en cuenta que reemplacé todas las ocurrencias de datos sensibles en el text
 - **Mantenerte al Día con las Regulaciones**: Mantente informado sobre las leyes de privacidad de datos para garantizar que las prácticas de filtrado del agente cumplan con las normativas.
 
 ## Artículos Relacionados
-¡Continúa explorando nuestra colección de [Plantillas de Agentes](/en-us/agent-templates/) para descubrir más ideas de agentes de IA en acción!

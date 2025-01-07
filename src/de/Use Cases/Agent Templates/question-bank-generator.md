@@ -7,6 +7,14 @@ permalink: /agent-templates/question-bank-generator
 
 # Fragenbank-Generator
 
+Der **Fragenbank-Generator** ist ein intelligenter Agent, der entwickelt wurde, um Multiple-Choice-Fragen basierend auf spezifischen Themen zu erstellen, die aus bereitgestellten Webinhalten abgeleitet werden. Der Agent bewertet das Verständnis des Nutzers, indem er Fragen stellt, die verschiedene Schwierigkeitsgrade von einfach bis schwierig abdecken, und so eine umfassende Bewertung der Schlüsselkonzepte gewährleisten. Mit der Fähigkeit, sowohl Single-Correct- als auch Multiple-Correct-Antwortoptionen zu generieren, passt dieses Werkzeug Bewertungen effektiv für Bildungszwecke an. Es ist ideal für Pädagogen, Studenten und jeden, der Wissen umfassend festigen FabriXAI Benutzerhandbuch
+description: Dies ist ein Benutzerhandbuch zur Konfiguration und Verwendung des Fragenbank-Generators zur Erstellung maßgeschneiderter Multiple-Choice-Fragen.
+lang: de
+permalink: /agent-templates/question-bank-generator
+---
+
+# Fragenbank-Generator
+
 Der **Fragenbank-Generator** ist ein intelligenter Agent, der entwickelt wurde, um Multiple-Choice-Fragen basierend auf spezifischen Themen zu erstellen, die aus bereitgestellten Webinhalten abgeleitet werden. Der Agent bewertet das Verständnis des Nutzers, indem er Fragen stellt, die verschiedene Schwierigkeitsgrade von einfach bis schwierig abdecken, und so eine umfassende Bewertung der Schlüsselkonzepte gewährleisten. Mit der Fähigkeit, sowohl Single-Correct- als auch Multiple-Correct-Antwortoptionen zu generieren, passt dieses Werkzeug Bewertungen effektiv für Bildungszwecke an. Es ist ideal für Pädagogen, Studenten und jeden, der Wissen umfassend festigen möchte.
 
 ## Erste Schritte
@@ -80,4 +88,3 @@ Korrekte Antwort: B
 - **Experimentieren Sie mit den Eingaben**: Passen Sie das Thema und die Anzahl der Fragen basierend auf Feedback und Ergebnissen für die besten Ergebnisse an.
 
 ## Verwandte Artikel
-Entdecken Sie unsere Sammlung von [Agent-Vorlagen](/en-us/agent-templates/), um weitere inspirierende Ideen für den Einsatz von KI-Agenten zu entdecken!

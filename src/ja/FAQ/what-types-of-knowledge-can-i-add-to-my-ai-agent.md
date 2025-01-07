@@ -5,6 +5,12 @@ lang: ja-JP
 permalink: /what-types-of-knowledge-can-i-add-to-my-ai-agent
 ---
 
+# FabriXAIユーザーガイド
+description: AIエージェントに統合できる知識の種類やサポートされているファイル形式について学びましょう。
+lang: ja
+permalink: /what-types-of-knowledge-can-i-add-to-my-ai-agent
+---
+
 # AIエージェントに追加できる知識の種類は？
 
 ドキュメント形式でさまざまな知識を追加することで、AIエージェントを強化できます。現在、以下のファイル形式のアップロードに対応しています：
@@ -25,4 +31,3 @@ permalink: /what-types-of-knowledge-can-i-add-to-my-ai-agent
 
 知識の作成方法についての詳細は、[知識](/ja-jp/knowledge/)セクションを参照してください。
 
-特定のAIエージェントに知識を統合するには、AIエージェントの設定ガイドの[知識の統合手順](/ja-jp/configure-ai-agent/#knowledge)を参照してください。

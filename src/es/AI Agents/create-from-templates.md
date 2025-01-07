@@ -7,6 +7,14 @@ permalink: /create-from-templates
 
 # Crear a partir de Plantillas
 
+Aprovecha las plantillas preconstruidas de Agentes FabriXAI para comenzar Guía del Usuario de FabriXA
+description: Aprende a crear agentes de IA a partir de plantillas en FabriXAI con esta guía paso a paso.
+lang: es
+permalink: /create-from-templates
+---
+
+# Crear a partir de Plantillas
+
 Aprovecha las plantillas preconstruidas de Agentes FabriXAI para comenzar rápidamente.
 
 ## ¿Qué son las Plantillas de Agentes?
@@ -32,4 +40,3 @@ Nos complace ver cómo extiendes y personalizas estos agentes para satisfacer tu
 
 ## Artículos Relacionados
 - [Plantillas para Agentes](/en-us/agent-templates/)
-- [Configurar Agente de Inteligencia Artificial](/en-us/configure-ai-agent/)

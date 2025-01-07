@@ -7,6 +7,14 @@ permalink: /agent-templates/ai-code-tutor
 
 # AI Code Tutor
 
+Der **AI Code Tutor** ist ein intelligenter Assistent, der entwickelt wurde, um Benutzern das Verständnis von Programmiercode zu erleichtern. Durch die Analyse der vom Benutzer bereitgestellten Codeausschnitte bietet der Agent einen umfassenden Überblick darüber, was der Programmiercode bewirkt. Anschließend folgt eine detaillierte, schrittweise Erklärung jeder einzelnen Komponente. Darüber hinaus werden verwandte Programmierthemen für weiterführendes Lernen vorgeschlagen, sodass die Benutzer eine stärkere Grundlage in Programmierkonzepten aufbauen können. Egal, ob Sie Anfänger sind oder Ihre Fähigkeiten verbessern möchten, der AI Code Tutor führt Sie durch die verschiedenen Aspekte von Programmiersprachen und FabriXAI Benutzerhandbuch
+description: Dies ist ein Benutzerleitfaden zur Konfiguration und Verwendung des AI-Code-Tutors, eines Agenten, der sich auf Programmiers-Erklärungen spezialisiert hat.
+lang: de
+permalink: /agent-templates/ai-code-tutor
+---
+
+# AI Code Tutor
+
 Der **AI Code Tutor** ist ein intelligenter Assistent, der entwickelt wurde, um Benutzern das Verständnis von Programmiercode zu erleichtern. Durch die Analyse der vom Benutzer bereitgestellten Codeausschnitte bietet der Agent einen umfassenden Überblick darüber, was der Programmiercode bewirkt. Anschließend folgt eine detaillierte, schrittweise Erklärung jeder einzelnen Komponente. Darüber hinaus werden verwandte Programmierthemen für weiterführendes Lernen vorgeschlagen, sodass die Benutzer eine stärkere Grundlage in Programmierkonzepten aufbauen können. Egal, ob Sie Anfänger sind oder Ihre Fähigkeiten verbessern möchten, der AI Code Tutor führt Sie durch die verschiedenen Aspekte von Programmiersprachen und -konzepten.
 
 

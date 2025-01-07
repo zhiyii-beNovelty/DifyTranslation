@@ -5,6 +5,12 @@ lang: zh-CN
 permalink: /faq/can-i-use-ai-agent-in-my-own-apps
 ---
 
+# FabriXAI 用户指南
+description: 了解如何将您的AI代理集成并嵌入到您自己的应用程序和网站中。
+lang: zh-CN
+permalink: /faq/can-i-use-ai-agent-in-my-own-apps
+---
+
 # 我可以在自己的应用中使用AI代理吗？
 
 是的，您可以在自己的应用程序中使用AI代理！我们的平台提供了灵活的集成和嵌入选项，使您能够在各种环境中利用AI代理的功能。
@@ -21,4 +27,3 @@ permalink: /faq/can-i-use-ai-agent-in-my-own-apps
 
 如果您希望在您的网站上让用户访问AI代理，您可以使用提供的HTML代码片段轻松地将其嵌入。这允许用户直接从您的网页与AI代理进行互动，无需额外导航。
 
-了解如何在[分享AI代理](/en-us/share-ai-agent/)部分获取嵌入代码片段。

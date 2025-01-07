@@ -7,6 +7,14 @@ permalink: /agent-templates/seo-meta-tags-generator
 
 # SEO元标签生成器
 
+**SEO元标签生成器** 是一个专门设计的AI工具，旨在帮助内容创作者优化他们的博客文章以适应搜索引擎。通过提供大纲和介绍，以及一张特色图片，该工具生成一个包含基本SEO元标签的结构化JSON对象。这包括标题、描述以及各种Open FabriXAI 用户指南
+description: 这是SEO元标签生成器的用户指南，该工具旨在根据提供的大纲和介绍为博客文章创建优化的SEO元标签。
+lang: zh-CN
+permalink: /agent-templates/seo-meta-tags-generator
+---
+
+# SEO元标签生成器
+
 **SEO元标签生成器** 是一个专门设计的AI工具，旨在帮助内容创作者优化他们的博客文章以适应搜索引擎。通过提供大纲和介绍，以及一张特色图片，该工具生成一个包含基本SEO元标签的结构化JSON对象。这包括标题、描述以及各种Open Graph和Twitter卡片元素，所有这些都旨在提升在线可见性。这个简化的流程使博客作者能够专注于内容质量，同时确保符合SEO最佳实践。
 
 ## 开始使用
@@ -76,4 +84,3 @@ permalink: /agent-templates/seo-meta-tags-generator
 - **反复优化输入**：请随时优化输入并重新运行AI工具，以实现最佳结果。
 
 ## 相关文章
-继续探索我们的[代理模板](/en-us/agent-templates/)集合，发现更多AI代理创意的应用！

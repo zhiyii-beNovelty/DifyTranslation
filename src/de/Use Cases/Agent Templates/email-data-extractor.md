@@ -7,6 +7,14 @@ permalink: /agent-templates/email-data-extractor
 
 # E-Mail-Datenextraktor
 
+Der **E-Mail-Datenextraktor** ist ein spezialisierter KI-Agent, der entwickelt wurde, um E-Mail-Inhalte zu analysieren und relevante Informationen basierend auf spezifischen Datenfeldern zu extrahieren. Unter Verwendung eines strukturierten JSON-Formats verarbeitet der Agent E-Mail-Texte, um Schlüsselinformationen wie den Namen des Absenders, den Betreff und die Kontaktnummer zu identifizieren. In Fällen, in denen ein Datenfeld nicht gefunden wird, weist der Extraktor automatisch den Wert 'N/A' zu. Dies gewährleistet eine umfassende Ausgabe, die sowohl strukturierte als auch unstrukturierte E-Mail-Inhalte abdeckt und somit ideal für die Analyse der Geschäftskommunikation und die Datenverwaltung FabriXAI Benutzerhandbuch
+description: Dies ist ein Benutzerhandbuch für den E-Mail-Datenextraktor, ein professionelles E-Mail-Analysewerkzeug zur Extraktion relevanter Informationen aus E-Mails.
+lang: de
+permalink: /agent-templates/email-data-extractor
+---
+
+# E-Mail-Datenextraktor
+
 Der **E-Mail-Datenextraktor** ist ein spezialisierter KI-Agent, der entwickelt wurde, um E-Mail-Inhalte zu analysieren und relevante Informationen basierend auf spezifischen Datenfeldern zu extrahieren. Unter Verwendung eines strukturierten JSON-Formats verarbeitet der Agent E-Mail-Texte, um Schlüsselinformationen wie den Namen des Absenders, den Betreff und die Kontaktnummer zu identifizieren. In Fällen, in denen ein Datenfeld nicht gefunden wird, weist der Extraktor automatisch den Wert 'N/A' zu. Dies gewährleistet eine umfassende Ausgabe, die sowohl strukturierte als auch unstrukturierte E-Mail-Inhalte abdeckt und somit ideal für die Analyse der Geschäftskommunikation und die Datenverwaltung ist.
 
 # Erste Schritte
@@ -62,4 +70,3 @@ Für detailliertere Anweisungen zur Einrichtung eines KI-Agenten, verweisen Sie 
 - **Nutzen Sie Beispieleingaben als Leitfaden**: Beziehen Sie sich auf die bereitgestellten Beispieleingaben, um Ihren E-Mail-Inhalt effektiv zu strukturieren und optimale Extraktionsergebnisse zu erzielen.
 
 # Verwandte Artikel
-Entdecken Sie weitere KI-Agent-Ideen in unserer Sammlung von [Agentenvorlagen](/en-us/agent-templates/)!

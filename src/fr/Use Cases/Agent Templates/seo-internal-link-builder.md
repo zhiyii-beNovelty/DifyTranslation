@@ -7,6 +7,14 @@ permalink: /agent-templates/seo-internal-link-builder
 
 # Outil de liens internes SEO
 
+L'**Outil de liens internes SEO** est un agent d'IA avancé conçu pour vous aider à optimiser vos articles de blog en intégrant stratégiquement des liens internes. Cet outil se concentre sur l'optimisation pour les moteurs de recherche (SEO) de votre contenu sans modifier le texte original. En analysant l'article de blog fourni et une liste de liens pertinents, l'agent s'assurera que les liens internes sont contextuellement appropriés, conduisant à un meilleur engagement et à un classement du site amélioré. Grâce à la mise en forme Markdown, vous recevrez une version mise à jour de votre article de blog intégrée avec des liens internes qui encouragent les lecteurs à explorer le contenu connexe sur votre Guide de l'utilisateur FabriXAI
+description: Ceci est un guide utilisateur pour configurer et utiliser le Constructeur de liens internes SEO afin d'améliorer le SEO de votre blog grâce à des liens internes pertinents.
+lang: fr
+permalink: /agent-templates/seo-internal-link-builder
+---
+
+# Outil de liens internes SEO
+
 L'**Outil de liens internes SEO** est un agent d'IA avancé conçu pour vous aider à optimiser vos articles de blog en intégrant stratégiquement des liens internes. Cet outil se concentre sur l'optimisation pour les moteurs de recherche (SEO) de votre contenu sans modifier le texte original. En analysant l'article de blog fourni et une liste de liens pertinents, l'agent s'assurera que les liens internes sont contextuellement appropriés, conduisant à un meilleur engagement et à un classement du site amélioré. Grâce à la mise en forme Markdown, vous recevrez une version mise à jour de votre article de blog intégrée avec des liens internes qui encouragent les lecteurs à explorer le contenu connexe sur votre site.
 
 ## Premiers Pas
@@ -80,4 +88,3 @@ En incorporant ces techniques avancées de conception de requêtes dans vos inte
 - **Expérimentez avec des modèles d’IA** : Essayez différents modèles d’IA pour voir lequel donne les meilleurs résultats pour vos besoins spécifiques.
 
 ## Articles connexes
-Continuez à explorer notre collection de [modèles d'agents](/fr/agent-templates/) pour découvrir plus d'idées d'agents IA en action !

@@ -5,6 +5,12 @@ lang: zh-CN
 permalink: /agent-templates/blog-post-generator
 ---
 
+# FabriXAI 用户指南
+description: 这是博客文章生成器的用户指南，旨在帮助用户高效地创建引人入胜且内容丰富的博客文章。
+lang: zh-CN
+permalink: /agent-templates/blog-post-generator
+---
+
 # 博客文章生成器
 
 **博客文章生成器**旨在帮助用户创建结构合理且经过优化的博客文章，特别是围绕目标关键词生成内容。该工具采用了详细的两步工作流程：
@@ -151,4 +157,3 @@ AI 和 ML 的未来令人兴奋，且发展迅速。一些预测包括：
 - **审核建议的说明文字**：在发布前始终检查说明文字的相关性和与品牌的匹配度。
 
 ## 相关文章
-继续探索我们的一系列[代理模板](/zh-cn/agent-templates/)，了解更多 AI 代理的创意应用！

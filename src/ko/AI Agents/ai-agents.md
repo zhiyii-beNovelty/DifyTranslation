@@ -7,6 +7,14 @@ permalink: /ai-agents
 
 # 인공지능 에이전트 소개  
 
+# AI 에이전트란 무엇인가?  FabriXAI 사용자 가이드
+description: AI 에이전트, 그들의 기능, 그리고 FabriXAI 사용을 시작하는 방법에 대해 알아보세요.
+lang: ko
+permalink: /ai-agents
+---
+
+# 인공지능 에이전트 소개  
+
 # AI 에이전트란 무엇인가?  
 AI 에이전트는 업무 수행, 의사 결정, 사전에 정의된 역할과 상호작용을 위해 설계된 자율 프로그램입니다. 대형 언어 모델(LLMs)과 같은 고급 기술에 의해 구동되는 이 에이전트들은 인간의 개입 없이도 정보를 처리하고, 행동을 실행하며, 특정 요구에 적응할 수 있습니다.  
 
@@ -59,4 +67,3 @@ AI 에이전트의 효과를 극대화하기 위해서는:
 # 관련 기사
 - [템플릿으로 만들기](/en-us/create-from-templates/)
 - [에이전트 템플릿](/en-us/agent-templates/)
-- [AI 에이전트 설정](/en-us/configure-ai-agent/)

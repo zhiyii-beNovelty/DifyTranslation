@@ -7,6 +7,14 @@ permalink: /configure-ai-agent
 
 # Configurer l'Agent IA
 
+## Créez vos agents IA personnalisés dans Guide de l'utilisateur FabriXAI
+description: Apprenez à configurer des agents IA sur FabriXAI avec ce guide étape par étape.
+lang: fr
+permalink: /configure-ai-agent
+---
+
+# Configurer l'Agent IA
+
 ## Créez vos agents IA personnalisés dans FabriXAI
 
 Les agents IA dans FabriXAI sont conçus pour automatiser les flux de travail et améliorer des cas d'utilisation spécifiques. Avec FabriXAI, vous pouvez déployer votre agent IA sous deux formats, en fonction des besoins de votre tâche :

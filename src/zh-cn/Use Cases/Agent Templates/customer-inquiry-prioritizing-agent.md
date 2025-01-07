@@ -5,6 +5,12 @@ lang: zh-CN
 permalink: /agent-templates/customer-inquiry-prioritizing-agent
 ---
 
+# FabriXAI 用户指南
+description: 这是《客户查询优先级代理》的用户指南，用于根据紧急程度对客户查询进行分类。
+lang: zh-CN
+permalink: /agent-templates/customer-inquiry-prioritizing-agent
+---
+
 # 客户咨询优先级分类系统
 
 **客户咨询优先级分类系统**旨在分析客户咨询，并将其归类为五个紧急程度级别之一：紧急、高、中、低或一般。通过评估每个咨询的紧急程度、严重性以及潜在的进一步问题，该系统帮助企业有效地优先处理客户支持请求。这确保了关键问题能够及时解决，提升了客户满意度和运营效率。
@@ -56,4 +62,3 @@ permalink: /agent-templates/customer-inquiry-prioritizing-agent
 - **定期更新**：定期更新知识库，确保代理能够提供最相关的信息。
 
 # 相关文章
-继续探索我们的 [代理模板](/zh-cn/agent-templates/)，以了解更多 AI 代理的实际应用！

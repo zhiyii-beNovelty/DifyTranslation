@@ -7,6 +7,14 @@ permalink: /agent-templates/code-convertor
 
 # Code-Konverter
 
+Der **Code-Konverter** ist ein KI-Agent, der entwickelt wurde, um Programmierern dabei zu unterstützen, Code von einer Programmiersprache in eine andere zu übertragen. Benutzer müssen lediglich die Quellsprache, die Zielsprache sowie den zu konvertierenden Code angeben. Anschließend führt der Agent präzise Übersetzungen durch und stellt sicher, dass die Funktionalität des Codes erhalten bleibt. Darüber hinaus fügt er Kommentare ein, um wesentliche Änderungen während des Konvertierungsprozesses hervorzuheben. Kann die Konvertierung nicht durchgeführt werden, erklärt der Agent den Grund. Dadurch ist der Code-Konverter ein wertvolles Werkzeug für Entwickler, die mit verschiedenen Programmiersprachen arbeiten FabriXAI Benutzerhandbuch
+description: Dies ist ein Benutzerhandbuch für den Code Konvertor Agenten, der beim Konvertieren von Code von einer Programmiersprache in eine andere hilft und dabei die Funktionalität gewährleistet.
+lang: de
+permalink: /agent-templates/code-convertor
+---
+
+# Code-Konverter
+
 Der **Code-Konverter** ist ein KI-Agent, der entwickelt wurde, um Programmierern dabei zu unterstützen, Code von einer Programmiersprache in eine andere zu übertragen. Benutzer müssen lediglich die Quellsprache, die Zielsprache sowie den zu konvertierenden Code angeben. Anschließend führt der Agent präzise Übersetzungen durch und stellt sicher, dass die Funktionalität des Codes erhalten bleibt. Darüber hinaus fügt er Kommentare ein, um wesentliche Änderungen während des Konvertierungsprozesses hervorzuheben. Kann die Konvertierung nicht durchgeführt werden, erklärt der Agent den Grund. Dadurch ist der Code-Konverter ein wertvolles Werkzeug für Entwickler, die mit verschiedenen Programmiersprachen arbeiten möchten.
 
 ## Erste Schritte
@@ -77,4 +85,3 @@ int main() {
 - **Setzen Sie Kommentare gezielt ein**: Wenn Sie Code mit Kommentaren hochladen, sollten diese prägnant und relevant sein, um das Verständnis der Konvertierung zu verbessern.
 
 ## Verwandte Artikel
-Entdecken Sie unsere Sammlung von [Agenten-Vorlagen](/de-de/agenten-vorlagen/), um weitere KI-Agenten-Ideen in der Praxis zu entdecken!

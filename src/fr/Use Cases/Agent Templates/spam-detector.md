@@ -7,6 +7,14 @@ permalink: /fr/agent-templates/spam-detector
 
 # Détecteur de spam
 
+L'**agent Détecteur de spam** est conçu pour aider les utilisateurs à déterminer si un e-mail ou un message texte est du spam ou non. En analysant divers aspects du message, y compris le contenu non sollicité, les liens suspects, les demandes d'informations personnelles, le langage indiquant une urgence et les erreurs de grammaire, l'agent Détecteur de spam fournit un verdict clair de "Spam" ou "Non spam". De plus, il offre une brève explication du raisonnement derrière la décision, aidant les utilisateurs à comprendre les facteurs influençant l'évaluation. Cet outil utilise des directives définies et un taux de confiance pour améliorer la précision de sa détection de Guide de l'utilisateur FabriXAI
+description: Ceci est un guide de l'utilisateur pour configurer et utiliser l'agent IA Détecteur de spam afin d'identifier efficacement les messages de spam.
+lang: fr
+permalink: /fr/agent-templates/spam-detector
+---
+
+# Détecteur de spam
+
 L'**agent Détecteur de spam** est conçu pour aider les utilisateurs à déterminer si un e-mail ou un message texte est du spam ou non. En analysant divers aspects du message, y compris le contenu non sollicité, les liens suspects, les demandes d'informations personnelles, le langage indiquant une urgence et les erreurs de grammaire, l'agent Détecteur de spam fournit un verdict clair de "Spam" ou "Non spam". De plus, il offre une brève explication du raisonnement derrière la décision, aidant les utilisateurs à comprendre les facteurs influençant l'évaluation. Cet outil utilise des directives définies et un taux de confiance pour améliorer la précision de sa détection de spam.
 
 ## Démarrage
@@ -66,4 +74,3 @@ Je suis très confiant dans ce verdict car l'email semble être une notification
 - **Expérimenter avec Différents Modèles** : Essayez divers modèles d'IA pour déterminer celui qui offre les meilleurs résultats pour vos besoins.
 
 ## Articles connexes
-Continuez à explorer notre collection de [Modèles d'agents](/fr/agent-templates/) pour découvrir plus d'exemples d'agents IA en action !

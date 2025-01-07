@@ -7,6 +7,14 @@ permalink: /configure-ai-agent
 
 # Configurar Agente de IA
 
+## Crea Tus Agentes de IA Personalizados en Guía del Usuario de FabriXA
+description: Aprende cómo configurar agentes de IA en FabriXAI con esta guía paso a paso.
+lang: es
+permalink: /configure-ai-agent
+---
+
+# Configurar Agente de IA
+
 ## Crea Tus Agentes de IA Personalizados en FabriXAI
 
 Los agentes de IA en FabriXAI están diseñados para automatizar flujos de trabajo y mejorar casos de uso específicos. Con FabriXAI, puedes desplegar tu agente de IA en dos formatos, dependiendo de las necesidades de tu tarea:
@@ -118,4 +126,3 @@ Después de configurar todos los ajustes, simplemente haz clic en **"Guardar"** 
 
 ## Artículos Relacionados
 - [Utilizar el Agente de IA](/es-us/use-ai-agent)
-- [Compartir el Agente de IA](/es-us/share-ai-agent/)

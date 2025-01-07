@@ -7,6 +7,14 @@ permalink: /agent-templates/thank-you-email-generator
 
 # Generador de Correos de Agradecimiento
 
+El agente **Generador de Correos de Agradecimiento** te ayuda a crear correos electrónicos personalizados de agradecimiento para clientes que han realizado compras recientes. Al ingresar detalles pertinentes como el nombre del cliente, el producto adquirido y el tono preferido, el agente genera un correo cálido y sincero que expresa gratitud y destaca los beneficios del producto. El correo resultante cubrirá todos los elementos esenciales para mejorar la satisfacción y el compromiso del cliente, convirtiéndolo en una herramienta ideal para las empresas que buscan mantener relaciones positivas con su Guía del Usuario de FabriXA
+description: Esta es una guía de usuario para configurar y usar el agente Generador de Correo de Agradecimiento para crear correos de agradecimiento personalizados.
+lang: es
+permalink: /agent-templates/thank-you-email-generator
+---
+
+# Generador de Correos de Agradecimiento
+
 El agente **Generador de Correos de Agradecimiento** te ayuda a crear correos electrónicos personalizados de agradecimiento para clientes que han realizado compras recientes. Al ingresar detalles pertinentes como el nombre del cliente, el producto adquirido y el tono preferido, el agente genera un correo cálido y sincero que expresa gratitud y destaca los beneficios del producto. El correo resultante cubrirá todos los elementos esenciales para mejorar la satisfacción y el compromiso del cliente, convirtiéndolo en una herramienta ideal para las empresas que buscan mantener relaciones positivas con su clientela.
 
 ## Comenzando
@@ -72,4 +80,3 @@ Saludos cordiales,
 
 ## Artículos Relacionados
 
-Continúa explorando nuestra colección de [Plantillas de Agentes](/en-us/agent-templates/) para descubrir más ideas de agentes de IA en acción!

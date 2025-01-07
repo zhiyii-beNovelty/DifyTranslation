@@ -7,6 +7,14 @@ permalink: /agent-templates/email-data-extractor
 
 # Extractor de Datos de Correo Electrónico
 
+El **Extractor de Datos de Correo Electrónico** es una herramienta de inteligencia artificial especializada diseñada para analizar el contenido de los correos electrónicos y extraer información relevante basada en campos de datos específicos. Mediante un formato JSON estructurado, la herramienta procesa el texto del correo electrónico para identificar elementos clave como el nombre del remitente, el asunto y el número de contacto. En los casos en que no se encuentra un campo de datos, el extractor asigna automáticamente el valor 'N/A'. Esto garantiza un resultado completo que se adapta tanto al contenido estructurado como no estructurado de los correos electrónicos, lo que lo hace ideal para el análisis de la comunicación empresarial y la gestión de Guía del Usuario de FabriXA
+description: Esta es una guía del usuario para el Extractor de Datos de Correo Electrónico, un analizador de correo profesional para extraer información relevante de los correos electrónicos.
+lang: es
+permalink: /agent-templates/email-data-extractor
+---
+
+# Extractor de Datos de Correo Electrónico
+
 El **Extractor de Datos de Correo Electrónico** es una herramienta de inteligencia artificial especializada diseñada para analizar el contenido de los correos electrónicos y extraer información relevante basada en campos de datos específicos. Mediante un formato JSON estructurado, la herramienta procesa el texto del correo electrónico para identificar elementos clave como el nombre del remitente, el asunto y el número de contacto. En los casos en que no se encuentra un campo de datos, el extractor asigna automáticamente el valor 'N/A'. Esto garantiza un resultado completo que se adapta tanto al contenido estructurado como no estructurado de los correos electrónicos, lo que lo hace ideal para el análisis de la comunicación empresarial y la gestión de datos.
 
 ## Inicio
@@ -84,4 +92,3 @@ Acme Software Solutions.
 - **Utiliza Entradas de Muestra como Guía**: Consulta las entradas de muestra proporcionadas para estructurar eficazmente el contenido de tu correo electrónico y obtener resultados de extracción óptimos.
 
 ## Artículos Relacionados
-¡Continúa explorando nuestra colección de [plantillas de agentes](/en-us/agent-templates/) para descubrir más ideas de agentes de inteligencia artificial en acción!

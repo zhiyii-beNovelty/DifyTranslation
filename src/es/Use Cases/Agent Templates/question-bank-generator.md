@@ -7,6 +7,14 @@ permalink: /agent-templates/question-bank-generator
 
 # Generador de Bancos de Preguntas
 
+El **Generador de Bancos de Preguntas** es una herramienta inteligente diseñada para crear preguntas de opción múltiple basadas en temas específicos derivados de contenido web proporcionado. Esta herramienta evalúa la comprensión del usuario formulando preguntas que abarcan varios niveles de dificultad, desde fácil hasta difícil, asegurando una evaluación inclusiva de los conceptos clave. Capaz de generar opciones de respuesta con una sola respuesta correcta o con múltiples respuestas correctas, adapta las evaluaciones de manera efectiva para fines educativos. Es ideal para educadores, estudiantes y cualquier persona que busque fortalecer sus conocimientos de manera Guía del Usuario de FabriXA
+description: Esta es una guía de usuario para configurar y usar el agente Generador de Banco de Preguntas para crear preguntas de opción múltiple personalizadas.
+lang: es
+permalink: /agent-templates/question-bank-generator
+---
+
+# Generador de Bancos de Preguntas
+
 El **Generador de Bancos de Preguntas** es una herramienta inteligente diseñada para crear preguntas de opción múltiple basadas en temas específicos derivados de contenido web proporcionado. Esta herramienta evalúa la comprensión del usuario formulando preguntas que abarcan varios niveles de dificultad, desde fácil hasta difícil, asegurando una evaluación inclusiva de los conceptos clave. Capaz de generar opciones de respuesta con una sola respuesta correcta o con múltiples respuestas correctas, adapta las evaluaciones de manera efectiva para fines educativos. Es ideal para educadores, estudiantes y cualquier persona que busque fortalecer sus conocimientos de manera completa.
 
 # Empezando
@@ -80,4 +88,3 @@ respuesta correcta: B
 - **Experimentar con los datos de entrada**: Ajusta el tema y el número de preguntas basándote en la retroalimentación y los resultados para maximizar la efectividad.
 
 # Artículos Relacionados
-Continúa explorando nuestra colección de [Plantillas de Agente](/en-us/agent-templates/) para descubrir más ideas en acción de agentes de IA.

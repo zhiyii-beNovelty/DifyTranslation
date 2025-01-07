@@ -7,6 +7,14 @@ permalink: /agent-templates/email-data-extractor
 
 # Extracteur de données d'e-mails
 
+L'**Extracteur de données d'e-mails** est un outil d'IA spécialisé conçu pour analyser le contenu des e-mails et extraire des informations pertinentes basées sur des champs de données spécifiques. En utilisant un format JSON structuré, l'agent traite le texte des e-mails pour identifier des éléments clés tels que le nom de l'expéditeur, l'objet et le numéro de contact. Dans les cas où un champ de données n'est pas trouvé, l'extracteur attribue automatiquement la valeur 'N/A'. Cela assure une sortie complète qui convient aussi bien au contenu d'e-mails structuré qu'à celui non structuré, ce qui le rend idéal pour l'analyse des communications d'entreprise et la gestion des Guide de l'utilisateur FabriXAI
+description: Ceci est un guide utilisateur pour l'Extracteur de données Email, un analyseur d'emails professionnel permettant d'extraire les informations pertinentes des emails.
+lang: fr
+permalink: /agent-templates/email-data-extractor
+---
+
+# Extracteur de données d'e-mails
+
 L'**Extracteur de données d'e-mails** est un outil d'IA spécialisé conçu pour analyser le contenu des e-mails et extraire des informations pertinentes basées sur des champs de données spécifiques. En utilisant un format JSON structuré, l'agent traite le texte des e-mails pour identifier des éléments clés tels que le nom de l'expéditeur, l'objet et le numéro de contact. Dans les cas où un champ de données n'est pas trouvé, l'extracteur attribue automatiquement la valeur 'N/A'. Cela assure une sortie complète qui convient aussi bien au contenu d'e-mails structuré qu'à celui non structuré, ce qui le rend idéal pour l'analyse des communications d'entreprise et la gestion des données.
 
 ## Commencer
@@ -62,4 +70,3 @@ Pour des instructions plus détaillées sur la configuration d'un agent d'IA, ve
 - **Utiliser des exemples d'entrées comme guide** : Référez-vous aux exemples d'entrées fournis pour structurer efficacement le contenu de votre e-mail afin d'obtenir des résultats d'extraction optimaux.
 
 ## Articles liés
-Continuez à explorer notre collection de [Modèles d'agents](/en-us/agent-templates/) pour découvrir davantage d'idées d'agents d'IA en action !

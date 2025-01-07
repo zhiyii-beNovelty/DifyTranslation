@@ -7,6 +7,14 @@ permalink: /agent-templates/sensitive-data-filtering-agent
 
 # 敏感数据过滤代理
 
+**敏感数据过滤代理** FabriXAI 用户指南
+description: 这是敏感数据过滤代理的用户指南，旨在帮助用户通过自动识别和隐藏给定文本中的敏感数据来保护个人信息。
+lang: zh-CN
+permalink: /agent-templates/sensitive-data-filtering-agent
+---
+
+# 敏感数据过滤代理
+
 **敏感数据过滤代理** 旨在通过自动识别和隐藏给定文本中的敏感数据，帮助用户保护个人信息。该代理针对特定类别，如香港身份证号码、电话号码、地址、财务信息和出生日期，系统地使用预定义的占位符替换敏感数据。用户可以在确保机密信息不被泄露的同时，维护通信的完整性并遵守数据隐私法规，使其成为处理敏感文档的专业人士的宝贵工具。
 
 ## 入门指南
@@ -77,4 +85,3 @@ permalink: /agent-templates/sensitive-data-filtering-agent
 
 ## 相关文章
 
-继续探索我们的[代理模板](/agent-templates/)集合，了解更多人工智能代理的创意实践！

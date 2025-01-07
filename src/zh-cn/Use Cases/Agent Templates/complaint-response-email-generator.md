@@ -7,6 +7,14 @@ permalink: /agent-templates/complaint-response-email-generator
 
 # 投诉回复电邮生成器
 
+**投诉回复电邮生成器** FabriXAI 用户指南
+description: 这是投诉回复电邮生成器的用户指南，旨在帮助公司草拟礼貌且有效的客户投诉回复。
+lang: zh-CN
+permalink: /agent-templates/complaint-response-email-generator
+---
+
+# 投诉回复电邮生成器
+
 **投诉回复电邮生成器** 是一款人工智能工具，旨在帮助客户服务代表撰写礼貌且信息丰富的电子邮件回复客户投诉。该工具利用客户反馈和公司政策生成定制回复，不仅认可客户的关切，还引导他们通过解决过程。其目标是在确保遵守公司政策的同时，创造积极的客户体验。该工具考虑了所需的语调和风格，确保所有沟通都保持专业性和同理心。
 
 ## 入门指南
@@ -82,4 +90,3 @@ permalink: /agent-templates/complaint-response-email-generator
 
 ## 相关文章
 
-继续探索我们的[代理模板](/zh-cn/agent-templates/)集合，发现更多 AI 代理的创意应用！

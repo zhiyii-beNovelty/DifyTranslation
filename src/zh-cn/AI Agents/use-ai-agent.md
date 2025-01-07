@@ -5,6 +5,12 @@ lang: zh-CN
 permalink: /use-ai-agent
 ---
 
+# FabriXAI 用户指南
+description: 了解如何使用此分步指南来访问和使用您的AI代理。
+lang: zh-CN
+permalink: /use-ai-agent
+---
+
 # 使用AI智能体
 
 完成配置后，您可以访问并与AI智能体互动！
@@ -20,4 +26,3 @@ permalink: /use-ai-agent
 
 ## 相关文章
 - [配置AI代理](/en-us/configure-ai-agent/)
-- [分享AI代理们](/en-us/share-ai-agents)

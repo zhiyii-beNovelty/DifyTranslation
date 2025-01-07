@@ -7,6 +7,14 @@ permalink: /agent-templates
 
 # 에이전트 템플릿
 
+## 에이전트 FabriXAI 사용자 가이드
+description: FabriXAI의 에이전트 템플릿에 대해 배우고 이를 활용하여 맞춤형 AI 에이전트를 손쉽게 만드는 방법을 알아보세요.
+lang: ko
+permalink: /agent-templates
+---
+
+# 에이전트 템플릿
+
 ## 에이전트 템플릿이란?
 
 에이전트 템플릿은 특정 작업에 맞게 맞춤형 AI 에이전트를 빠르게 생성할 수 있도록 설계된 사전 제작된 템플릿입니다. 이 템플릿은 출발점 역할을 하며, 고유한 비즈니스 요구 사항을 충족하기 위해 맞춤 설정할 수 있는 기본 설정을 제공합니다. 에이전트 템플릿을 사용하면, 의도한 목적에 효과적으로 구성된 AI 에이전트를 보장하면서 시간과 노력을 절약할 수 있습니다.
@@ -51,4 +59,3 @@ permalink: /agent-templates
 
 ### 보안 에이전트
 - [민감 데이터 필터링 에이전트](/en-us/agent-templates/sensitive-data-filtering-agent)
-- [스팸 탐지기](/en-us/agent-templates/spam-detector)

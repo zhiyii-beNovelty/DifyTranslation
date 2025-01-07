@@ -7,6 +7,14 @@ permalink: /create-from-templates
 
 # Aus Vorlagen erstellen
 
+Nutzen Sie FabriXAI's vorgefertigte Agenten-Vorlagen, um schnell FabriXAI Benutzerhandbuch
+description: Lernen Sie, wie Sie mithilfe dieser Schritt-für-Schritt-Anleitung AI-Agenten aus Vorlagen auf FabriXAI erstellen.
+lang: de
+permalink: /create-from-templates
+---
+
+# Aus Vorlagen erstellen
+
 Nutzen Sie FabriXAI's vorgefertigte Agenten-Vorlagen, um schnell loszulegen!
 
 ## Was sind Agenten-Vorlagen?
@@ -32,4 +40,3 @@ Wir sind gespannt zu sehen, wie Sie diese Agenten erweitern und anpassen, um Ihr
 
 ## Verwandte Artikel
 - [Agenten-Vorlagen](/en-us/agent-templates/)
-- [KI-Agent konfigurieren](/en-us/configure-ai-agent/)

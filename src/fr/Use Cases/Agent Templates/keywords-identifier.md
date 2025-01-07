@@ -7,6 +7,14 @@ permalink: /agent-templates/keywords-identifier
 
 # Identificateur de Mots-Clés
 
+L'**Identificateur de Mots-Clés** est un agent intelligent conçu pour extraire les thèmes clés et les sujets d'un texte donné. En analysant le contenu, il identifie et classe les mots-clés ou étiquettes les plus pertinents qui encapsulent les idées et sujets principaux discutés. Cet outil est particulièrement utile pour les créateurs de contenu, les chercheurs et les spécialistes du marketing numérique qui ont besoin de distiller rapidement des informations à partir de grands volumes de texte. Il garantit que les mots-clés extraits sont concis et reflètent avec précision le contenu du texte, fournissant une liste classée en fonction de leur Guide de l'utilisateur FabriXAI
+description: Ceci est un guide utilisateur pour l'Identificateur de Mots-Clés, conçu pour extraire les thèmes et sujets clés d'un texte donné.
+lang: fr
+permalink: /agent-templates/keywords-identifier
+---
+
+# Identificateur de Mots-Clés
+
 L'**Identificateur de Mots-Clés** est un agent intelligent conçu pour extraire les thèmes clés et les sujets d'un texte donné. En analysant le contenu, il identifie et classe les mots-clés ou étiquettes les plus pertinents qui encapsulent les idées et sujets principaux discutés. Cet outil est particulièrement utile pour les créateurs de contenu, les chercheurs et les spécialistes du marketing numérique qui ont besoin de distiller rapidement des informations à partir de grands volumes de texte. Il garantit que les mots-clés extraits sont concis et reflètent avec précision le contenu du texte, fournissant une liste classée en fonction de leur importance.
 
 ## Commencer
@@ -64,4 +72,3 @@ Ces mots-clés capturent l'essence du texte et fournissent un résumé concis de
 - **Revoir Régulièrement les Résultats** : Évaluez régulièrement les mots-clés extraits pour leur pertinence et leur précision, et ajustez le texte d’entrée ou les paramètres selon les besoins.
 
 ## Articles Connexes
-Continuez à explorer notre collection de [Modèles d'Agents](/en-us/agent-templates/) pour découvrir davantage d'agents IA en action !

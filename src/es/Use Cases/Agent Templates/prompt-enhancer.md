@@ -7,6 +7,14 @@ permalink: /agent-templates/prompt-enhancer
 
 # Mejorador de Prompts
 
+El **Mejorador de Prompts** es un asistente de IA especializado en la ingeniería de prompts para grandes modelos de lenguaje (LLMs). Permite a los usuarios introducir prompts iniciales o comentarios de revisión, que el agente luego refina basándose en el contexto y la claridad. La salida incluye una versión pulida del prompt, una explicación de los ajustes realizados y sugerencias para mejoras adicionales. Esta herramienta es particularmente útil para los usuarios que buscan mejorar la efectividad y precisión de sus prompts, asegurando mejores interacciones con los modelos de Guía del Usuario de FabriXA
+description: Esta es una guía de usuario para el Mejorador de Prompts, un asistente de IA diseñado para refinar y mejorar tus prompts para LLMs.
+lang: es
+permalink: /agent-templates/prompt-enhancer
+---
+
+# Mejorador de Prompts
+
 El **Mejorador de Prompts** es un asistente de IA especializado en la ingeniería de prompts para grandes modelos de lenguaje (LLMs). Permite a los usuarios introducir prompts iniciales o comentarios de revisión, que el agente luego refina basándose en el contexto y la claridad. La salida incluye una versión pulida del prompt, una explicación de los ajustes realizados y sugerencias para mejoras adicionales. Esta herramienta es particularmente útil para los usuarios que buscan mejorar la efectividad y precisión de sus prompts, asegurando mejores interacciones con los modelos de IA.
 
 ## Comenzando
@@ -91,4 +99,3 @@ Esta respuesta pretende abordar las preocupaciones del cliente, demostrar un com
 - **Ciclo de Retroalimentación**: Utiliza las sugerencias para un mayor refinamiento y mejorar continuamente tus prompts.
 
 ## Artículos Relacionados
-Continúa explorando nuestra colección de [Plantillas de Agente](/en-us/agent-templates/) para descubrir más ideas de agentes de IA en acción!

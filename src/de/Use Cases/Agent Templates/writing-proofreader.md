@@ -7,6 +7,14 @@ permalink: /agent-templates/writing-proofreader
 
 # Schreibkorrektor
 
+Der **Schreibkorrektor** KI-Agent ist darauf ausgelegt, professionelles Feedback zu Ihren schriftlichen Inhalten zu geben. Durch die Bewertung von Grammatik, Struktur und Inhalt hilft er Ihnen, Ihren Text zu verfeinern, um Klarheit und Engagement zu erhöhen. Ob Sie eine Buchrezension, einen Artikel oder eine andere Form des schriftlichen Ausdrucks verfassen, dieser Agent bietet detaillierte Verbesserungsvorschläge und ist somit ein unverzichtbares Werkzeug für Autoren auf jedem FabriXAI Benutzerhandbuch
+description: Dies ist ein Benutzerhandbuch zur Konfiguration und Verwendung des Schreibkorrektor-KI-Agenten, um einen gegebenen Text zu überarbeiten.
+lang: de
+permalink: /agent-templates/writing-proofreader
+---
+
+# Schreibkorrektor
+
 Der **Schreibkorrektor** KI-Agent ist darauf ausgelegt, professionelles Feedback zu Ihren schriftlichen Inhalten zu geben. Durch die Bewertung von Grammatik, Struktur und Inhalt hilft er Ihnen, Ihren Text zu verfeinern, um Klarheit und Engagement zu erhöhen. Ob Sie eine Buchrezension, einen Artikel oder eine andere Form des schriftlichen Ausdrucks verfassen, dieser Agent bietet detaillierte Verbesserungsvorschläge und ist somit ein unverzichtbares Werkzeug für Autoren auf jedem Niveau.
 
 ## Erste Schritte
@@ -73,4 +81,3 @@ Zusammenfassend ist *Harry Potter und der Stein der Weisen* eine meisterhafte Ei
 - **Experimentiere mit verschiedenen Modellen**: Wenn du mit dem Ergebnis nicht zufrieden bist, probiere verschiedene KI-Modelle aus, um zu sehen, welches am besten zu deinem Schreibstil passt.
 
 ## Verwandte Artikel
-Entdecken Sie unsere Sammlung von [Agent-Vorlagen](/en-us/agent-templates/), um mehr über die Anwendungsmöglichkeiten von KI-Agenten zu erfahren!

@@ -7,6 +7,14 @@ permalink: /key-concepts
 
 # FabriXAI 的关键概念
 
+## FabriXAI 用户指南
+description: 了解FabriXAI的关键概念并快速开始。
+lang: zh-CN
+permalink: /key-concepts
+---
+
+# FabriXAI 的关键概念
+
 ## 智能代理
 
 智能代理是一种旨在自主执行任务并与预定义角色互动的程序。配备了预训练的大型语言模型（LLMs），智能代理不仅具备自然语言处理的能力，还提供了广泛的先进功能。它们能够处理信息、做出决策并采取行动，而无需人工干预。
@@ -40,4 +48,3 @@ API 密钥是用于认证对 API 发出的请求的唯一标识符。它们作�
 ## 相关文章
 - [人工智能代理](/zh-cn/ai-agents/)
 - [知识](/zh-cn/knowledge/)
-- [代理模板](/zh-cn/agent-templates/)

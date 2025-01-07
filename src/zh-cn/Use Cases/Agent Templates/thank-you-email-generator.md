@@ -5,6 +5,12 @@ lang: zh-CN
 permalink: /agent-templates/thank-you-email-generator
 ---
 
+# FabriXAI 用户指南
+description: 这是用于配置和使用感谢邮件生成器代理以创建个性化感谢邮件的用户指南。
+lang: zh-CN
+permalink: /agent-templates/thank-you-email-generator
+---
+
 # 感谢邮件生成器
 
 **感谢邮件生成器**代理帮助您为最近进行购买的客户创建个性化的感谢邮件。通过输入相关细节，如客户的姓名、购买的产品和偏好的语调，代理会生成一封温暖而真诚的邮件，表达感激之情并突出产品的优点。生成的邮件将涵盖所有必要的要素，以提升客户满意度和参与度，使其成为希望与客户保持积极关系的企业的理想工具。
@@ -71,4 +77,3 @@ permalink: /agent-templates/thank-you-email-generator
 - **测试和优化**：尝试不同的输入，观察变化如何影响电子邮件的输出，从而不断改进交互的效果。
 
 ## 相关文章
-继续探索我们的[代理模板](/zh-cn/agent-templates/)，了解更多 AI 代理的实际应用！

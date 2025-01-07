@@ -7,6 +7,14 @@ permalink: /agent-templates/seo-internal-link-builder
 
 # Constructor de Enlaces Internos SEO
 
+El **Constructor de Enlaces Internos SEO** es un avanzado agente de IA diseñado para ayudarte a optimizar tus publicaciones de blog mediante la inserción estratégica de enlaces internos. Esta herramienta se centra en mejorar la optimización para motores de búsqueda (SEO) de tu contenido sin modificar el texto original. Al analizar la publicación de blog proporcionada y una lista de enlaces relevantes, el agente asegurará que el enlazado interno sea contextualmente apropiado, lo que lleva a una mejor interacción y a un posicionamiento del sitio mejorado. A través del formateo en Markdown, recibirás una versión actualizada de tu publicación de blog incrustada con enlaces internos que alientan a los lectores a explorar contenido relacionado en tu Guía del Usuario de FabriXA
+description: Esta es una guía del usuario para configurar y utilizar el Constructor de Enlaces Internos SEO para mejorar el SEO de tu blog mediante enlaces internos relevantes.
+lang: es
+permalink: /agent-templates/seo-internal-link-builder
+---
+
+# Constructor de Enlaces Internos SEO
+
 El **Constructor de Enlaces Internos SEO** es un avanzado agente de IA diseñado para ayudarte a optimizar tus publicaciones de blog mediante la inserción estratégica de enlaces internos. Esta herramienta se centra en mejorar la optimización para motores de búsqueda (SEO) de tu contenido sin modificar el texto original. Al analizar la publicación de blog proporcionada y una lista de enlaces relevantes, el agente asegurará que el enlazado interno sea contextualmente apropiado, lo que lleva a una mejor interacción y a un posicionamiento del sitio mejorado. A través del formateo en Markdown, recibirás una versión actualizada de tu publicación de blog incrustada con enlaces internos que alientan a los lectores a explorar contenido relacionado en tu sitio.
 
 ## Inicio
@@ -80,4 +88,3 @@ Al incorporar estas avanzadas técnicas de ingeniería de indicaciones en tus in
 - **Experimenta con modelos de IA**: Prueba diferentes modelos de IA para ver cuál ofrece los mejores resultados para tus necesidades específicas.
 
 ## Artículos Relacionados
-Continúa explorando nuestra colección de [Plantillas de Agentes](/en-us/agent-templates/) para descubrir más ejemplos de agentes de IA en funcionamiento.

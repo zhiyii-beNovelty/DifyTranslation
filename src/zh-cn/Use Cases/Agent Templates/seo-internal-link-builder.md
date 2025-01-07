@@ -7,6 +7,14 @@ permalink: /agent-templates/seo-internal-link-builder
 
 # SEO内部链接构建器
 
+**SEO内部链接构建器** FabriXAI 用户指南
+description: 本用户指南用于配置和使用SEO内部链接构建器，通过相关的内部链接增强您的博客SEO。
+lang: zh-CN
+permalink: /agent-templates/seo-internal-link-builder
+---
+
+# SEO内部链接构建器
+
 **SEO内部链接构建器** 是一个高级AI代理，旨在通过策略性地嵌入内部链接来帮助您优化博客文章。此工具专注于在不修改原文的情况下提升内容的搜索引擎优化（SEO）。通过分析提供的博客文章和相关链接列表，代理将确保内部链接在上下文中适当，从而提高用户参与度和网站排名。通过Markdown格式，您将收到一个嵌入了内部链接的更新版博客文章，鼓励读者探索您网站上的相关内容。
 
 ## 开始使用
@@ -82,4 +90,3 @@ React提示是一种技术，利用AI模型的响应来指导和优化下一个�
 - **尝试不同的AI模型**：尝试不同的AI模型，以确定哪种最适合您的具体需求。
 
 ## 相关文章
-继续探索我们的 [代理模板](/en-us/agent-templates/) 系列，发现更多AI代理的创新应用！

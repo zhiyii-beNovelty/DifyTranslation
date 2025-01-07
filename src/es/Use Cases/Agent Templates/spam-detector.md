@@ -7,6 +7,14 @@ permalink: /agent-templates/spam-detector
 
 # Detector de Spam
 
+El agente **Detector de Spam** está diseñado para ayudar a los usuarios a determinar si un correo electrónico o mensaje de texto es spam o no. Al analizar diversos aspectos del mensaje, incluyendo contenido no solicitado, enlaces sospechosos, solicitudes de información personal, lenguaje urgente y errores gramaticales, el Detector de Spam proporciona un veredicto claro de "Spam" o "No es spam." Además, ofrece una breve explicación del razonamiento detrás de la decisión, ayudando a los usuarios a comprender los factores que influyen en la evaluación. Esta herramienta utiliza directrices definidas y una calificación de confianza para mejorar la precisión de su detección de Guía del Usuario de FabriXA
+description: Esta es una guía del usuario para configurar y utilizar el agente de IA Detector de Spam para identificar mensajes no deseados de manera eficiente.
+lang: es
+permalink: /agent-templates/spam-detector
+---
+
+# Detector de Spam
+
 El agente **Detector de Spam** está diseñado para ayudar a los usuarios a determinar si un correo electrónico o mensaje de texto es spam o no. Al analizar diversos aspectos del mensaje, incluyendo contenido no solicitado, enlaces sospechosos, solicitudes de información personal, lenguaje urgente y errores gramaticales, el Detector de Spam proporciona un veredicto claro de "Spam" o "No es spam." Además, ofrece una breve explicación del razonamiento detrás de la decisión, ayudando a los usuarios a comprender los factores que influyen en la evaluación. Esta herramienta utiliza directrices definidas y una calificación de confianza para mejorar la precisión de su detección de spam.
 
 ## Inicio
@@ -66,4 +74,3 @@ Estoy muy seguro de este veredicto porque el correo electrónico parece ser una 
 - **Experimente con diferentes modelos**: Pruebe varios modelos de IA para determinar cuál ofrece los mejores resultados para sus necesidades.
 
 ## Artículos Relacionados
-Continúa explorando nuestra colección de [Plantillas de Agentes](/en-us/agent-templates/) para descubrir más aplicaciones de agentes de IA.

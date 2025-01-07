@@ -7,6 +7,14 @@ permalink: /knowledge
 
 # Conocimiento
 
+La característica de conocimiento mejora la calidad de las respuestas de tu agente de IA al proporcionar información valiosa. Al incorporar conocimiento, tu agente de IA puede ofrecer respuestas más precisas, mejorar las interacciones con los usuarios y tomar decisiones informadas. Esta característica garantiza que tu agente de IA tenga acceso a los datos esenciales para atender eficazmente a los Guía del Usuario de FabriXA
+description: Aprende cómo añadir e integrar conocimiento en tus agentes de IA usando la función de Conocimiento en FabriXAI.
+lang: es
+permalink: /knowledge
+---
+
+# Conocimiento
+
 La característica de conocimiento mejora la calidad de las respuestas de tu agente de IA al proporcionar información valiosa. Al incorporar conocimiento, tu agente de IA puede ofrecer respuestas más precisas, mejorar las interacciones con los usuarios y tomar decisiones informadas. Esta característica garantiza que tu agente de IA tenga acceso a los datos esenciales para atender eficazmente a los usuarios.
 
 ## Guía Paso a Paso para Agregar Conocimientos
@@ -27,4 +35,3 @@ Para integrar los conocimientos que ha añadido a su Agente de IA, consulte los 
 
 ## Artículos Relacionados
 - [Configurar Agente de IA](/en-us/configure-ai-agent/)
-- [Pasos para Integrar el Conocimiento](/en-us/configure-ai-agent/#knowledge)

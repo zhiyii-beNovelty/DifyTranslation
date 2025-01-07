@@ -5,6 +5,12 @@ lang: zh-CN
 permalink: /agent-templates/summarizer
 ---
 
+# FabriXAI 用户指南
+description: 这是一本用于有效配置和使用摘要器代理的用户指南。
+lang: zh-CN
+permalink: /agent-templates/summarizer
+---
+
 # 摘要器
 
 **摘要器**代理旨在将冗长的文本浓缩为简洁的摘要，同时保留原始材料的核心意义和上下文。用户可以指定写作的语气，设定字数限制，并提供反馈以进一步优化摘要。这种多功能性使得摘要能够满足特定需求，无论是用于轻松阅读还是正式分析。您可以根据个人偏好自定义输出风格，使其成为高效处理大量信息的宝贵工具。
@@ -58,4 +64,3 @@ permalink: /agent-templates/summarizer
 - **审查反馈**：利用反馈机制，根据之前的输出进一步完善您的摘要。
 
 ## 相关文章
-继续探索我们的 [代理模板](/en-us/agent-templates/) 集合，发现更多 AI 代理的创意应用！

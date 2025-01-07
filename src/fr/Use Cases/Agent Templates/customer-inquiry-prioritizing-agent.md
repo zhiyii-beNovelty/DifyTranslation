@@ -7,6 +7,14 @@ permalink: /agent-templates/customer-inquiry-prioritizing-agent
 
 # Agent de Priorisation des Demandes Clients
 
+L'**Agent de Priorisation des Demandes Clients** est conçu pour analyser les demandes clients et les classer en l'un des cinq niveaux d'urgence : Urgent, Élevé, Moyen, Faible ou Général. En évaluant l'urgence, la sévérité et le potentiel de problèmes supplémentaires dans chaque demande, l'agent aide les entreprises à prioriser efficacement les requêtes de support client. Cela garantit que les problèmes critiques sont traités rapidement, améliorant la satisfaction client et l'efficacité Guide de l'utilisateur FabriXAI
+description: Ceci est un guide utilisateur pour l'Agent de Priorisation des Demandes Clients afin de classer les demandes clients en fonction de leur urgence.
+lang: fr
+permalink: /agent-templates/customer-inquiry-prioritizing-agent
+---
+
+# Agent de Priorisation des Demandes Clients
+
 L'**Agent de Priorisation des Demandes Clients** est conçu pour analyser les demandes clients et les classer en l'un des cinq niveaux d'urgence : Urgent, Élevé, Moyen, Faible ou Général. En évaluant l'urgence, la sévérité et le potentiel de problèmes supplémentaires dans chaque demande, l'agent aide les entreprises à prioriser efficacement les requêtes de support client. Cela garantit que les problèmes critiques sont traités rapidement, améliorant la satisfaction client et l'efficacité opérationnelle.
 
 ## Premiers Pas
@@ -56,4 +64,3 @@ Le client ne peut pas se connecter à son compte, ce qui l'empêche de passer un
 - **Mises à jour régulières** : Maintenez la base de connaissances à jour pour garantir que l'agent réponde avec les informations les plus pertinentes.
 
 ## Articles liés
-Continuez à explorer notre collection de [Modèles d'agent](/en-us/agent-templates/) pour découvrir plus d'exemples d'agents IA en action !

@@ -7,6 +7,14 @@ permalink: /configure-ai-agent
 
 # AIエージェントの設定
 
+## FabriXAIユーザーガイド
+description: このステップバイステップのガイドで、FabriXAI上でAIエージェントを設定する方法を学びましょう。
+lang: ja
+permalink: /configure-ai-agent
+---
+
+# AIエージェントの設定
+
 ## FabriXAIでカスタマイズされたAIエージェントを作成する
 
 FabriXAIのAIエージェントはワークフローを自動化し、特定のユースケースを強化するように設計されています。FabriXAIを使用すると、タスクのニーズに応じて、AIエージェントを2つの形式でデプロイできます：
@@ -118,4 +126,3 @@ FabriXAIの知識機能を利用することで、独自のコンテキストと
 
 ## 関連する記事
 - [AIエージェントの利用](/use-ai-agent)
-- [AIエージェントの共有](/share-ai-agent/)

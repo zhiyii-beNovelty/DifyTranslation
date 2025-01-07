@@ -7,6 +7,14 @@ permalink: /integrations-api
 
 # Integrar Agente de IA con API
 
+¡Integre fácilmente su Agente de IA personalizado con la API de FabriXAI para mejorar sus Guía del Usuario de FabriXA
+description: Aprende cómo integrar tu agente de IA personalizado con la API de FabriXAI en tus aplicaciones.
+lang: es
+permalink: /integrations-api
+---
+
+# Integrar Agente de IA con API
+
 ¡Integre fácilmente su Agente de IA personalizado con la API de FabriXAI para mejorar sus aplicaciones!
 
 ## Beneficios de Usar la API de FabriXAI
@@ -28,4 +36,3 @@ Siga estos pasos para acceder a la API de FabriXAI para su agente de IA:
 
 ## Artículos relacionados
 - [Usar Agente de IA](/es-us/use-ai-agent)
-- [Compartir Agente de IA](/es-us/share-ai-agent/)

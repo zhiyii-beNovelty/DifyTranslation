@@ -7,6 +7,14 @@ permalink: /agent-templates/spam-detector
 
 # Spam-Detektor
 
+Der **Spam-Detektor-Agent** ist darauf ausgelegt, Benutzern dabei zu helfen festzustellen, ob eine E-Mail oder Textnachricht Spam ist oder nicht. Durch die Analyse verschiedener Aspekte der Nachricht, einschließlich unerwünschtem Inhalt, verdächtigen Links, Anfragen nach persönlichen Informationen, dringenden Formulierungen und Grammatikfehlern, gibt der Spam-Detektor ein klares Urteil von "Spam" oder "Kein Spam" ab. Zusätzlich bietet er eine kurze Erklärung der Begründung für die Entscheidung, um den Benutzern zu helfen, die Faktoren zu verstehen, die die Bewertung beeinflussen. Dieses Tool verwendet definierte Richtlinien und einen Vertrauensgrad, um die Genauigkeit seiner Spam-Erkennung zu FabriXAI Benutzerhandbuch
+description: Dies ist ein Benutzerhandbuch zur Konfiguration und Nutzung des Spam-Detektor-AI-Agenten zur effizienten Identifizierung von Spam-Nachrichten.
+lang: de
+permalink: /agent-templates/spam-detector
+---
+
+# Spam-Detektor
+
 Der **Spam-Detektor-Agent** ist darauf ausgelegt, Benutzern dabei zu helfen festzustellen, ob eine E-Mail oder Textnachricht Spam ist oder nicht. Durch die Analyse verschiedener Aspekte der Nachricht, einschließlich unerwünschtem Inhalt, verdächtigen Links, Anfragen nach persönlichen Informationen, dringenden Formulierungen und Grammatikfehlern, gibt der Spam-Detektor ein klares Urteil von "Spam" oder "Kein Spam" ab. Zusätzlich bietet er eine kurze Erklärung der Begründung für die Entscheidung, um den Benutzern zu helfen, die Faktoren zu verstehen, die die Bewertung beeinflussen. Dieses Tool verwendet definierte Richtlinien und einen Vertrauensgrad, um die Genauigkeit seiner Spam-Erkennung zu verbessern.
 
 ## Erste Schritte
@@ -66,4 +74,3 @@ Ich bin sehr zuversichtlich in Bezug auf dieses Urteil, weil die E-Mail eine leg
 - **Experimentieren Sie mit verschiedenen Modellen**: Probieren Sie verschiedene KI-Modelle aus, um festzustellen, welches die besten Ergebnisse für Ihre Bedürfnisse liefert.
 
 ## Verwandte Artikel
-Erkunden Sie unsere Sammlung von [Agentenvorlagen](/en-us/agent-templates/), um mehr KI-Agent-Ideen in Aktion zu entdecken!

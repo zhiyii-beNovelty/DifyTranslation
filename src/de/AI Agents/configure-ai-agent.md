@@ -7,6 +7,14 @@ permalink: /configure-ai-agent
 
 # KI-Agent konfigurieren
 
+## Erstellen Sie Ihre maßgeschneiderten KI-Agenten in FabriXAI Benutzerhandbuch
+description: Erfahren Sie, wie Sie KI-Agenten auf FabriXAI mit dieser Schritt-für-Schritt-Anleitung konfigurieren.
+lang: de
+permalink: /configure-ai-agent
+---
+
+# KI-Agent konfigurieren
+
 ## Erstellen Sie Ihre maßgeschneiderten KI-Agenten in FabriXAI
 
 KI-Agenten in FabriXAI sind darauf ausgelegt, Arbeitsabläufe zu automatisieren und spezifische Anwendungsfälle zu verbessern. Mit FabriXAI können Sie Ihren KI-Agenten in zwei Formaten bereitstellen, abhängig von den Anforderungen Ihrer Aufgabe:

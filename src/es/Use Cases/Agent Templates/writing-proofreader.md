@@ -7,6 +7,14 @@ permalink: /agent-templates/writing-proofreader
 
 # Corrector de Escritura
 
+El **Corrector de Escritura** es un agente de IA diseñado para proporcionar retroalimentación de nivel profesional sobre tu contenido escrito. Al evaluar la gramática, estructura y contenido, te ayuda a refinar tu texto para mejorar la claridad y el atractivo. Ya sea que estés redactando una reseña de libro, un artículo o cualquier forma de expresión escrita, este agente ofrece sugerencias detalladas para mejorar, convirtiéndose en una herramienta invaluable para escritores de cualquier Guía del Usuario de FabriXA
+description: Esta es una guía de usuario para configurar y utilizar el agente de IA Corrector de Escritura para pulir un texto dado.
+lang: es
+permalink: /agent-templates/writing-proofreader
+---
+
+# Corrector de Escritura
+
 El **Corrector de Escritura** es un agente de IA diseñado para proporcionar retroalimentación de nivel profesional sobre tu contenido escrito. Al evaluar la gramática, estructura y contenido, te ayuda a refinar tu texto para mejorar la claridad y el atractivo. Ya sea que estés redactando una reseña de libro, un artículo o cualquier forma de expresión escrita, este agente ofrece sugerencias detalladas para mejorar, convirtiéndose en una herramienta invaluable para escritores de cualquier nivel.
 
 ## Inicio
@@ -73,4 +81,3 @@ En conclusión, *Harry Potter y la Piedra Filosofal* es una introducción magist
 - **Experimenta con las opciones del modelo**: Si no estás satisfecho con el resultado, prueba diferentes modelos de IA para ver cuál se alinea mejor con tu estilo de escritura.
 
 ## Artículos Relacionados
-Sigue explorando nuestra colección de [Plantillas de Agentes](/es-us/agent-templates/) para descubrir más ideas de agentes de IA en acción.

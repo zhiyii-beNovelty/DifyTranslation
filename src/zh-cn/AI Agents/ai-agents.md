@@ -7,6 +7,14 @@ permalink: /ai-agents
 
 # 人工智能代理介绍  
 
+## 什么是AI代理？  FabriXAI 用户指南
+description: 了解AI代理、它们的功能以及如何开始使用FabriXAI。
+lang: zh-CN
+permalink: /ai-agents
+---
+
+# 人工智能代理介绍  
+
 ## 什么是AI代理？  
 AI代理是设计来执行任务、做出决策并与预设角色互动的自主程序。它们由大型语言模型（LLMs）等先进技术驱动，能够处理信息、执行操作并根据具体需求进行调整，无需人工干预。  
 
@@ -55,4 +63,3 @@ FabriXAI的AI代理能够处理多种任务，使其在不同行业中非常有�
 ## 相关文章
 - [从模板创建](/zh-cn/create-from-templates/)
 - [AI代理模板](/zh-cn/agent-templates/)
-- [配置AI代理](/zh-cn/configure-ai-agent/)

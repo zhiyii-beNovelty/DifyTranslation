@@ -7,6 +7,14 @@ permalink: /agent-templates/keywords-identifier
 
 # 关键词识别器
 
+**关键词识别器** FabriXAI 用户指南
+description: 这是关键词识别器的用户指南，旨在从给定文本中提取关键主题和话题。
+lang: zh-CN
+permalink: /agent-templates/keywords-identifier
+---
+
+# 关键词识别器
+
 **关键词识别器** 是一个智能代理，旨在从给定的文本中提取关键主题和话题。通过分析内容，它识别并排名最相关的关键词或标签，这些关键词或标签概括了讨论的核心思想和主题。这个工具对于内容创作者、研究人员和数字营销人员特别有用，因为他们需要从大量文本中快速提炼信息。它确保提取的关键词简洁且准确地反映文本的内容，提供基于其重要性的排名列表。
 
 ## 快速开始
@@ -64,4 +72,3 @@ permalink: /agent-templates/keywords-identifier
 - **定期审查输出**：定期评估提取的关键词的相关性和准确性，并根据需要调整输入文本或设置。
 
 ## 相关文章
-继续探索我们的 [代理模板](/en-us/agent-templates/) 集合，以发现更多 AI 代理的创意实践！

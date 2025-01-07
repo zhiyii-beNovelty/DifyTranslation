@@ -7,6 +7,14 @@ permalink: /agent-templates/summarizer
 
 # Zusammenfasser
 
+Der **Zusammenfassungsagent** ist darauf ausgelegt, umfangreiche Texte in prägnante Zusammenfassungen zu kondensieren, während die Kernbedeutung und der Kontext des Originalmaterials erhalten bleiben. Benutzer können den Tonfall der Zusammenfassung festlegen, eine Wortbegrenzung setzen und Feedback geben, um die Zusammenfassung weiter zu verfeinern. Diese Vielseitigkeit ermöglicht Zusammenfassungen, die spezifischen Bedürfnissen entsprechen, sei es für die beiläufige Lektüre oder für die formale Analyse. Sie können den Ausgabestil basierend auf Ihren Vorlieben anpassen, was es zu einem unschätzbaren Werkzeug für die effiziente Verarbeitung großer Informationsmengen FabriXAI Benutzerhandbuch
+description: Dies ist ein Benutzerhandbuch zur effektiven Konfiguration und Nutzung des Zusammenfasser-Agenten.
+lang: de
+permalink: /agent-templates/summarizer
+---
+
+# Zusammenfasser
+
 Der **Zusammenfassungsagent** ist darauf ausgelegt, umfangreiche Texte in prägnante Zusammenfassungen zu kondensieren, während die Kernbedeutung und der Kontext des Originalmaterials erhalten bleiben. Benutzer können den Tonfall der Zusammenfassung festlegen, eine Wortbegrenzung setzen und Feedback geben, um die Zusammenfassung weiter zu verfeinern. Diese Vielseitigkeit ermöglicht Zusammenfassungen, die spezifischen Bedürfnissen entsprechen, sei es für die beiläufige Lektüre oder für die formale Analyse. Sie können den Ausgabestil basierend auf Ihren Vorlieben anpassen, was es zu einem unschätzbaren Werkzeug für die effiziente Verarbeitung großer Informationsmengen macht.
 
 ## Erste Schritte
@@ -58,4 +66,3 @@ Der schnelle Fortschritt der Künstlichen Intelligenz ist äußerst spannend, br
 - **Überprüfen Sie das Feedback**: Nutzen Sie die Rückmeldungen des Agenten, um Ihre Zusammenfassungen basierend auf früheren Ergebnissen weiter zu verfeinern.
 
 ## Verwandte Artikel
-Setzen Sie fort, unsere Sammlung von [Agent-Vorlagen](/en-us/agent-templates/) zu erkunden, um weitere Ideen für KI-Agenten in der Praxis kennenzulernen!

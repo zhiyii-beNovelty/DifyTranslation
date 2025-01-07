@@ -7,6 +7,14 @@ permalink: /agent-templates/writing-proofreader
 
 # Correcteur d'écriture
 
+L'agent IA **Correcteur d'écriture** est conçu pour fournir des retours de niveau professionnel sur votre contenu écrit. En évaluant la grammaire, la structure et le contenu, il vous aide à affiner votre texte afin d'améliorer sa clarté et son attrait. Que vous rédigiez une critique de livre, un article ou toute autre forme d'expression écrite, cet agent offre des suggestions détaillées pour l'amélioration, ce qui en fait un outil inestimable pour les écrivains à tous les Guide de l'utilisateur FabriXAI
+description: Ceci est un guide utilisateur pour configurer et utiliser l'agent IA Correcteur d'écriture afin de peaufiner un texte donné.
+lang: fr
+permalink: /agent-templates/writing-proofreader
+---
+
+# Correcteur d'écriture
+
 L'agent IA **Correcteur d'écriture** est conçu pour fournir des retours de niveau professionnel sur votre contenu écrit. En évaluant la grammaire, la structure et le contenu, il vous aide à affiner votre texte afin d'améliorer sa clarté et son attrait. Que vous rédigiez une critique de livre, un article ou toute autre forme d'expression écrite, cet agent offre des suggestions détaillées pour l'amélioration, ce qui en fait un outil inestimable pour les écrivains à tous les niveaux.
 
 ## Premiers Pas
@@ -71,4 +79,3 @@ Alors que le livre excelle dans la création d'un monde immersif, il brille éga
 - **Expérimentez avec les options de modèles** : Si vous n'êtes pas satisfait des résultats, essayez différents modèles d'IA pour voir lequel correspond le mieux à votre style d'écriture.
 
 ## Articles connexes
-Continuez à explorer notre collection de [Modèles d'agents](/agent-templates/) pour découvrir davantage d'idées d'agents IA en action !

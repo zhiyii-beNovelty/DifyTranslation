@@ -5,6 +5,12 @@ lang: ja-JP
 permalink: /use-ai-agent
 ---
 
+# FabriXAIユーザーガイド
+description: このステップバイステップガイドで、AIエージェントにアクセスして使用する方法を学びましょう。
+lang: ja
+permalink: /use-ai-agent
+---
+
 # AIエージェントの使用
 
 設定後にあなたのAIエージェントにアクセスして、対話してください！
@@ -20,4 +26,3 @@ AIエージェントの設定をすべて設定して保存したら、以下の
 
 ## 関連記事
 - [AIエージェントの設定方法](/en-us/configure-ai-agent/)
-- [AIエージェントの共有方法](/en-us/share-ai-agents)

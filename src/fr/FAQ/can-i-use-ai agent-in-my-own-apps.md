@@ -7,6 +7,14 @@ permalink: /faq/can-i-use-ai-agent-in-my-own-apps
 
 # Puis-je utiliser un agent IA dans mes propres applications ?
 
+Oui, vous pouvez utiliser votre agent IA dans vos propres applications ! Notre plateforme fournit des options flexibles pour l'intégration et l'incorporation, vous permettant de tirer parti des capacités de votre agent IA dans divers Guide de l'utilisateur FabriXAI
+description: Apprenez à intégrer et à incorporer votre agent IA dans vos propres applications et sites Web.
+lang: fr
+permalink: /faq/can-i-use-ai-agent-in-my-own-apps
+---
+
+# Puis-je utiliser un agent IA dans mes propres applications ?
+
 Oui, vous pouvez utiliser votre agent IA dans vos propres applications ! Notre plateforme fournit des options flexibles pour l'intégration et l'incorporation, vous permettant de tirer parti des capacités de votre agent IA dans divers environnements.
 
 ## Options pour l'utilisation des Agents d'IA
@@ -21,4 +29,3 @@ Pour des instructions détaillées, veuillez vous référer à [Intégrer l'Agen
 
 Si vous souhaitez rendre votre agent IA accessible sur votre site Web, vous pouvez facilement l'intégrer à l'aide du fragment HTML fourni. Cela permet aux utilisateurs d'interagir avec votre agent IA directement depuis vos pages Web sans aucune navigation supplémentaire.
 
-Apprenez comment obtenir le fragment d'intégration dans la section [Partager l'Agent IA](/fr/share-agent-ia/).

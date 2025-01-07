@@ -7,6 +7,14 @@ permalink: /share-ai-agent
 
 # KI-Agenten teilen
 
+Teilen Sie Ihre KI-Agenten einfach mithilfe von FabriXAI mit FabriXAI Benutzerhandbuch
+description: Lernen Sie, wie Sie Ihre KI-Agenten mit dieser Schritt-für-Schritt-Anleitung teilen.
+lang: de
+permalink: /share-ai-agent
+---
+
+# KI-Agenten teilen
+
 Teilen Sie Ihre KI-Agenten einfach mithilfe von FabriXAI mit anderen!
 
 ## Freigabemethoden
@@ -26,4 +34,3 @@ Folgen Sie diesen Schritten, um Ihren KI-Agenten zu teilen:
 ## Verwandte Artikel
 - [Vorlagen erstellen](/de/create-from-templates)
 - [KI-Agent konfigurieren](/de/configure-ai-agent/)
-- [KI-Agent mit API integrieren](/de/integrations-api/)

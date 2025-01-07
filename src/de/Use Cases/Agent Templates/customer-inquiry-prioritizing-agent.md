@@ -7,6 +7,14 @@ permalink: /agent-templates/customer-inquiry-prioritizing-agent
 
 # Agent zur Priorisierung von Kundenanfragen
 
+Der **Agent zur Priorisierung von Kundenanfragen** ist darauf ausgelegt, Kundenanfragen zu analysieren und ihnen eine von fünf Prioritätsstufen zuzuweisen: Dringend, Hoch, Mittel, Niedrig oder Allgemein. Durch die Bewertung der Priorität, Schwere und des Potenzials für Folgeprobleme in jeder Anfrage unterstützt der Agent Unternehmen dabei, Kundenanfragen im Support effektiv zu priorisieren. Dadurch wird sichergestellt, dass kritische Probleme umgehend behandelt werden, was die Kundenzufriedenheit und die Betriebseffizienz FabriXAI Benutzerhandbuch
+description: Dies ist ein Benutzerhandbuch für den Kundenanfragen-Priorisierungs-Agenten, der Kundenanfragen basierend auf der Dringlichkeit klassifiziert.
+lang: de
+permalink: /agent-templates/customer-inquiry-prioritizing-agent
+---
+
+# Agent zur Priorisierung von Kundenanfragen
+
 Der **Agent zur Priorisierung von Kundenanfragen** ist darauf ausgelegt, Kundenanfragen zu analysieren und ihnen eine von fünf Prioritätsstufen zuzuweisen: Dringend, Hoch, Mittel, Niedrig oder Allgemein. Durch die Bewertung der Priorität, Schwere und des Potenzials für Folgeprobleme in jeder Anfrage unterstützt der Agent Unternehmen dabei, Kundenanfragen im Support effektiv zu priorisieren. Dadurch wird sichergestellt, dass kritische Probleme umgehend behandelt werden, was die Kundenzufriedenheit und die Betriebseffizienz steigert.
 
 ## Erste Schritte
@@ -56,4 +64,3 @@ Der Kunde oder die Kundin kann sich nicht in ihr Konto anmelden, was sie daran h
 - **Regelmäßige Aktualisierungen**: Halte die Wissensdatenbank aktuell, um sicherzustellen, dass der Agent mit den relevantesten Informationen antwortet.
 
 ## Verwandte Artikel
-Entdecken Sie unsere Sammlung von [Agentenvorlagen](/de/agent-templates/), um weitere Ideen für den Einsatz von KI-Agenten zu erhalten!

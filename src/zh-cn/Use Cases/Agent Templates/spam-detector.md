@@ -5,6 +5,12 @@ lang: zh-CN
 permalink: /agent-templates/spam-detector
 ---
 
+# FabriXAI 用户指南
+description: 这是一个用户指南，用于配置和使用垃圾邮件检测AI代理，以高效识别垃圾邮件。
+lang: zh-CN
+permalink: /agent-templates/spam-detector
+---
+
 # 垃圾邮件检测器
 
 **垃圾邮件检测器**代理旨在帮助用户判断一封电子邮件或短信是否为垃圾邮件。通过分析消息的各个方面，包括未经请求的内容、可疑链接、个人信息请求、紧急措辞和语法错误，垃圾邮件检测器提供了明确的判决“垃圾”或“非垃圾”。此外，它还简要解释了决策背后的原因，帮助用户理解影响评估的因素。此工具利用定义的指南和置信度评分来提高其垃圾邮件检测的准确性。
@@ -66,4 +72,3 @@ permalink: /agent-templates/spam-detector
 - **尝试不同的AI模型**：测试多种AI模型，以确定哪一种最适合您的需求。
 
 ## 相关文章
-继续浏览我们的[代理模板](/zh-cn/agent-templates/)系列，探索更多AI代理的创意应用！

@@ -7,6 +7,14 @@ permalink: /agent-templates/product-description-enhancer
 
 # 产品描述增强器
 
+**产品描述增强器** FabriXAI 用户指南
+description: 这是产品描述增强器代理的用户指南，帮助用户为营销目的创建引人注目的产品描述。
+lang: zh-CN
+permalink: /agent-templates/product-description-enhancer
+---
+
+# 产品描述增强器
+
 **产品描述增强器** 是一种由人工智能驱动的工具，旨在将基础的产品信息转化为吸引人且具有说服力的营销描述。通过整合产品的名称、关键特性、期望的写作语气以及其他相关细节，该工具能够精心打造出一个引人注目的段落，突出产品的优势、独特卖点和潜在用途。此工具非常适合营销人员、电子商务经理以及任何希望提升产品叙述效果并有效吸引潜在客户的专业人士使用。
 
 ## 快速入门
@@ -65,4 +73,3 @@ permalink: /agent-templates/product-description-enhancer
 
 ## 相关文章
 
-继续探索我们收集的 [代理模板](/zh-cn/agent-templates/) 以发现更多 AI 代理的创意案例！

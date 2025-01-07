@@ -7,6 +7,14 @@ permalink: /agent-templates
 
 # 代理模板
 
+## FabriXAI 用户指南
+description: 了解FabriXAI的代理模板，以及如何利用它们轻松创建定制化的AI代理。
+lang: zh-CN
+permalink: /agent-templates
+---
+
+# 代理模板
+
 ## 什么是代理模板？
 
 代理模板是预先构建的配置，旨在帮助您快速创建适用于特定任务的AI代理。这些模板作为起点，提供基础设置，您可以根据独特的业务需求进行定制。使用代理模板，您可以节省时间和精力，同时确保您的AI代理能够有效配置，实现预期目的。
@@ -51,4 +59,3 @@ permalink: /agent-templates
 
 ### 安全代理
 - [敏感数据过滤代理](/zh-cn/agent-templates/sensitive-data-filtering-agent)
-- [垃圾邮件检测器](/zh-cn/agent-templates/spam-detector)

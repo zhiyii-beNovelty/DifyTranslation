@@ -7,6 +7,14 @@ permalink: /key-concepts
 
 # Zentrale Konzepte für FabriXAI
 
+## FabriXAI Benutzerhandbuch
+description: Entdecken Sie die Schlüsselkonzepte von FabriXAI und starten Sie schnell.
+lang: de
+permalink: /key-concepts
+---
+
+# Zentrale Konzepte für FabriXAI
+
 ## KI-Agent
 
 Ein KI-Agent ist ein Programm, das entwickelt wurde, um Aufgaben autonom auszuführen und mit vordefinierten Rollen zu interagieren. KI-Agenten sind mit vorgefertigten großen Sprachmodellen (LLMs) ausgestattet, wodurch sie über die Verarbeitung natürlicher Sprache hinausgehen und eine Vielzahl fortschrittlicher Funktionen bieten. Sie können Informationen verarbeiten, Entscheidungen treffen und Aktionen ausführen, ohne dass menschliches Eingreifen erforderlich ist.
@@ -44,4 +52,3 @@ Erfahren Sie mehr über die Integration Ihres KI-Agenten mit der API unter [API-
 ## Verwandte Artikel
 - [KI-Agenten](/en-us/ai-agents/)
 - [Wissensdatenbank](/en-us/knowledge/)
-- [Vorlagen für Agenten](/en-us/agent-templates/)

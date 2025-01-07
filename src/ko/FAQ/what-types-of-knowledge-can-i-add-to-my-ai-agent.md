@@ -7,6 +7,14 @@ permalink: /what-types-of-knowledge-can-i-add-to-my-ai-agent
 
 # 저의 AI 에이전트에 추가할 수 있는 지식의 종류는?
 
+문서 형태로 다양한 종류의 지식을 추가하여 AI 에이전트를 향상시킬 수 있습니다. 현재 저희는 다음 파일 형식의 업로드를 FabriXAI 사용자 가이드
+description: AI 에이전트에 통합할 수 있는 지식의 유형과 지원되는 파일 형식에 대해 알아보세요.
+lang: ko
+permalink: /what-types-of-knowledge-can-i-add-to-my-ai-agent
+---
+
+# 저의 AI 에이전트에 추가할 수 있는 지식의 종류는?
+
 문서 형태로 다양한 종류의 지식을 추가하여 AI 에이전트를 향상시킬 수 있습니다. 현재 저희는 다음 파일 형식의 업로드를 지원합니다:
 
 ## 지원되는 형식
@@ -25,4 +33,3 @@ permalink: /what-types-of-knowledge-can-i-add-to-my-ai-agent
 
 지식을 생성하는 방법에 대한 자세한 내용은 [지식](/en-us/knowledge/) 부분을 참조하세요.
 
-특정 AI 에이전트에 지식을 통합하려면, AI 에이전트 설정 가이드의 [지식 통합 단계](/en-us/configure-ai-agent/#knowledge)를 참조하세요.

@@ -7,6 +7,14 @@ permalink: /agent-templates/sensitive-data-filtering-agent
 
 # Sensitiver Datenfilteragent
 
+Der **Sensitiver Datenfilteragent** ist dazu gedacht, Benutzern zu helfen, persönliche Informationen zu schützen, indem er sensible Daten in einem Text automatisch erkennt und unkenntlich macht. Dieser Agent verarbeitet spezifische Kategorien wie HKID-Nummern, Telefonnummern, Adressen, Finanzinformationen und Geburtsdaten und ersetzt sensible Daten systematisch durch festgelegte Platzhalter. Benutzer können so die Integrität ihrer Kommunikation und die Einhaltung der Datenschutzvorschriften wahren, während sie sicherstellen, dass vertrauliche Details nicht preisgegeben werden. Dadurch wird er zu einem unverzichtbaren Werkzeug für Fachleute, die mit sensiblen Dokumenten FabriXAI Benutzerhandbuch
+description: Dies ist ein Benutzerhandbuch für den Agenten zur Filterung sensibler Daten, das entwickelt wurde, um Benutzern dabei zu helfen, persönliche Informationen zu schützen, indem es automatisch sensible Daten in einem gegebenen Text identifiziert und verschleiert.
+lang: de
+permalink: /agent-templates/sensitive-data-filtering-agent
+---
+
+# Sensitiver Datenfilteragent
+
 Der **Sensitiver Datenfilteragent** ist dazu gedacht, Benutzern zu helfen, persönliche Informationen zu schützen, indem er sensible Daten in einem Text automatisch erkennt und unkenntlich macht. Dieser Agent verarbeitet spezifische Kategorien wie HKID-Nummern, Telefonnummern, Adressen, Finanzinformationen und Geburtsdaten und ersetzt sensible Daten systematisch durch festgelegte Platzhalter. Benutzer können so die Integrität ihrer Kommunikation und die Einhaltung der Datenschutzvorschriften wahren, während sie sicherstellen, dass vertrauliche Details nicht preisgegeben werden. Dadurch wird er zu einem unverzichtbaren Werkzeug für Fachleute, die mit sensiblen Dokumenten umgehen.
 
 ## Erste Schritte
@@ -76,4 +84,3 @@ Beachten Sie, dass ich alle Vorkommen sensibler Daten im Text ersetzt habe, soda
 - **Regelungen auf dem neuesten Stand halten**: Informieren Sie sich über Datenschutzgesetze, um sicherzustellen, dass die Filterpraktiken des Agenten konform bleiben.
 
 ## Verwandte Artikel
-Entdecken Sie weiterhin unsere Sammlung von [Agent Templates](/en-us/agent-templates/), um weitere Ideen für KI-Agenten in der Praxis kennenzulernen!

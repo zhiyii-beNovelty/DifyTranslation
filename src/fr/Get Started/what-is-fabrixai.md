@@ -7,6 +7,14 @@ permalink: /what-is-fabrixai
 
 # Bienvenue chez FabriXAI
 
+## Guide de l'utilisateur FabriXAI
+description: Présentation de FabriXAI — La plateforme d'agents d'IA à faible code conçue pour simplifier l'automatisation.
+lang: fr
+permalink: /what-is-fabrixai
+---
+
+# Bienvenue chez FabriXAI
+
 ## Introduction
 FabriXAI est une plateforme tout-en-un conçue pour simplifier les processus métier complexes en tirant parti des agents d'IA à faible code. Elle permet aux entreprises de créer, automatiser et gérer des flux de travail sans effort, sans nécessiter une expertise informatique approfondie. De la création d'agents d'IA puissants à leur enchaînement sans faille pour gérer des tâches plus complexes, FabriXAI révolutionne la façon dont les équipes abordent la productivité et l'automatisation.
 
@@ -39,4 +47,3 @@ L'équipe derrière FabriXAI est certifiée ISO 27001:2013, assurant que vos don
 - **Personnalisable pour les entreprises :** Bénéficiez de solutions sur mesure avec une sécurité de niveau entreprise et un contrôle pour répondre aux exigences spécifiques de votre entreprise.
 
 ## Commencer avec FabriXAI
-Prêt à révolutionner vos flux de travail ? Continuez à lire plus sur les [Concepts Clés de FabriXAI](/fr/concepts-cles) et commencez dès maintenant avec FabriXAI !

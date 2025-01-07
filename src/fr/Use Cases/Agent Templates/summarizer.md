@@ -7,6 +7,14 @@ permalink: /agent-templates/summarizer
 
 # Résumeur
 
+L'**agent Résumeur** est conçu pour condenser de longs textes en résumés concis tout en conservant le sens principal et le contexte du matériel original. Les utilisateurs peuvent spécifier le ton de l'écriture, établir une limite de mots et fournir des retours pour affiner davantage le résumé. Cette polyvalence permet des résumés adaptés à des besoins spécifiques, que ce soit pour une lecture informelle ou une analyse formelle. Vous pouvez personnaliser le style de sortie en fonction de vos préférences, ce qui en fait un outil inestimable pour traiter efficacement de grandes quantités Guide de l'utilisateur FabriXAI
+description: Ceci est un guide utilisateur pour configurer et utiliser efficacement l'agent Résumeur.
+lang: fr
+permalink: /agent-templates/summarizer
+---
+
+# Résumeur
+
 L'**agent Résumeur** est conçu pour condenser de longs textes en résumés concis tout en conservant le sens principal et le contexte du matériel original. Les utilisateurs peuvent spécifier le ton de l'écriture, établir une limite de mots et fournir des retours pour affiner davantage le résumé. Cette polyvalence permet des résumés adaptés à des besoins spécifiques, que ce soit pour une lecture informelle ou une analyse formelle. Vous pouvez personnaliser le style de sortie en fonction de vos préférences, ce qui en fait un outil inestimable pour traiter efficacement de grandes quantités d'informations.
 
 ## Démarrage
@@ -59,4 +67,3 @@ Le progrès rapide de l'intelligence artificielle est extrêmement excitant mais
 
 ## Articles connexes
 
-Continuez à explorer notre collection de [Modèles d'Agents](/en-us/agent-templates/) pour découvrir davantage d'idées d'agents IA en action!

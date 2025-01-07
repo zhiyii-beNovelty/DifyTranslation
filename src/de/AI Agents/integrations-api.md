@@ -7,6 +7,14 @@ permalink: /integrations-api
 
 # KI-Agent mit der API integrieren
 
+Integrieren Sie Ihren maßgeschneiderten KI-Agenten einfach mit der FabriXAI-API, um Ihre Anwendungen zu FabriXAI Benutzerhandbuch
+description: Erfahren Sie, wie Sie Ihren maßgeschneiderten KI-Agenten mit der FabriXAI API in Ihre Anwendungen integrieren.
+lang: de
+permalink: /integrations-api
+---
+
+# KI-Agent mit der API integrieren
+
 Integrieren Sie Ihren maßgeschneiderten KI-Agenten einfach mit der FabriXAI-API, um Ihre Anwendungen zu verbessern!
 
 # Vorteile der Verwendung der FabriXAI API
@@ -28,4 +36,3 @@ Folgen Sie diesen Schritten, um auf die FabriXAI-API für Ihren KI-Agenten zuzug
 
 # Ähnliche Artikel
 - [KI-Agent verwenden](/de-de/ki-agent-verwenden)
-- [KI-Agent teilen](/de-de/ki-agent-teilen)

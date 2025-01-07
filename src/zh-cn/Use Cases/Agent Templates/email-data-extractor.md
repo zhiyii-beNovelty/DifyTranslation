@@ -7,6 +7,14 @@ permalink: /agent-templates/email-data-extractor
 
 # 邮件数据提取器
 
+**邮件数据提取器** 是一款专业的 AI 工具，旨在分析邮件内容并根据特定的数据字段提取相关信息。该工具使用结构化 JSON FabriXAI 用户指南
+description: 这是邮件数据提取器的用户指南，一种专业的电子邮件分析工具，用于从电子邮件中提取相关信息。
+lang: zh-CN
+permalink: /agent-templates/email-data-extractor
+---
+
+# 邮件数据提取器
+
 **邮件数据提取器** 是一款专业的 AI 工具，旨在分析邮件内容并根据特定的数据字段提取相关信息。该工具使用结构化 JSON 格式，处理邮件文本以识别关键元素，如发件人姓名、主题和联系电话。在未找到某个数据字段的情况下，提取器会自动分配“不适用”这一值。这确保了全面的输出，适用于结构化和非结构化的邮件内容，使其成为商务通信分析和数据管理的理想选择。
 
 ## 入门指南
@@ -63,4 +71,3 @@ permalink: /agent-templates/email-data-extractor
 
 ## 相关文章
 
-继续探索我们的 [代理模板](/en-us/agent-templates/) 集合，发现更多正在运作的人工智能代理想法。

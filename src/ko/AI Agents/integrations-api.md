@@ -7,6 +7,14 @@ permalink: /integrations-api
 
 # AI 에이전트와 API 통합
 
+FabriXAI API를 사용하여 귀사의 맞춤형 AI 에이전트를 손쉽게 통합하고 응용 프로그램을 FabriXAI 사용자 가이드
+description: FabriXAI API를 사용하여 맞춤형 AI 에이전트를 애플리케이션에 통합하는 방법을 배우세요.
+lang: ko
+permalink: /integrations-api
+---
+
+# AI 에이전트와 API 통합
+
 FabriXAI API를 사용하여 귀사의 맞춤형 AI 에이전트를 손쉽게 통합하고 응용 프로그램을 향상시키세요!
 
 ## FabriXAI API 사용의 이점
@@ -28,4 +36,3 @@ FabriXAI API에 액세스하여 AI 에이전트를 통합하려면 다음 단계
 
 ## 관련 기사
 - [AI 에이전트 사용하기](/en-us/use-ai-agent)
-- [AI 에이전트 공유하기](/en-us/share-ai-agent/)

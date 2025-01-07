@@ -7,6 +7,14 @@ permalink: /agent-templates/keywords-identifier
 
 # Identificador de Palabras Clave
 
+El **Identificador de Palabras Clave** es un agente inteligente diseñado para extraer temas y tópicos clave de un texto dado. Al analizar el contenido, identifica y clasifica las palabras clave o etiquetas más relevantes que encapsulan las ideas y temas principales discutidos. Esta herramienta es particularmente útil para creadores de contenido, investigadores y especialistas en marketing digital que necesitan destilar rápidamente información de grandes volúmenes de texto. Garantiza que las palabras clave extraídas sean concisas y reflejen con precisión el contenido del texto, proporcionando una lista clasificada basada en su Guía del Usuario de FabriXA
+description: Esta es una guía de usuario para el Identificador de Palabras Clave, diseñado para extraer temas y tópicos clave de un texto dado.
+lang: es
+permalink: /agent-templates/keywords-identifier
+---
+
+# Identificador de Palabras Clave
+
 El **Identificador de Palabras Clave** es un agente inteligente diseñado para extraer temas y tópicos clave de un texto dado. Al analizar el contenido, identifica y clasifica las palabras clave o etiquetas más relevantes que encapsulan las ideas y temas principales discutidos. Esta herramienta es particularmente útil para creadores de contenido, investigadores y especialistas en marketing digital que necesitan destilar rápidamente información de grandes volúmenes de texto. Garantiza que las palabras clave extraídas sean concisas y reflejen con precisión el contenido del texto, proporcionando una lista clasificada basada en su importancia.
 
 ## Comenzando
@@ -64,4 +72,3 @@ Estas palabras clave/etiquetas capturan la esencia del texto y proporcionan un r
 - **Revisa los Resultados Regularmente**: Evalúa periódicamente las palabras clave extraídas para verificar su relevancia y precisión, y ajusta el texto de entrada o las configuraciones según sea necesario.
 
 ## Artículos Relacionados
-Continúa explorando nuestra colección de [Plantillas de Agentes](/en-us/agent-templates/) para descubrir más ideas de agentes de IA en acción!

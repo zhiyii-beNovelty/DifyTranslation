@@ -7,6 +7,14 @@ permalink: /share-ai-agent
 
 # Compartir Agente de IA
 
+¡Comparte fácilmente tus agentes de IA con otros usando Guía del Usuario de FabriXA
+description: Aprende cómo compartir tus agentes de IA con esta guía paso a paso.
+lang: es
+permalink: /share-ai-agent
+---
+
+# Compartir Agente de IA
+
 ¡Comparte fácilmente tus agentes de IA con otros usando FabriXAI!
 
 ## Métodos para Compartir
@@ -26,4 +34,3 @@ Sigue estos pasos para compartir tu agente de inteligencia artificial:
 ## Artículos relacionados
 - [Crear desde Plantillas](/en-us/ecreate-from-templates)
 - [Configurar el Agente de IA](/en-us/configure-ai-agent/)
-- [Integrar el Agente de IA con API](/en-us/integrations-api/)

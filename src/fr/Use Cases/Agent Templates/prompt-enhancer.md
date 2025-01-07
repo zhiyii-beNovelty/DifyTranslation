@@ -7,6 +7,14 @@ permalink: /agent-templates/prompt-enhancer
 
 # Améliorateur de Prompt
 
+L'**Améliorateur de Prompt** est un assistant IA spécialisé dans la création de prompts pour les grands modèles de langage (LLM). Il permet aux utilisateurs d'entrer des prompts initiaux ou des commentaires de révision, que l'agent affine ensuite en fonction du contexte et de la clarté. Le résultat comprend une version améliorée du prompt, une explication des ajustements effectués et des suggestions pour des améliorations supplémentaires. Cet outil est particulièrement utile pour les utilisateurs cherchant à augmenter l'efficacité et la précision de leurs prompts, garantissant des interactions de meilleure qualité avec les modèles Guide de l'utilisateur FabriXAI
+description: Ceci est un guide utilisateur pour l'Améliorateur de Prompts, un assistant IA conçu pour affiner et améliorer vos prompts pour les LLMs.
+lang: fr
+permalink: /agent-templates/prompt-enhancer
+---
+
+# Améliorateur de Prompt
+
 L'**Améliorateur de Prompt** est un assistant IA spécialisé dans la création de prompts pour les grands modèles de langage (LLM). Il permet aux utilisateurs d'entrer des prompts initiaux ou des commentaires de révision, que l'agent affine ensuite en fonction du contexte et de la clarté. Le résultat comprend une version améliorée du prompt, une explication des ajustements effectués et des suggestions pour des améliorations supplémentaires. Cet outil est particulièrement utile pour les utilisateurs cherchant à augmenter l'efficacité et la précision de leurs prompts, garantissant des interactions de meilleure qualité avec les modèles IA.
 
 ## Premiers Pas
@@ -90,4 +98,3 @@ Cette réponse vise à répondre aux préoccupations du client, à démontrer un
 - **Boucle de Rétroaction** : Utilisez les suggestions pour un affinement supplémentaire afin d'améliorer continuellement vos requêtes.
 
 ## Articles connexes
-Continuez d'explorer notre collection de [Templates d'agents](/en-us/agent-templates/) pour découvrir davantage d'idées d'agents d'IA en action!

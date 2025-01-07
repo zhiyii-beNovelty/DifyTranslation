@@ -7,6 +7,14 @@ permalink: /create-from-templates
 
 # Créer à partir des Gabarits
 
+Utilisez les gabarits d'Agents préconçus de FabriXAI pour démarrer rapidement Guide de l'utilisateur FabriXAI
+description: Apprenez à créer des agents IA à partir de modèles sur FabriXAI avec ce guide étape par étape.
+lang: fr
+permalink: /create-from-templates
+---
+
+# Créer à partir des Gabarits
+
 Utilisez les gabarits d'Agents préconçus de FabriXAI pour démarrer rapidement !
 
 ## Qu'est-ce que les Modèles d'agents ?
@@ -32,4 +40,3 @@ Nous sommes impatients de voir comment vous étendez et personnalisez ces agents
 
 ## Articles connexes
 - [Modèles d'agent](/fr-fr/agent-templates/)
-- [Configurer un agent IA](/fr-fr/configure-ai-agent/)

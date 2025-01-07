@@ -4,4 +4,3 @@
 
 에이전트 템플릿 사용 방법에 대한 자세한 내용은 [템플릿에서 생성](/en-us/create-from-templates)를 참조하세요.
 
-FabriXAI의 [에이전트 템플릿](/en-us/agent-templates) 라이브러리를 계속 탐색하여 다양한 AI 에이전트 아이디어를 확인할 수 있습니다.

@@ -7,6 +7,14 @@ permalink: /share-ai-agent
 
 # AI 에이전트 공유
 
+FabriXAI를 사용하여 다른 사람과 AI 에이전트를 쉽게 FabriXAI 사용자 가이드
+description: 이 단계별 가이드를 통해 AI 에이전트를 공유하는 방법을 알아보세요.
+lang: ko
+permalink: /share-ai-agent
+---
+
+# AI 에이전트 공유
+
 FabriXAI를 사용하여 다른 사람과 AI 에이전트를 쉽게 공유하세요!
 
 ## 공유 방법
@@ -26,4 +34,3 @@ AI 에이전트를 공유하려면 다음 단계를 따라주세요:
 ## 관련 기사
 - [템플릿에서 생성하기](/en-us/ecreate-from-templates)
 - [AI 에이전트 구성하기](/en-us/configure-ai-agent/)
-- [API와 AI 에이전트 통합하기](/en-us/integrations-api/)

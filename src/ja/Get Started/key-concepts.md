@@ -7,6 +7,14 @@ permalink: /key-concepts
 
 # ファブリXAIの主要な概念
 
+## FabriXAIユーザーガイド
+description: FabriXAIの主要な概念を学び、迅速に始めましょう。
+lang: ja
+permalink: /key-concepts
+---
+
+# ファブリXAIの主要な概念
+
 ## AIエージェント
 
 AIエージェントは、自律的にタスクを実行し、事前に定義された役割を実行するように設計されたプログラムです。大規模言語モデル（LLMs）を搭載したAIエージェントは、自然言語処理に留まらず、幅広い機能を提供します。AIエージェントは情報を処理し、意思決定を行い、人間の介入なしに行動を起こすことができます。
@@ -44,4 +52,3 @@ AIエージェントとAPIの統合について詳しくは、[Integrate AI Agen
 ## 関連記事
 - [AIエージェント](/ja/ai-agents/)
 - [知識](/ja/knowledge/)
-- [エージェントテンプレート](/ja/agent-templates/)

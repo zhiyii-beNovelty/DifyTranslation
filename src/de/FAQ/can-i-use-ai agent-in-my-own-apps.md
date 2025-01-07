@@ -7,6 +7,14 @@ permalink: /faq/can-i-use-ai-agent-in-my-own-apps
 
 # Kann ich einen KI-Agent in meinen eigenen Apps verwenden?
 
+Ja, Sie können Ihren KI-Agent in Ihren eigenen Anwendungen nutzen! Unsere Plattform bietet flexible Möglichkeiten für Integration und Einbindung, sodass Sie die Fähigkeiten Ihres KI-Agent in verschiedenen Umgebungen einsetzen FabriXAI Benutzerhandbuch
+description: Lernen Sie, wie Sie Ihren AI-Agent in Ihre eigenen Anwendungen und Websites integrieren und einbetten können.
+lang: de
+permalink: /faq/can-i-use-ai-agent-in-my-own-apps
+---
+
+# Kann ich einen KI-Agent in meinen eigenen Apps verwenden?
+
 Ja, Sie können Ihren KI-Agent in Ihren eigenen Anwendungen nutzen! Unsere Plattform bietet flexible Möglichkeiten für Integration und Einbindung, sodass Sie die Fähigkeiten Ihres KI-Agent in verschiedenen Umgebungen einsetzen können.
 
 ## Optionen für den Einsatz von KI-Agenten
@@ -21,4 +29,3 @@ Für detaillierte Anweisungen, bitte verweisen Sie auf [KI-Agent mit API integri
 
 Wenn Sie Ihren KI-Agent auf Ihrer Webseite zugänglich machen möchten, können Sie ihn einfach mit dem bereitgestellten HTML-Snippet einbetten. Dadurch können Benutzer direkt von Ihrer Webseite mit Ihrem KI-Agenten interagieren, ohne zusätzliche Navigation.
 
-Erfahren Sie, wie Sie das Einbettungssnippet im Abschnitt [Share AI Agent](/en-us/share-ai-agent/) erhalten.

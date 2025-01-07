@@ -7,6 +7,14 @@ permalink: /agent-templates/sensitive-data-filtering-agent
 
 # Agent de filtrage des données sensibles
 
+L’**Agent de filtrage des données sensibles** est conçu pour aider les utilisateurs à protéger leurs informations personnelles en identifiant automatiquement et en masquant les données sensibles dans un texte donné. Ciblant des catégories spécifiques telles que les numéros HKID, les numéros de téléphone, les adresses, les informations financières et les dates de naissance, cet agent remplace systématiquement les données sensibles par des espaces réservés définis. Les utilisateurs peuvent ainsi maintenir l’intégrité de leur communication et se conformer aux réglementations sur la protection des données. Cela garantit que les détails confidentiels ne soient pas divulgués, faisant de cet outil un atout inestimable pour les professionnels qui manipulent des documents Guide de l'utilisateur FabriXAI
+description: Ceci est un guide de l'utilisateur pour l'Agent de filtrage des données sensibles, conçu pour aider les utilisateurs à protéger les informations personnelles en identifiant automatiquement et en masquant les données sensibles dans un texte donné.
+lang: fr
+permalink: /agent-templates/sensitive-data-filtering-agent
+---
+
+# Agent de filtrage des données sensibles
+
 L’**Agent de filtrage des données sensibles** est conçu pour aider les utilisateurs à protéger leurs informations personnelles en identifiant automatiquement et en masquant les données sensibles dans un texte donné. Ciblant des catégories spécifiques telles que les numéros HKID, les numéros de téléphone, les adresses, les informations financières et les dates de naissance, cet agent remplace systématiquement les données sensibles par des espaces réservés définis. Les utilisateurs peuvent ainsi maintenir l’intégrité de leur communication et se conformer aux réglementations sur la protection des données. Cela garantit que les détails confidentiels ne soient pas divulgués, faisant de cet outil un atout inestimable pour les professionnels qui manipulent des documents sensibles.
 
 # Premiers Pas
@@ -76,4 +84,3 @@ J'ai remplacé toutes les données sensibles dans le texte, tout en veillant à 
 - **Rester Informé sur les Réglementations** : Se tenir au courant des lois sur la protection des données personnelles pour garantir que les pratiques de filtrage de l'agent restent conformes.
 
 # Articles Liés
-Continuez à explorer notre collection de [Modèles d'agents](/en-us/agent-templates/) pour découvrir plus d'idées d'agents d'IA en action !

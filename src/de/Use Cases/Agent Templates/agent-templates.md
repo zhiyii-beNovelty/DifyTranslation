@@ -7,6 +7,14 @@ permalink: /agent-templates
 
 # Agenten-Vorlagen
 
+## Was sind FabriXAI Benutzerhandbuch
+description: Erfahren Sie mehr über die Agenten-Vorlagen von FabriXAI und wie Sie diese nutzen können, um mühelos maßgeschneiderte KI-Agenten zu erstellen.
+lang: de
+permalink: /agent-templates
+---
+
+# Agenten-Vorlagen
+
 ## Was sind Agenten-Vorlagen?
 
 Agenten-Vorlagen sind vorgefertigte Konfigurationen, die entwickelt wurden, um Ihnen zu helfen, schnell KI-Agenten zu erstellen, die auf spezifische Aufgaben zugeschnitten sind. Diese Vorlagen dienen als Ausgangspunkt und bieten grundlegende Setups, die Sie an Ihre einzigartigen Geschäftsanforderungen anpassen können. Durch die Nutzung von Agenten-Vorlagen können Sie Zeit und Aufwand sparen und gleichzeitig sicherstellen, dass Ihr KI-Agent effektiv für den vorgesehenen Zweck konfiguriert ist.

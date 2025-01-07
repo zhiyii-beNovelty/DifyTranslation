@@ -7,6 +7,14 @@ permalink: /ai-agents
 
 # Introducción a Agentes de IA  
 
+## ¿Qué son los Agentes de IA?  Guía del Usuario de FabriXA
+description: Aprende sobre los agentes de IA, sus capacidades y cómo comenzar con FabriXAI.
+lang: es
+permalink: /ai-agents
+---
+
+# Introducción a Agentes de IA  
+
 ## ¿Qué son los Agentes de IA?  
 Los agentes de IA son programas autónomos diseñados para realizar tareas, tomar decisiones e interactuar con roles predefinidos. Impulsados por tecnologías avanzadas como los Modelos de Lenguaje a Gran Escala (LLM), estos agentes pueden procesar información, ejecutar acciones y adaptarse a necesidades específicas sin intervención humana.  
 
@@ -64,4 +72,3 @@ Para maximizar la efectividad de tus agentes de IA:
 ## Artículos relacionados
 - [Crear desde Plantillas](/es-us/create-from-templates/)
 - [Plantillas de Agentes](/es-us/agent-templates/)
-- [Configurar Agente de IA](/es-us/configure-ai-agent/)

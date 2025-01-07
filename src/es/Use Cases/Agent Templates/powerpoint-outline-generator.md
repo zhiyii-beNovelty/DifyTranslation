@@ -7,6 +7,14 @@ permalink: /agent-templates/powerpoint-outline-generator
 
 # Generador de Esquemas de PowerPoint
 
+El **Generador de Esquemas de PowerPoint** es una herramienta poderosa diseñada para ayudar a los usuarios a crear esquemas estructurados para presentaciones. Simplemente proporcionando un tema, una breve descripción y el número deseado de diapositivas, la herramienta genera un esquema detallado que incluye títulos de diapositivas, puntos clave y elementos visuales sugeridos para cada diapositiva. Esto asegura que los usuarios puedan crear presentaciones que no solo sean informativas sino también visualmente atractivas. El generador agiliza el proceso de preparación, facilitando la comunicación efectiva de ideas en un formato Guía del Usuario de FabriXA
+description: Esta es una guía de usuario para crear de manera eficiente esquemas detallados de PowerPoint adaptados a temas específicos utilizando el agente Generador de Esquemas de PowerPoint.
+lang: es
+permalink: /agent-templates/powerpoint-outline-generator
+---
+
+# Generador de Esquemas de PowerPoint
+
 El **Generador de Esquemas de PowerPoint** es una herramienta poderosa diseñada para ayudar a los usuarios a crear esquemas estructurados para presentaciones. Simplemente proporcionando un tema, una breve descripción y el número deseado de diapositivas, la herramienta genera un esquema detallado que incluye títulos de diapositivas, puntos clave y elementos visuales sugeridos para cada diapositiva. Esto asegura que los usuarios puedan crear presentaciones que no solo sean informativas sino también visualmente atractivas. El generador agiliza el proceso de preparación, facilitando la comunicación efectiva de ideas en un formato profesional.
 
 ## Primeros pasos
@@ -114,4 +122,3 @@ Para instrucciones más detalladas sobre cómo configurar un agente de IA, consu
 - **Explora sugerencias visuales**: Considera usar elementos visuales sugeridos para mejorar la participación y la comprensión.
 
 ## Artículos Relacionados
-Continúa explorando nuestra colección de [Plantillas de Agentes](/en-us/agent-templates/) para descubrir más ideas de agentes de IA en acción.

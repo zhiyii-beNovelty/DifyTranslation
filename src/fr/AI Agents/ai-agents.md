@@ -7,6 +7,14 @@ permalink: /ai-agents
 
 # Introduction aux Agents d'IA  
 
+## Quels sont les Agents d'IA ?  Guide de l'utilisateur FabriXAI
+description: Découvrez les agents d'IA, leurs capacités et comment démarrer avec FabriXAI.
+lang: fr
+permalink: /ai-agents
+---
+
+# Introduction aux Agents d'IA  
+
 ## Quels sont les Agents d'IA ?  
 Les agents d'IA sont des programmes autonomes conçus pour accomplir des tâches, prendre des décisions et interagir avec des rôles prédéfinis. Alimentés par des technologies avancées comme les grands modèles de langage (LLMs), ces agents peuvent traiter des informations, exécuter des actions et s'adapter à des besoins spécifiques sans intervention humaine.  
 
@@ -64,4 +72,3 @@ Pour maximiser l'efficacité de vos agents d'IA :
 ## Articles Liés
 - [Créer à partir de modèles](/en-us/create-from-templates/)
 - [Modèles d'agents](/en-us/agent-templates/)
-- [Configurer un agent d'IA](/en-us/configure-ai-agent/)

@@ -7,6 +7,14 @@ permalink: /agent-templates/prompt-enhancer
 
 # Prompt Enhancer
 
+Der **Prompt Enhancer** ist ein KI-Assistent, der sich auf Prompt-Engineering für große Sprachmodelle (LLMs) spezialisiert hat. Er ermöglicht es Benutzern, Eingabeaufforderungen oder Feedback-Kommentare einzugeben, die das System dann basierend auf Kontext und Klarheit verfeinert. Die Ausgabe umfasst eine überarbeitete Version der Eingabe, eine Erklärung der vorgenommenen Anpassungen und Vorschläge für weitere Verbesserungen. Dieses Tool ist besonders nützlich für Benutzer, die die Effektivität und Präzision ihrer Eingabeaufforderungen verbessern möchten, um bessere Interaktionen mit KI-Modellen zu FabriXAI Benutzerhandbuch
+description: Dies ist ein Benutzerhandbuch für den Prompt Enhancer, einen KI-Assistenten, der entwickelt wurde, um Ihre Eingabeaufforderungen für LLMs zu verfeinern und zu verbessern.
+lang: de
+permalink: /agent-templates/prompt-enhancer
+---
+
+# Prompt Enhancer
+
 Der **Prompt Enhancer** ist ein KI-Assistent, der sich auf Prompt-Engineering für große Sprachmodelle (LLMs) spezialisiert hat. Er ermöglicht es Benutzern, Eingabeaufforderungen oder Feedback-Kommentare einzugeben, die das System dann basierend auf Kontext und Klarheit verfeinert. Die Ausgabe umfasst eine überarbeitete Version der Eingabe, eine Erklärung der vorgenommenen Anpassungen und Vorschläge für weitere Verbesserungen. Dieses Tool ist besonders nützlich für Benutzer, die die Effektivität und Präzision ihrer Eingabeaufforderungen verbessern möchten, um bessere Interaktionen mit KI-Modellen zu gewährleisten.
 
 # Erste Schritte
@@ -92,4 +100,3 @@ Diese Antwort zielt darauf ab, die Bedenken des Kunden anzusprechen, das Engagem
 - **Feedback**: Nutzen Sie die Vorschläge zur weiteren Verfeinerung, um Ihre Prompts kontinuierlich zu verbessern.
 
 # Verwandte Artikel
-Setzen Sie Ihre Erkundung unserer Sammlung von [Agentenvorlagen](/en-us/agent-templates/) fort, um weitere praxisnahe Ideen für KI-Agenten zu entdecken!

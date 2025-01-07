@@ -7,6 +7,14 @@ permalink: /agent-templates/job-description-generator
 
 # Generador de Descripciones de Puesto
 
+El **Generador de Descripciones de Puesto** es una poderosa herramienta de IA diseñada para asistir a los profesionales de RRHH y a los responsables de contratación en la creación de descripciones de puestos completas. Al proporcionar simplemente detalles sobre el puesto de trabajo, el agente generará una descripción de puesto bien estructurada, que incluye una visión general de la posición, una lista de requisitos y una lista de responsabilidades. Esto ayuda a optimizar el proceso de reclutamiento y asegura que toda la información necesaria se comunique claramente a los posibles Guía del Usuario de FabriXA
+description: Esta es una guía de usuario para el Generador de Descripciones de Puesto, un agente de IA diseñado para crear descripciones de puestos detalladas basadas en la entrada del usuario.
+lang: es
+permalink: /agent-templates/job-description-generator
+---
+
+# Generador de Descripciones de Puesto
+
 El **Generador de Descripciones de Puesto** es una poderosa herramienta de IA diseñada para asistir a los profesionales de RRHH y a los responsables de contratación en la creación de descripciones de puestos completas. Al proporcionar simplemente detalles sobre el puesto de trabajo, el agente generará una descripción de puesto bien estructurada, que incluye una visión general de la posición, una lista de requisitos y una lista de responsabilidades. Esto ayuda a optimizar el proceso de reclutamiento y asegura que toda la información necesaria se comunique claramente a los posibles candidatos.
 
 
@@ -91,4 +99,3 @@ Proporcionar liderazgo y mentoría a los miembros junior del equipo de marketing
 
 
 ## Artículos Relacionados
-Sigue explorando nuestra colección de [Plantillas para Agentes](/en-us/agent-templates/) para descubrir más ejemplos de agentes de IA en acción!

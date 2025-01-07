@@ -7,6 +7,14 @@ permalink: /agent-templates
 
 # Plantillas de Agentes
 
+## ¿Qué son las Plantillas de Guía del Usuario de FabriXA
+description: Aprende sobre las plantillas de agentes de FabriXIA y cómo utilizarlas para crear agentes de inteligencia artificial personalizados sin esfuerzo.
+lang: es
+permalink: /agent-templates
+---
+
+# Plantillas de Agentes
+
 ## ¿Qué son las Plantillas de Agentes?
 
 Las plantillas de agentes son configuraciones prediseñadas diseñadas para ayudarte a crear rápidamente agentes de IA adaptados a tareas específicas. Estas plantillas sirven como punto de partida, proporcionando configuraciones fundamentales que puedes personalizar para satisfacer las necesidades únicas de tu negocio. Al usar plantillas de agentes, puedes ahorrar tiempo y esfuerzo mientras aseguras que tu agente de IA esté configurado de manera efectiva para su propósito previsto.
@@ -51,4 +59,3 @@ Continúa explorando nuestra colección de plantillas de agentes para descubrir 
 
 ### Agentes de Seguridad
 - [Agente de Filtrado de Datos Sensibles](/es-us/agent-templates/sensitive-data-filtering-agent)
-- [Detector de Spam](/es-us/agent-templates/spam-detector)

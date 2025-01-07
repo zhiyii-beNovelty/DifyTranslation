@@ -5,6 +5,12 @@ lang: ja-JP
 permalink: /create-from-templates
 ---
 
+# FabriXAIユーザーガイド
+description: FabriXAIでテンプレートからAIエージェントを作成する方法を、このステップバイステップガイドで学びましょう。
+lang: ja
+permalink: /create-from-templates
+---
+
 # テンプレートから作成
 
 FabriXAIの事前に構築されたエージェントテンプレートを活用して、素早く始めましょう！
@@ -32,4 +38,3 @@ FabriXAIの事前に構築されたエージェントテンプレートを活用
 
 ## 関連記事
 - [エージェント用テンプレート](/en-us/agent-templates/)
-- [AIエージェントを設定する](/en-us/configure-ai-agent/)

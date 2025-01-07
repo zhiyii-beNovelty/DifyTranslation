@@ -7,6 +7,14 @@ permalink: /what-types-of-knowledge-can-i-add-to-my-ai-agent
 
 # 我可以向我的 AI 代理添加哪些类型的知识？
 
+您可以通过添加各种类型的文档来增强您的 AI FabriXAI 用户指南
+description: 了解您可以集成到AI代理中的知识类型和支持的文件格式。
+lang: zh-CN
+permalink: /what-types-of-knowledge-can-i-add-to-my-ai-agent
+---
+
+# 我可以向我的 AI 代理添加哪些类型的知识？
+
 您可以通过添加各种类型的文档来增强您的 AI 代理。目前，我们支持上传以下文件格式：
 
 ## 支持的格式
@@ -25,4 +33,3 @@ permalink: /what-types-of-knowledge-can-i-add-to-my-ai-agent
 
 有关如何创建知识的更多信息，请参阅[知识](/zh-cn/knowledge/)部分。
 
-要将知识集成到特定的 AI 代理中，请查阅配置 AI 代理指南中的[集成知识的步骤](/zh-cn/configure-ai-agent/#knowledge)。

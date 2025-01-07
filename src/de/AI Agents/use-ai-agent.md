@@ -7,6 +7,14 @@ permalink: /use-ai-agent
 
 # KI-Agent verwenden
 
+Greifen Sie nach der Konfiguration auf Ihre KI-Agenten zu und interagieren Sie mit FabriXAI Benutzerhandbuch
+description: Erfahren Sie, wie Sie auf Ihre KI-Agenten zugreifen und diese mit dieser Schritt-für-Schritt-Anleitung verwenden.
+lang: de
+permalink: /use-ai-agent
+---
+
+# KI-Agent verwenden
+
 Greifen Sie nach der Konfiguration auf Ihre KI-Agenten zu und interagieren Sie mit ihnen!
 
 ## Zugriff auf Ihren KI-Agenten
@@ -20,4 +28,3 @@ Sie sind nun bereit, Ihren KI-Agenten zu verwenden und seine Fähigkeiten zu erk
 
 ## Verwandte Artikel
 - [KI-Agent konfigurieren](/de-de/configure-ai-agent/)
-- [KI-Agent freigeben](/de-de/share-ai-agents)

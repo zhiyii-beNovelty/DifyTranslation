@@ -5,6 +5,12 @@ lang: ja
 permalink: /share-ai-agent
 ---
 
+# FabriXAIユーザーガイド
+description: このステップバイステップガイドを使用して、AIエージェントを共有する方法を学びます。
+lang: ja
+permalink: /share-ai-agent
+---
+
 # 共有AIエージェント
 
 FabriXAIを使って、AIエージェントを簡単に他の方と共有しましょう！
@@ -26,4 +32,3 @@ AIエージェントを共有する方法は2つあります：
 ## 関連記事
 - [テンプレートから作成する](/en-us/ecreate-from-templates)
 - [AIエージェントを設定する](/en-us/configure-ai-agent/)
-- [AIエージェントをAPIと統合する](/en-us/integrations-api/)

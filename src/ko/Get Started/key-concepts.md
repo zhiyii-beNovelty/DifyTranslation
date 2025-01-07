@@ -7,6 +7,14 @@ permalink: /key-concepts
 
 # 핵심 개념: FabriXAI
 
+## AI FabriXAI 사용자 가이드
+description: FabriXAI의 핵심 개념을 발견하고 빠르게 시작하세요.
+lang: ko
+permalink: /key-concepts
+---
+
+# 핵심 개념: FabriXAI
+
 ## AI 에이전트
 
 AI 에이전트는 자율적으로 작업을 수행하고 미리 정의된 역할과 상호 작용하도록 설계된 프로그램입니다. 미리 구축된 대규모 언어 모델(LLMs)을 갖춘 AI 에이전트는 자연어 처리를 넘어 광범위한 고급 기능을 제공합니다. 이들은 인간의 개입 없이 정보를 처리하고, 결정을 내리며, 행동을 취할 수 있습니다.

@@ -7,6 +7,14 @@ permalink: /agent-templates/powerpoint-outline-generator
 
 # PowerPoint大纲生成器
 
+**PowerPoint大纲生成器** FabriXAI 用户指南
+description: 这是一个用户指南，介绍如何使用PowerPoint大纲生成器代理高效地创建针对特定主题的详细PowerPoint大纲。
+lang: zh-CN
+permalink: /agent-templates/powerpoint-outline-generator
+---
+
+# PowerPoint大纲生成器
+
 **PowerPoint大纲生成器** 是一款强大的工具，旨在帮助用户为演示文稿创建结构化的大纲。只需提供一个主题、简要描述和所需的幻灯片数量，代理即可生成一个详细的大纲，包括幻灯片标题、要点内容以及每张幻灯片的建议视觉元素。这确保用户能够创建不仅内容丰富，而且视觉上吸引人的演示文稿。该生成器简化了准备过程，使以专业格式有效传达想法变得更加容易。
 
 ## 开始使用
@@ -115,4 +123,3 @@ permalink: /agent-templates/powerpoint-outline-generator
 
 ## 相关文章
 
-继续探索我们的[代理模板](/zh-cn/agent-templates/)，发现更多实际应用中的AI代理创意！

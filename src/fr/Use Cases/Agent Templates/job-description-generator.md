@@ -7,6 +7,14 @@ permalink: /agent-templates/job-description-generator
 
 # Générateur de Descriptions de Poste
 
+Le **Générateur de Descriptions de Poste** est un puissant outil d'IA conçu pour aider les professionnels des RH et les responsables de recrutement à créer des descriptions de poste complètes. En fournissant simplement des détails sur le rôle du poste, l'agent générera une description de poste bien structurée, incluant une vue d'ensemble du poste, les exigences et les responsabilités. Cela permet de rationaliser le processus de recrutement et garantit que toutes les informations nécessaires sont clairement communiquées aux candidats Guide de l'utilisateur FabriXAI
+description: Ceci est un guide utilisateur pour le Générateur de Descriptions de Poste, un agent IA conçu pour créer des descriptions de poste détaillées basées sur les entrées de l'utilisateur.
+lang: fr
+permalink: /agent-templates/job-description-generator
+---
+
+# Générateur de Descriptions de Poste
+
 Le **Générateur de Descriptions de Poste** est un puissant outil d'IA conçu pour aider les professionnels des RH et les responsables de recrutement à créer des descriptions de poste complètes. En fournissant simplement des détails sur le rôle du poste, l'agent générera une description de poste bien structurée, incluant une vue d'ensemble du poste, les exigences et les responsabilités. Cela permet de rationaliser le processus de recrutement et garantit que toutes les informations nécessaires sont clairement communiquées aux candidats potentiels.
 
 
@@ -92,4 +100,3 @@ Fournir du leadership et du mentorat aux membres de l'équipe marketing.
 
 
 ## Articles Connexes
-Continuez à explorer notre collection de [Modèles d'Agents](/fr-fr/agent-templates/) pour découvrir plus d'idées d'agents IA en action !

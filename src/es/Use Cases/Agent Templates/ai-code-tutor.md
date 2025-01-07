@@ -7,6 +7,14 @@ permalink: /agent-templates/ai-code-tutor
 
 # Tutor de Código de IA
 
+El **Tutor de Código de IA** es un tutor diseñado para ayudar a los usuarios a comprender el código de programación. Al analizar fragmentos de código proporcionados por el usuario, el tutor ofrece una visión general de lo que hace el código, seguido de una explicación detallada y paso a paso de cada parte. Además, sugiere temas de programación relacionados para un aprendizaje adicional, lo que permite a los usuarios construir una base más sólida en conceptos de programación. Ya seas un principiante o busques mejorar tus habilidades, el Tutor de Código de IA te guiará a través de las complejidades de los lenguajes y conceptos de Guía del Usuario de FabriXA
+description: Esta es una guía del usuario para configurar y usar el Tutor de Código de IA, un agente especializado en explicaciones de programación.
+lang: es
+permalink: /agent-templates/ai-code-tutor
+---
+
+# Tutor de Código de IA
+
 El **Tutor de Código de IA** es un tutor diseñado para ayudar a los usuarios a comprender el código de programación. Al analizar fragmentos de código proporcionados por el usuario, el tutor ofrece una visión general de lo que hace el código, seguido de una explicación detallada y paso a paso de cada parte. Además, sugiere temas de programación relacionados para un aprendizaje adicional, lo que permite a los usuarios construir una base más sólida en conceptos de programación. Ya seas un principiante o busques mejorar tus habilidades, el Tutor de Código de IA te guiará a través de las complejidades de los lenguajes y conceptos de programación.
 
 ## Inicio
@@ -85,4 +93,3 @@ El tutorial de Real Python sobre manejo de errores: [https://realpython.com/pyth
 - **Refinar tus Indicaciones**: Si las explicaciones no son lo suficientemente detalladas, intenta proporcionar más contexto o hacer preguntas específicas sobre el código.
 
 ## Artículos Relacionados
-Sigue explorando nuestra colección de [Plantillas de Agente](/en-us/agent-templates/) para descubrir más ideas de Agentes de IA!

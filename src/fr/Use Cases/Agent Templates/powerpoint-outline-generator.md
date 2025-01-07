@@ -7,6 +7,14 @@ permalink: /agent-templates/powerpoint-outline-generator
 
 # Générateur de plan PowerPoint
 
+Le **Générateur de plan PowerPoint** est un outil puissant conçu pour aider les utilisateurs à créer des plans structurés pour les présentations. En fournissant simplement un sujet, une brève description et le nombre de diapositives souhaité, le générateur génère un plan détaillé qui inclut des titres de diapositives, un contenu sous forme de puces et des éléments visuels suggérés pour chaque diapositive. Cela garantit que les utilisateurs peuvent créer des présentations qui ne sont pas seulement informatives mais aussi visuellement attrayantes. Le générateur simplifie le processus de préparation, facilitant ainsi la transmission efficace des idées dans un format Guide de l'utilisateur FabriXAI
+description: Il s'agit d'un guide utilisateur pour créer efficacement des plans PowerPoint détaillés adaptés à des sujets spécifiques en utilisant l'agent Générateur de Plan PowerPoint.
+lang: fr
+permalink: /agent-templates/powerpoint-outline-generator
+---
+
+# Générateur de plan PowerPoint
+
 Le **Générateur de plan PowerPoint** est un outil puissant conçu pour aider les utilisateurs à créer des plans structurés pour les présentations. En fournissant simplement un sujet, une brève description et le nombre de diapositives souhaité, le générateur génère un plan détaillé qui inclut des titres de diapositives, un contenu sous forme de puces et des éléments visuels suggérés pour chaque diapositive. Cela garantit que les utilisateurs peuvent créer des présentations qui ne sont pas seulement informatives mais aussi visuellement attrayantes. Le générateur simplifie le processus de préparation, facilitant ainsi la transmission efficace des idées dans un format professionnel.
 
 ## Premiers Pas
@@ -112,4 +120,3 @@ Pour des instructions plus détaillées sur la configuration d'un agent d'IA, ve
 - **Explorez les suggestions visuelles** : Envisagez d'utiliser les éléments visuels suggérés pour améliorer l'engagement et la compréhension.
 
 ## Articles connexes
-Continuez à explorer notre collection de [Modèles d'agents](/en-us/agent-templates/) pour découvrir plus d'idées d'agents d'IA en pratique !

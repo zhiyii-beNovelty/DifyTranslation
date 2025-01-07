@@ -7,6 +7,14 @@ permalink: /agent-templates/customer-inquiry-prioritizing-agent
 
 # Agente de priorización de consultas de clientes
 
+El **Agente de priorización de consultas de clientes** está diseñado para analizar consultas de clientes y clasificarlas en uno de cinco niveles de urgencia: Urgente, Alto, Medio, Bajo o General. Al evaluar la urgencia, gravedad y el potencial de generar problemas adicionales en cada consulta, el agente ayuda a las empresas a priorizar de manera efectiva las solicitudes de servicio al cliente. Esto asegura que los problemas críticos se aborden con prontitud, mejorando la satisfacción del cliente y la eficiencia Guía del Usuario de FabriXA
+description: Esta es una guía del usuario para el Agente de Priorización de Consultas de Clientes para clasificar las consultas de los clientes según su urgencia.
+lang: es
+permalink: /agent-templates/customer-inquiry-prioritizing-agent
+---
+
+# Agente de priorización de consultas de clientes
+
 El **Agente de priorización de consultas de clientes** está diseñado para analizar consultas de clientes y clasificarlas en uno de cinco niveles de urgencia: Urgente, Alto, Medio, Bajo o General. Al evaluar la urgencia, gravedad y el potencial de generar problemas adicionales en cada consulta, el agente ayuda a las empresas a priorizar de manera efectiva las solicitudes de servicio al cliente. Esto asegura que los problemas críticos se aborden con prontitud, mejorando la satisfacción del cliente y la eficiencia operativa.
 
 ## Primeros Pasos
@@ -56,4 +64,3 @@ El cliente no puede iniciar sesión en su cuenta, lo que le impide cumplir con u
 - **Actualizaciones regulares**: Mantén la base de conocimientos actualizada para asegurar que el agente responda con la información más relevante.
 
 ## Artículos relacionados
-Continúa explorando nuestra colección de [Plantillas de agentes](/en-us/agent-templates/) para descubrir más ejemplos de agentes de IA en funcionamiento!
