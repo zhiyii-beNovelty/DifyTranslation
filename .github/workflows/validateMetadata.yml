@@ -115,4 +115,11 @@ jobs:
             # Determine the language based on the directory structure
             case "$file" in
               src/zh-cn/* | src/zh-CN/*) correct_metadata "$file" "zh-cn" ;;
-              src
+              src/es/*)    correct_metadata "$file" "es" ;;
+              src/fr/*)    correct_metadata "$file" "fr" ;;
+              src/de/*)    correct_metadata "$file" "de" ;;
+              src/ja/*)    correct_metadata "$file" "ja" ;;
+              src/ko/*)    correct_metadata "$file" "ko" ;;
+              *)           echo "File $file does not match known language directories." ;;
+            esac
+          done
