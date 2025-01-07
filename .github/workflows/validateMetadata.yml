@@ -1,7 +1,13 @@
 name: Validate and Correct Metadata
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:  # Enables manual trigger
+  push:
+    paths:
+      - 'src/**'
+  pull_request:
+    paths:
+      - 'src/**'
 
 jobs:
   validate_and_correct_metadata:
@@ -34,6 +40,9 @@ jobs:
             local metadata=$(head -n 10 "$file")
             local needs_update=false
 
+            echo "Processing file: $file"
+            echo "Current metadata:\n$metadata"
+
             # Check for metatitle
             if [[ $metadata =~ metatitle:\ (.+) ]]; then
               metatitle="${BASH_REMATCH[1]}"
@@ -62,6 +71,7 @@ jobs:
 
             # If changes are needed, update the file
             if $needs_update; then
+              echo "Changes needed in $file. Updating..."
               # Create a temporary file to hold the modified content
               temp_file=$(mktemp)
 
@@ -78,21 +88,22 @@ jobs:
 
               # Move the temporary file back to the original
               mv "$temp_file" "$file"
+              echo "Updated: $file"
+            else
+              echo "No updates needed for $file"
             fi
           }
 
-          # Iterate over all language directories and apply corrections
-          for path in src/zh-cn src/es src/fr src/de src/ja src/ko; do
-            for file in "$path"/*; do
-              if [[ -f $file ]]; then
-                case "$path" in
-                  "src/zh-cn") correct_metadata "$file" "zh-CN" ;;
-                  "src/es") correct_metadata "$file" "es" ;;
-                  "src/fr") correct_metadata "$file" "fr" ;;
-                  "src/de") correct_metadata "$file" "de" ;;
-                  "src/ja") correct_metadata "$file" "ja" ;;
-                  "src/ko") correct_metadata "$file" "ko" ;;
-                esac
-              fi
-            done
+          # Find all relevant files, excluding index.md
+          find src -type f ! -name "index.md" | while read -r file; do
+            # Determine the language based on the directory structure
+            case "$file" in
+              src/zh-cn/*) correct_metadata "$file" "zh-CN" ;;
+              src/es/*)    correct_metadata "$file" "es" ;;
+              src/fr/*)    correct_metadata "$file" "fr" ;;
+              src/de/*)    correct_metadata "$file" "de" ;;
+              src/ja/*)    correct_metadata "$file" "ja" ;;
+              src/ko/*)    correct_metadata "$file" "ko" ;;
+              *)           echo "File $file does not match known language directories." ;;
+            esac
           done
