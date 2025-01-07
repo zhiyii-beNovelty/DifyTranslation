@@ -1,5 +1,5 @@
 ---
-metatitle: Kann ich meinen KI-Agenten mit anderen teilen? | FAQ | FabriXAI Benutzeranleitung
+metatitle: Kann ich meinen KI-Agenten mit anderen teilen? | FAQ | FabriXAI Benutzerhandbuch
 description: Lernen Sie, wie Sie Ihren KI-Agenten mit anderen über Links oder eingebettete Optionen teilen können.
 lang: de
 permalink: /can-i-share-my-ai-agent-with-others
