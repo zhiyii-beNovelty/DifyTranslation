@@ -13,13 +13,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        with:
-          persist-credentials: false  # Prevent storing credentials for the default GITHUB_TOKEN
-
-      - name: Set up Git
-        run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
 
       - name: Validate and correct metadata
         run: |
@@ -125,8 +118,11 @@ jobs:
 
       - name: Commit changes
         run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "no-reply@github.com"
           git add src/**  # Add changes to all files in the src directory
           git commit -m "Update translation files with corrected metadata" || echo "No changes to commit"
+          git push
 
       - name: Push changes
         run: |
