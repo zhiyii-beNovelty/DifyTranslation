@@ -1,5 +1,5 @@
 ---
-metatitle: AI-Code-Tutor | Agentenvorlagen | FabriXAI Benutzerleitfaden
+metatitle: AI-Code-Tutor | Agentenvorlagen | FabriXAI Benutzerhandbuch
 description: Dies ist ein Benutzerleitfaden zur Konfiguration und Verwendung des AI-Code-Tutors, eines Agenten, der sich auf Programmiers-Erklärungen spezialisiert hat.
 lang: de-DE
 permalink: /agent-templates/ai-code-tutor
