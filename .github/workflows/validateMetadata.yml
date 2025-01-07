@@ -86,7 +86,7 @@ jobs:
             for file in "$path"/*; do
               if [[ -f $file ]]; then
                 case "$path" in
-                  "src/zh-cn") correct_metadata "$file" "zh-cn" ;;
+                  "src/zh-cn") correct_metadata "$file" "zh-CN" ;;
                   "src/es") correct_metadata "$file" "es" ;;
                   "src/fr") correct_metadata "$file" "fr" ;;
                   "src/de") correct_metadata "$file" "de" ;;
