@@ -4,7 +4,7 @@ on:
   workflow_dispatch:  # Enables manual trigger
   push:
     paths:
-      - 'src/.github/workflows/validateMetadata.yml'
+      - '.github/workflows/validateMetadata.yml'
 
 jobs:
   validate_and_correct_metadata:
