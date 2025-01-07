@@ -1,7 +1,7 @@
 ---
 metatitle: Agenten-Vorlagen | FabriXAI Benutzerhandbuch
 description: Erfahren Sie mehr über die Agenten-Vorlagen von FabriXAI und wie Sie diese nutzen können, um mühelos maßgeschneiderte KI-Agenten zu erstellen.
-lang: de-DE
+lang: de
 permalink: /agent-templates
 ---
 
