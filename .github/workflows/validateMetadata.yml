@@ -13,6 +13,13 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          persist-credentials: false  # Prevent storing credentials for the default GITHUB_TOKEN
+
+      - name: Set up Git
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
 
       - name: Validate and correct metadata
         run: |
@@ -23,7 +30,6 @@ jobs:
             local metatitle_suffix
             local lang_code
 
-            # Define metatitle suffixes for each language and set lang_code
             case "$lang" in
               "zh-cn" | "zh-CN")
                 metatitle_suffix="FabriXAI 用户指南"
@@ -52,14 +58,12 @@ jobs:
               *) echo "Unknown language: $lang" && return ;;
             esac
             
-            # Read the first few lines of the file
             local metadata=$(head -n 10 "$file")
             local needs_update=false
 
             echo "Processing file: $file"
             echo "Current metadata:\n$metadata"
 
-            # Check for metatitle
             if [[ $metadata =~ metatitle:\ (.+) ]]; then
               metatitle="${BASH_REMATCH[1]}"
               if [[ ! $metatitle == *"$metatitle_suffix" ]]; then
@@ -73,7 +77,6 @@ jobs:
               needs_update=true
             fi
 
-            # Check for lang
             if [[ $metadata =~ lang:\ (.+) ]]; then
               file_lang="${BASH_REMATCH[1]}"
               if [[ $file_lang != "$lang_code" ]]; then
@@ -88,10 +91,8 @@ jobs:
             # If changes are needed, update the file
             if $needs_update; then
               echo "Changes needed in $file. Updating..."
-              # Create a temporary file to hold the modified content
               temp_file=$(mktemp)
 
-              # Replace the old metadata with updated values
               while IFS= read -r line; do
                 if [[ $line =~ metatitle: ]]; then
                   echo "$metatitle" >> "$temp_file"
@@ -102,7 +103,6 @@ jobs:
                 fi
               done < "$file"
 
-              # Move the temporary file back to the original
               mv "$temp_file" "$file"
               echo "Updated: $file"
             else
@@ -112,7 +112,6 @@ jobs:
 
           # Find all relevant files, excluding index.md
           find src -type f ! -name "index.md" | while read -r file; do
-            # Determine the language based on the directory structure
             case "$file" in
               src/zh-cn/* | src/zh-CN/*) correct_metadata "$file" "zh-cn" ;;
               src/es/*)    correct_metadata "$file" "es" ;;
@@ -123,3 +122,12 @@ jobs:
               *)           echo "File $file does not match known language directories." ;;
             esac
           done
+
+      - name: Commit changes
+        run: |
+          git add src/**  # Add changes to all files in the src directory
+          git commit -m "Update translation files with corrected metadata" || echo "No changes to commit"
+
+      - name: Push changes
+        run: |
+          git push origin HEAD:${{ github.ref }}  # Push changes to the current branch
