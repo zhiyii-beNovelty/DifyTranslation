@@ -1,5 +1,5 @@
 ---
-metatitle: KI-Agent konfigurieren | FabriXAI Benutzerleitfaden
+metatitle: KI-Agent konfigurieren | FabriXAI Benutzerhandbuch
 description: Erfahren Sie, wie Sie KI-Agenten auf FabriXAI mit dieser Schritt-für-Schritt-Anleitung konfigurieren.
 lang: de-DE
 permalink: /configure-ai-agent
