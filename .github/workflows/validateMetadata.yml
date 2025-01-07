@@ -4,7 +4,7 @@ on:
   workflow_dispatch:  # Enables manual trigger
   push:
     paths:
-      - '.github/workflows/validateMetadata.yml'
+      - 'src/.github/workflows/validateMetadata.yml'
 
 jobs:
   validate_and_correct_metadata:
@@ -21,16 +21,35 @@ jobs:
             local file=$1
             local lang=$2
             local metatitle_suffix
+            local lang_code
 
-            # Define metatitle suffixes for each language
+            # Define metatitle suffixes for each language and set lang_code
             case "$lang" in
-              "zh-cn") metatitle_suffix="FabriXAI 用户指南" ;;
-              "es")    metatitle_suffix="Guía del Usuario de FabriXA" ;;
-              "fr")    metatitle_suffix="Guide de l'utilisateur FabriXAI" ;;
-              "de")    metatitle_suffix="FabriXAI Benutzerhandbuch" ;;
-              "ja")    metatitle_suffix="FabriXAIユーザーガイド" ;;
-              "ko")    metatitle_suffix="FabriXAI 사용자 가이드" ;;
-              *)       echo "Unknown language: $lang" && return ;;
+              "zh-cn" | "zh-CN")
+                metatitle_suffix="FabriXAI 用户指南"
+                lang_code="zh-CN"
+                ;;
+              "es")
+                metatitle_suffix="Guía del Usuario de FabriXA"
+                lang_code="es"
+                ;;
+              "fr")
+                metatitle_suffix="Guide de l'utilisateur FabriXAI"
+                lang_code="fr"
+                ;;
+              "de")
+                metatitle_suffix="FabriXAI Benutzerhandbuch"
+                lang_code="de"
+                ;;
+              "ja")
+                metatitle_suffix="FabriXAIユーザーガイド"
+                lang_code="ja"
+                ;;
+              "ko")
+                metatitle_suffix="FabriXAI 사용자 가이드"
+                lang_code="ko"
+                ;;
+              *) echo "Unknown language: $lang" && return ;;
             esac
             
             # Read the first few lines of the file
@@ -57,12 +76,12 @@ jobs:
             # Check for lang
             if [[ $metadata =~ lang:\ (.+) ]]; then
               file_lang="${BASH_REMATCH[1]}"
-              if [[ $file_lang != "$lang" ]]; then
-                echo "Updating lang in $file"
+              if [[ $file_lang != "$lang_code" ]]; then
+                echo "Updating lang in $file from $file_lang to $lang_code"
                 needs_update=true
               fi
             else
-              echo "Adding lang to $file"
+              echo "Adding lang: $lang_code to $file"
               needs_update=true
             fi
 
@@ -77,7 +96,7 @@ jobs:
                 if [[ $line =~ metatitle: ]]; then
                   echo "$metatitle" >> "$temp_file"
                 elif [[ $line =~ lang: ]]; then
-                  echo "lang: $lang" >> "$temp_file"
+                  echo "lang: $lang_code" >> "$temp_file"
                 else
                   echo "$line" >> "$temp_file"
                 fi
@@ -95,12 +114,5 @@ jobs:
           find src -type f ! -name "index.md" | while read -r file; do
             # Determine the language based on the directory structure
             case "$file" in
-              src/zh-cn/*) correct_metadata "$file" "zh-CN" ;;
-              src/es/*)    correct_metadata "$file" "es" ;;
-              src/fr/*)    correct_metadata "$file" "fr" ;;
-              src/de/*)    correct_metadata "$file" "de" ;;
-              src/ja/*)    correct_metadata "$file" "ja" ;;
-              src/ko/*)    correct_metadata "$file" "ko" ;;
-              *)           echo "File $file does not match known language directories." ;;
-            esac
-          done
+              src/zh-cn/* | src/zh-CN/*) correct_metadata "$file" "zh-cn" ;;
+              src
