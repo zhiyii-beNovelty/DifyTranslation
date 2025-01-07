@@ -2,9 +2,9 @@ name: Validate and Correct Metadata
 
 on:
   workflow_dispatch:  # Enables manual trigger
-  push:
-    paths:
-      - '.github/workflows/validateMetadata.yml'
+  # push:
+  #   paths:
+  #     - '.github/workflows/validateMetadata.yml'
 
 jobs:
   validate_and_correct_metadata:
